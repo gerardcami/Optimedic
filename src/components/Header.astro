@@ -1,8 +1,6 @@
 ---
 import { ProductsDropdown } from "./ProductsDropdown";
 import { Counter } from "./counter";
-
-console.log("javascript");
 ---
 
 <header
@@ -19,7 +17,7 @@ console.log("javascript");
     <nav>
       <ul class="flex gap-[35px]">
         <li><a href="#">Inicio</a></li>
-        <li><ProductsDropdown /></li>
+        <li class="select-none"><ProductsDropdown client:visible /></li>
         <li><a href="#">Eventos</a></li>
         <li><a href="../pages/about.astro">Sobre nosotros</a></li>
         <li><a href="#">Contacto</a></li>
