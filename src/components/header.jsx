@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import {
   Dialog,
   DialogPanel,
@@ -127,14 +127,18 @@ export default function Header() {
               <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {products.map((product) => (
-                    <div key={product.name}>
-                      <div className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+                    <div
+                      className="flex flex-col items-center"
+                      key={product.name}
+                    >
+                      <div className="flex text-sm font-semibold leading-6 text-gray-900 mb-1">
                         {product.name}
                       </div>
+                      <hr className="w-[20%] border-gray-900 mb-1" />
                       {product.subcategories.map((subcategory) => (
                         <div
                           key={subcategory.name}
-                          className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                          className="group w-full relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                         >
                           <div className="flex-auto">
                             <a
@@ -153,21 +157,6 @@ export default function Header() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon
-                        className="h-5 w-5 flex-none text-gray-400"
-                        aria-hidden="true"
-                      />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
               </PopoverPanel>
             </Transition>
           </Popover>
@@ -182,11 +171,27 @@ export default function Header() {
             Contact
           </a>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
+        <button className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-moon-filled"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z"
+              stroke-width="0"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
       </nav>
       <Dialog
         className="lg:hidden"
@@ -219,7 +224,7 @@ export default function Header() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      <DisclosureButton className="flex w-full items-center justify-between rounded-lg mt-3 py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         Products
                         <ChevronDownIcon
                           className={classNames(
@@ -231,16 +236,20 @@ export default function Header() {
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
                         {products.map((product) => (
-                          <div key={product.name}>
-                            <div className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+                          <div
+                            className="flex flex-col items-start"
+                            key={product.name}
+                          >
+                            <div className="flex mb-1 ml-4 text-sm font-semibold leading-6 text-gray-900">
                               {product.name}
                             </div>
+                            <hr className="w-[10%] ml-4 border-gray-900 mb-1" />
                             {product.subcategories.map((subcategory) => (
                               <DisclosureButton
                                 key={subcategory.name}
                                 as="a"
                                 href={subcategory.href}
-                                className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                               >
                                 {subcategory.name}
                               </DisclosureButton>
@@ -255,27 +264,19 @@ export default function Header() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  Events
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  About us
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
-                </a>
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
+                  Contact
                 </a>
               </div>
             </div>
