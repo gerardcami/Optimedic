@@ -1,4 +1,5 @@
-import { useState } from "react";
+// src/components/Header.jsx
+import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogPanel,
@@ -26,57 +27,22 @@ import {
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
 
-const products = [
-  {
-    name: "Loupes",
-    subcategories: [
-      {
-        name: "Lupas",
-        description: "Encuentre su aumento ideal con nuestras lupas.",
-        href: "#",
-      },
-      {
-        name: "Monturas",
-        description:
-          "Monturas duraderas y estéticamente atractivas que superarán sus expectativas de rendimiento y estilo.",
-        href: "#",
-      },
-    ],
-  },
-  {
-    name: "Surgery",
-    subcategories: [
-      {
-        name: "MicroAire",
-        description:
-          "Un potente instrumento de precisión diseñado para la extracción de grasa de pequeño o gran volumen, el contorno coprporal y la recolección de grasa.",
-        href: "#",
-      },
-      {
-        name: "Renuvion",
-        description: "Your customers’ data will be safe and secure",
-        href: "#",
-      },
-    ],
-  },
-  {
-    name: "Events",
-    subcategories: [
-      {
-        name: "Conference",
-        description: "Your customers’ data will be safe and secure",
-        href: "#",
-      },
-    ],
-  },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function fetchProducts() {
+      const response = await import("../services/products.ts");
+      setProducts(response.products);
+    }
+
+    fetchProducts();
+  }, []);
 
   return (
     <header className="bg-white text-gray-900 fixed inset-x-0 top-0 z-50">
