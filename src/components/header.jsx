@@ -51,11 +51,11 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="https://optimedic.es/">
+          <a href="/">
             <img
               className="h-8 w-auto"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
+              alt="Optimedic logo"
             />
           </a>
         </div>
@@ -124,13 +124,13 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="/events" className="text-sm font-semibold leading-6">
             Events
           </a>
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="/about" className="text-sm font-semibold leading-6">
             About us
           </a>
-          <a href="#" className="text-sm font-semibold leading-6">
+          <a href="/contact" className="text-sm font-semibold leading-6">
             Contact
           </a>
         </PopoverGroup>

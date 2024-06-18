@@ -6,13 +6,13 @@ export const products = [
       {
         name: "Lupas",
         description: "Encuentre su aumento ideal con nuestras lupas.",
-        href: "#",
+        href: "/src/pages/products/loupes.astro",
       },
       {
         name: "Monturas",
         description:
           "Monturas duraderas y estéticamente atractivas que superarán sus expectativas de rendimiento y estilo.",
-        href: "#",
+        href: "/src/pages/products/frames.astro",
       },
     ],
   },
@@ -23,12 +23,12 @@ export const products = [
         name: "MicroAire",
         description:
           "Un potente instrumento de precisión diseñado para la extracción de grasa de pequeño o gran volumen, el contorno corporal y la recolección de grasa.",
-        href: "#",
+        href: "/src/pages/products/microaire.astro",
       },
       {
         name: "Renuvion",
         description: "El único dispositivo aprobado por la FDA para su uso después de una liposucción y el único dispositivo aprobado por la FDA para contraer el tejido blando subcutáneo.",
-        href: "#",
+        href: "/src/pages/products/renuvion.astro",
       },
     ],
   },
@@ -38,7 +38,7 @@ export const products = [
       {
         name: "Conference",
         description: "Your customers’ data will be safe and secure",
-        href: "#",
+        href: "/src/pages/products/events.astro",
       },
     ],
   },
