@@ -32,12 +32,13 @@ const products = [
     subcategories: [
       {
         name: "Lupas",
-        description: "Get a better understanding of your traffic",
+        description: "Encuentre su aumento ideal con nuestras lupas.",
         href: "#",
       },
       {
         name: "Monturas",
-        description: "Speak directly to your customers",
+        description:
+          "Monturas duraderas y estéticamente atractivas que superarán sus expectativas de rendimiento y estilo.",
         href: "#",
       },
     ],
@@ -47,7 +48,8 @@ const products = [
     subcategories: [
       {
         name: "MicroAire",
-        description: "Your customers’ data will be safe and secure",
+        description:
+          "Un potente instrumento de precisión diseñado para la extracción de grasa de pequeño o gran volumen, el contorno coprporal y la recolección de grasa.",
         href: "#",
       },
       {
