@@ -88,14 +88,28 @@ export default function Header() {
               leaveTo="opacity-0 translate-y-1"
             >
               <PopoverPanel
+                className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 overflow-auto max-h-[calc(100vh-90px)]"
                 style={{
-                  maxHeight: "24rem",
+                  maxHeight: "calc(100vh - 90px)",
                   overflowY: "auto",
                   scrollbarWidth: "thin",
-                  scrollbarColor: "#6b7280 #f3f4f6",
+                  scrollbarColor: "#6b7280",
                 }}
-                className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md max-h-[calc(100vh-90px)] rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 overflow-auto"
               >
+                <style>
+                  {`
+                    ::-webkit-scrollbar {
+                      width: 5px;
+                    }
+                    ::-webkit-scrollbar-track {
+                      background: transparent;
+                    }
+                    ::-webkit-scrollbar-thumb {
+                      background-color: #6b7280;
+                      border-radius: 0.25rem;
+                    }
+                  `}
+                </style>
                 <div className="p-4">
                   {products.map((product) => (
                     <div
@@ -145,20 +159,20 @@ export default function Header() {
         <button className="hidden lg:flex lg:flex-1 lg:justify-end">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-moon-filled"
+            className="icon icon-tabler icon-tabler-moon-filled"
             width="20"
             height="20"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="#000000"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path
               d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z"
-              stroke-width="0"
+              strokeWidth="0"
               fill="currentColor"
             />
           </svg>
