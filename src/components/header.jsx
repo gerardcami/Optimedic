@@ -87,7 +87,15 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <PopoverPanel
+                style={{
+                  maxHeight: "24rem",
+                  overflowY: "auto",
+                  scrollbarWidth: "thin",
+                  scrollbarColor: "#6b7280 #f3f4f6",
+                }}
+                className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md max-h-[calc(100vh-90px)] rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 overflow-auto"
+              >
                 <div className="p-4">
                   {products.map((product) => (
                     <div

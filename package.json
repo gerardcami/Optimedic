@@ -20,7 +20,7 @@
     "@park-ui/tailwind-plugin": "^0.20.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.10.0",
+    "astro": "^4.10.3",
     "flowbite-react": "^0.9.0",
     "lucide-react": "^0.394.0",
     "pnpm": "^9.2.0",
