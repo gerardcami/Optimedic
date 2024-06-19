@@ -87,17 +87,10 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <PopoverPanel
-                className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 overflow-auto max-h-[calc(100vh-90px)]"
-                style={{
-                  maxHeight: "calc(100vh - 90px)",
-                  overflowY: "auto",
-                  scrollbarWidth: "thin",
-                  scrollbarColor: "#6b7280",
-                }}
-              >
-                <style>
-                  {`
+              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 overflow-hidden max-h-[calc(100vh-90px)]">
+                <div className="overflow-auto max-h-[calc(100vh-90px)]">
+                  <style>
+                    {`
                     ::-webkit-scrollbar {
                       width: 5px;
                     }
@@ -109,38 +102,39 @@ export default function Header() {
                       border-radius: 0.25rem;
                     }
                   `}
-                </style>
-                <div className="p-4">
-                  {products.map((product) => (
-                    <div
-                      className="flex flex-col items-center"
-                      key={product.name}
-                    >
-                      <div className="flex text-sm font-semibold leading-6 text-gray-900 mb-1">
-                        {product.name}
-                      </div>
-                      <hr className="w-[20%] border-gray-900 mb-1" />
-                      {product.subcategories.map((subcategory) => (
-                        <div
-                          key={subcategory.name}
-                          className="group w-full relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                        >
-                          <div className="flex-auto">
-                            <a
-                              href={subcategory.href}
-                              className="block font-semibold text-gray-900"
-                            >
-                              {subcategory.name}
-                              <span className="absolute inset-0" />
-                            </a>
-                            <p className="mt-1 text-gray-600">
-                              {subcategory.description}
-                            </p>
-                          </div>
+                  </style>
+                  <div className="p-4 overflow-auto">
+                    {products.map((product) => (
+                      <div
+                        className="flex flex-col items-center"
+                        key={product.name}
+                      >
+                        <div className="flex text-sm font-semibold leading-6 text-gray-900 mb-1">
+                          {product.name}
                         </div>
-                      ))}
-                    </div>
-                  ))}
+                        <hr className="w-[20%] border-gray-900 mb-1" />
+                        {product.subcategories.map((subcategory) => (
+                          <div
+                            key={subcategory.name}
+                            className="group w-full relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                          >
+                            <div className="flex-auto">
+                              <a
+                                href={subcategory.href}
+                                className="block font-semibold text-gray-900"
+                              >
+                                {subcategory.name}
+                                <span className="absolute inset-0" />
+                              </a>
+                              <p className="mt-1 text-gray-600">
+                                {subcategory.description}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </PopoverPanel>
             </Transition>
