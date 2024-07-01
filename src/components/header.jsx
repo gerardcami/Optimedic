@@ -54,7 +54,7 @@ export default function Header() {
           <a href="/">
             <img
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              src="/public/Imagotip Blanc.jpg"
               alt="Optimedic logo"
             />
           </a>
@@ -89,20 +89,6 @@ export default function Header() {
             >
               <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 overflow-hidden max-h-[calc(100vh-90px)]">
                 <div className="overflow-auto max-h-[calc(100vh-90px)]">
-                  <style>
-                    {`
-                    ::-webkit-scrollbar {
-                      width: 5px;
-                    }
-                    ::-webkit-scrollbar-track {
-                      background: transparent;
-                    }
-                    ::-webkit-scrollbar-thumb {
-                      background-color: #6b7280;
-                      border-radius: 0.25rem;
-                    }
-                  `}
-                  </style>
                   <div className="p-4 overflow-auto">
                     {products.map((product) => (
                       <div

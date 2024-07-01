@@ -6,7 +6,7 @@ interface Props {
 const { title } = Astro.props;
 import Footer from "../components/Footer.astro";
 import ViewTransitions from "astro/components/ViewTransitions.astro";
-import Header from "../components/header";
+import Header from "../components/Header";
 ---
 
 <!doctype html>
@@ -53,6 +53,16 @@ import Header from "../components/header";
           Bitstream Vera Sans Mono,
           Courier New,
           monospace;
+      }
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #6b7280;
+        border-radius: 0.25rem;
       }
     </style>
   </body>
