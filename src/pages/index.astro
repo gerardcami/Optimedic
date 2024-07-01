@@ -4,11 +4,13 @@ import Header from "../components/header";
 import Title from "../components/Title.astro";
 import Launches from "../components/Launches.astro";
 import Features from "../components/features";
+import Carousel from "../components/carousel";
 ---
 
 <Layout title="Optimedic">
   <Title />
-  <div class="max-w-[1200px] mx-auto">
+  <div class="max-w-[1200px] mx-auto flex flex-col items-center gap-[100px]">
+    <Carousel client:visible />
     <Features />
   </div>
 </Layout>
