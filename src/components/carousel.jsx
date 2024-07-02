@@ -115,7 +115,7 @@ export default function Carousel() {
           <button
             key={index}
             className={`w-8 h-1 rounded-full transition-all duration-500 ${
-              index === currentSlide ? "bg-[#076B61] w-12" : "bg-gray-300"
+              index === currentSlide ? "bg-[#076B61] w-[45px]" : "bg-gray-300"
             }`}
             onClick={() => handleIndicatorClick(index)}
             aria-label={`Go to slide ${index + 1}`}
