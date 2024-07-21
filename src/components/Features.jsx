@@ -1,10 +1,10 @@
 import React from "react";
-import { features } from "../services/features";
+import { featuresData } from "../services/features";
 
-const Features = () => {
+export default function Features() {
   return (
     <section className="flex justify-center items-center w-full h-[200px] gap-[30px]">
-      {features.map((feature) => (
+      {featuresData.map((feature) => (
         <div
           className="flex flex-col items-center w-1/4 h-full"
           key={feature.id}
@@ -17,6 +17,4 @@ const Features = () => {
       ))}
     </section>
   );
-};
-
-export default Features;
+}

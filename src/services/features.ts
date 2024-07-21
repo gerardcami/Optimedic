@@ -1,4 +1,4 @@
-export const features = [
+export const featuresData = [
   {
     id: 1,
     title: "Calidad",
