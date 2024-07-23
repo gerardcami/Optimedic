@@ -1,4 +1,3 @@
-import React from "react";
 import { productsData } from "../services/products";
 
 export default function Products() {
@@ -13,7 +12,7 @@ export default function Products() {
           style={{ backgroundImage: `url(${product.img})` }}
         >
           <div className="w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-50 rounded-lg group-hover:bg-opacity-75 transition-all duration-300 ease-in-out">
-            <h1 className="text-white text-2xl font-semibold p-4 group-hover:opacity-0 transition-opacity duration-300 ease-in-out">
+            <h1 className="text-white text-2xl font-semibold p-4 group-hover:hidden transition-opacity duration-300 ease-in-out">
               {product.name}
             </h1>
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
@@ -22,7 +21,7 @@ export default function Products() {
                   <a
                     key={subIndex}
                     href="#"
-                    className="text-white text-lg font-medium transition-transform transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out hover:underline"
+                    className="text-white text-lg font-medium transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out hover:underline"
                     style={{ transitionDelay: `${subIndex * 100}ms` }}
                   >
                     {subcategory.name}
