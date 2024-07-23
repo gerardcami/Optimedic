@@ -1,7 +1,8 @@
 // src/data/products.js
-export const products = [
+export const productsData = [
   {
     name: "Loupes",
+    img: "/public/img/oscar-alonso1.jpg",
     subcategories: [
       {
         name: "Lupas",
@@ -18,6 +19,7 @@ export const products = [
   },
   {
     name: "Surgery",
+    img: "/public/img/IMG_0415.png",
     subcategories: [
       {
         name: "MicroAire",
@@ -27,13 +29,15 @@ export const products = [
       },
       {
         name: "Renuvion",
-        description: "El único dispositivo aprobado por la FDA para su uso después de una liposucción y el único dispositivo aprobado por la FDA para contraer el tejido blando subcutáneo.",
+        description:
+          "El único dispositivo aprobado por la FDA para su uso después de una liposucción y el único dispositivo aprobado por la FDA para contraer el tejido blando subcutáneo.",
         href: "/src/pages/products/renuvion.astro",
       },
     ],
   },
   {
     name: "Events",
+    img: "/public/img/barcelona-oculoplastics-resumen-grafico-sorteo-gafas-lupa.jpg",
     subcategories: [
       {
         name: "Conference",

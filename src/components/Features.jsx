@@ -3,7 +3,7 @@ import { featuresData } from "../services/features";
 
 export default function Features() {
   return (
-    <section className="flex justify-center items-center w-full h-[200px] gap-[30px]">
+    <article className="flex justify-center items-center w-full h-[200px] gap-[30px]">
       {featuresData.map((feature) => (
         <div
           className="flex flex-col items-center w-1/4 h-full"
@@ -15,6 +15,6 @@ export default function Features() {
           <p className="text-center text">{feature.description}</p>
         </div>
       ))}
-    </section>
+    </article>
   );
 }

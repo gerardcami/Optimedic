@@ -38,7 +38,7 @@ export default function Header() {
   useEffect(() => {
     async function fetchProducts() {
       const response = await import("../services/products.ts");
-      setProducts(response.products);
+      setProducts(response.productsData);
     }
 
     fetchProducts();

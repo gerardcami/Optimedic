@@ -6,7 +6,7 @@ export const Slides = [
   },
   {
     id: 2,
-    image: "/public/img/foto oscar alonso 1.jpg",
+    image: "/public/img/oscar-alonso1.jpg",
   },
   {
     id: 3,
@@ -18,6 +18,6 @@ export const Slides = [
   },
   {
     id: 5,
-    image: "/public/img/oscar alonso 2.jpg",
+    image: "/public/img/oscar-alonso2.jpg",
   },
 ];
