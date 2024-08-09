@@ -1,11 +1,11 @@
 import { type Doc, type APISpaceXResponse } from "../types/api";
 
-export const getLaunchBy = async({id}: { id: string }) => {
+export const getLaunchBy = async ({ id }: { id: string }) => {
   const res = await fetch(`https://api.spacexdata.com/v5/launches/${id}`);
 
   const launch = (await res.json()) as Doc;
   return launch;
-}
+};
 
 export const getLaunches = async () => {
   const res = await fetch("https://api.spacexdata.com/v5/launches/query", {
@@ -23,7 +23,7 @@ export const getLaunches = async () => {
       },
     }),
   });
-  
+
   const { docs: launches } = (await res.json()) as APISpaceXResponse;
-  return launches
-}
+  return launches;
+};
