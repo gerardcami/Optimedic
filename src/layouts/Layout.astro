@@ -19,13 +19,6 @@ import Header from "../components/header";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
-  </head>
-  <body class="font-sans">
-    <Header client:visible />
-    <main class="flex flex-col">
-      <slot />
-    </main>
-    <Footer client:visible />
     <style is:global>
       :root {
         --accent: 136, 58, 234;
@@ -65,5 +58,12 @@ import Header from "../components/header";
         border-radius: 0.25rem;
       }
     </style>
+  </head>
+  <body class="font-sans min-h-screen flex flex-col">
+    <Header client:visible />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <Footer client:visible />
   </body>
 </html>

@@ -24,7 +24,7 @@ export const loupesData = [
       },
       {
         name: "HDL™ 3.0",
-        coverImage: "/public/img/loupes/covers/RDH_Elite25x.jpg",
+        coverImage: "/public/img/loupes/covers/HDL30.jpg",
         description:
           "Gracias a su diseño óptico, HDL es una de las lupas de 3,0 aumentos más ligeras que existen.",
       },
@@ -72,22 +72,25 @@ export const loupesData = [
       {
         name: "EyeZoom™ Max",
         coverImage: "/public/img/loupes/covers/EyeZoom_Max.jpg",
-        description: "TODO.",
+        description:
+          "La primera lupa que ofrece ambos niveles de aumento ajustables de 3,5x y 6,5x.(revisar descripción)",
       },
     ],
   },
   {
     type: "Ergo",
     products: [
-      {
+      /* {
         name: "HDL™ Ergo 3.0x",
         coverImage: "/",
-        description: "TODO.",
-      },
+        description:
+          "La lupa RDH Ergo le permite trabajar con comodidad y preservar sus carreras. Nuestra óptica de desviación mejora la postura sin sacrificar la visión.",
+      }, */
       {
         name: "HDL™ Ergo 3.5x",
         coverImage: "/public/img/loupes/covers/HDL_Ergo35x.jpg",
-        description: "TODO.",
+        description:
+          "Al utilizar prismas refractivos que permiten a los médicos sentarse erguidos y reducir la inclinación del cuello, la lupa HDL Ergo es una opción ergonómica que ofrece comodidad durante todo el día.",
       },
       {
         name: "HDL Ergo™ 5.0x",
