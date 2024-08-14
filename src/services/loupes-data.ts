@@ -4,12 +4,12 @@ export const loupesData = [
   {
     type: "Aumento fijo",
     products: [
-      {
+      /* {
         name: "RDH Elite™ 2,5x",
         coverImage: "/public/img/loupes/covers/RDH_Elite25x.jpg",
         description:
           "Una lupa higiénica con aumento de 2,5x centrada en mejorar la ergonomía y la productividad, diseñada teniendo en cuenta a higienistas, para higienistas.",
-      },
+      }, */
       {
         name: "HDL™ 2.5 Micro",
         coverImage: "/public/img/loupes/covers/HDL25Micro.jpg",

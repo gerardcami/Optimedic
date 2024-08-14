@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import { useState, useEffect } from "react";
 import {
   Dialog,
@@ -22,6 +21,7 @@ function classNames(...classes) {
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [products, setProducts] = useState([]);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     async function fetchProducts() {
@@ -30,12 +30,29 @@ export default function Header() {
     }
 
     fetchProducts();
+
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className="bg-white text-gray-900 fixed inset-x-0 top-0 z-50">
+    <header
+      className={classNames(
+        "fixed inset-x-0 top-0 z-30 transition-colors duration-300",
+        scrolled ? "bg-white/70 backdrop-blur-md shadow-sm" : "bg-transparent"
+      )}
+    >
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-2 lg:p-4 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -50,7 +67,7 @@ export default function Header() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className=" inline-flex items-center justify-center rounded-md p-2.5"
+            className="inline-flex items-center justify-center rounded-md p-2.5"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -151,8 +168,8 @@ export default function Header() {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-50" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-30 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
