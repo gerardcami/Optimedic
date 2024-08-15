@@ -8,8 +8,9 @@ export default function CardLoupes() {
           <h2 className="text-3xl font-semibold">{loupes.type}</h2>
           <div className="grid grid-cols-3 gap-[50px]">
             {loupes.products.map((productData, productIndex) => (
-              <div
-                className="relative rounded-lg overflow-hidden flex flex-col"
+              <a
+                href={`/products/loupes/${productData.slug}`}
+                className="relative rounded-lg overflow-hidden flex flex-col cursor-pointer transform transition-transform hover:shadow-lg hover:scale-105"
                 key={productIndex}
               >
                 <div
@@ -27,7 +28,7 @@ export default function CardLoupes() {
                     <p>{productData.description}</p>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

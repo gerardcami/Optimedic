@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { loupesData } from "../../../services/loupes-data";
+
+// Esta función genera las rutas estáticas para cada producto
+export async function getStaticPaths() {
+  // Retorna las rutas que Astro debe generar estáticamente a partir de los slugs extraidos
+  return loupesData.flatMap((loupeType) =>
+    loupeType.products.map((product) => ({
+      params: { loupe: product.slug },
+    }))
+  );
+}
+
+// Accede al parámetro de la ruta
+const { loupe } = Astro.params;
+
+// Encontrar el producto basado en el slug
+const product = loupesData
+  .flatMap((loupeType) => loupeType.products)
+  .find((product) => product.slug === loupe);
+
+if (!product) {
+  throw new Error(`Product not found for slug: ${loupe}`);
+}
+---
+
+<Layout title={product.name}>
+  <article>
+    <h1>{product.name}</h1>
+    <img src={product.coverImage} alt={product.name} />
+    <p>{product.description}</p>
+  </article>
+</Layout>

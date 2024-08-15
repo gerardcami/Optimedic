@@ -32,14 +32,14 @@ export default function Header() {
     fetchProducts();
 
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      // El header se vuelve opaco tan pronto como se detecta cualquier desplazamiento
+      setScrolled(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    // Inicializa el estado del desplazamiento basado en la posición de la página al cargar
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
