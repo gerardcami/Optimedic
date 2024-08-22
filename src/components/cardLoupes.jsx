@@ -15,7 +15,7 @@ export default function CardLoupes() {
               >
                 <div
                   className="bg-contain bg-no-repeat bg-center h-48 relative"
-                  style={{ backgroundImage: `url(${productData.coverImage})` }}
+                  style={{ backgroundImage: `url(${productData.cover_image})` }}
                 >
                   <div className="absolute inset-0 bg-gray-700 opacity-10"></div>
                 </div>
