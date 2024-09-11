@@ -26,9 +26,28 @@ if (!product) {
 ---
 
 <Layout title={product.name}>
-  <article class="text-black mt-[60px] lg:mt-[64px]">
-    <h1>{product.name}</h1>
-    <img src={product.cover_image} alt={product.name} />
-    <p>{product.description}</p>
-  </article>
+  <section>
+    <!-- Title -->
+    <article
+      class="text-black mt-[60px] lg:mt-[64px] flex items-center justify-center"
+    >
+      <div>
+        <h1>{product.name}</h1>
+        <p>{product.description}</p>
+      </div>
+      <img class="w-1/2" src={product.cover_image} alt={product.name} />
+    </article>
+    <!-- Specs -->
+    <article>
+      <h2>Especificaciones</h2>
+      <p>
+        Todos los sistemas ópticos emplean lentes de vidrio e incorporan
+        revestimientos antirrayado y antirreflejos.
+      </p>
+      <p>
+        La distancia de trabajo y el ángulo de declinación se adaptan a cada
+        usuario.
+      </p>
+    </article>
+  </section>
 </Layout>
