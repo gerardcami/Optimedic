@@ -40,14 +40,44 @@ if (!product) {
     <!-- Specs -->
     <article>
       <h2>Especificaciones</h2>
-      <p>
-        Todos los sistemas ópticos emplean lentes de vidrio e incorporan
-        revestimientos antirrayado y antirreflejos.
-      </p>
-      <p>
-        La distancia de trabajo y el ángulo de declinación se adaptan a cada
-        usuario.
-      </p>
+      <div>
+        <p>
+          Todos los sistemas ópticos emplean lentes de vidrio e incorporan
+          revestimientos antirrayado y antirreflejos.
+        </p>
+        <p>
+          La distancia de trabajo y el ángulo de declinación se adaptan a cada
+          usuario.
+        </p>
+      </div>
+      {
+        product.specs ? (
+          <div>
+            {product.specs.map((spec) => (
+              <div>
+                <div>
+                  <h3>Potencia de aumento</h3>
+                  <p>{spec.magnification_power}</p>
+                </div>
+                <div>
+                  <h3>Peso</h3>
+                  <p>{spec.weight}</p>
+                </div>
+                <div>
+                  <h3>Ancho de campo</h3>
+                  <p>{spec.field_width}</p>
+                </div>
+                <div>
+                  <h3>Profundidad de campo</h3>
+                  <p>{spec.field_depth}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p>No hay especificaciones disponibles para este producto.</p>
+        )
+      }
     </article>
   </section>
 </Layout>
