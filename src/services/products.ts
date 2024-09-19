@@ -15,6 +15,12 @@ export const productsData = [
           "Monturas duraderas y estéticamente atractivas que superarán sus expectativas de rendimiento y estilo.",
         href: "/products/frames",
       },
+      {
+        name: "Iluminadores frontales",
+        description:
+          "Monturas duraderas y estéticamente atractivas que superarán sus expectativas de rendimiento y estilo.",
+        href: "/products/frames",
+      },
     ],
   },
   {
