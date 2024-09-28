@@ -40,7 +40,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <article className="relative w-[80%]" data-carousel="slide">
+    <section className="relative w-[80%]" data-carousel="slide">
       <div className="relative h-56 overflow-hidden rounded-lg md:h-[500px]">
         {slides.map((slide, index) => (
           <div
@@ -122,6 +122,6 @@ export default function Carousel() {
           />
         ))}
       </div>
-    </article>
+    </section>
   );
 }

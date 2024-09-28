@@ -61,7 +61,9 @@ import Header from "../components/header";
   </head>
   <body class="font-sans min-h-screen flex flex-col">
     <Header client:visible />
-    <main class="flex-grow">
+    <main
+      class="flex-grow max-w-[1200px] mx-auto flex flex-col items-center gap-[100px] mb-[100px] mt-[60px] lg:mt-[64px]"
+    >
       <slot />
     </main>
     <Footer />

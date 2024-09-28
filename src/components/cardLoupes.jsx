@@ -2,9 +2,9 @@ import { loupesData } from "../services/loupes-data";
 
 export default function CardLoupes() {
   return (
-    <article className="flex flex-col gap-[50px]">
+    <section className="flex flex-col gap-[50px]">
       {loupesData.map((loupes, index) => (
-        <div className="flex flex-col gap-4" key={index}>
+        <article className="flex flex-col gap-4" key={index}>
           <h2 className="text-3xl font-semibold">{loupes.type}</h2>
           <div className="grid grid-cols-3 gap-[50px]">
             {loupes.products.map((productData, productIndex) => (
@@ -31,8 +31,8 @@ export default function CardLoupes() {
               </a>
             ))}
           </div>
-        </div>
+        </article>
       ))}
-    </article>
+    </section>
   );
 }

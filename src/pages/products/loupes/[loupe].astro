@@ -26,23 +26,21 @@ if (!product) {
 ---
 
 <Layout title={product.name}>
+  <!-- Title -->
   <section
-    class="max-w-[1200px] mx-auto flex flex-col items-center gap-[100px] mb-[100px]"
+    class="text-black mt-[60px] lg:mt-[64px] flex items-center justify-center"
   >
-    <!-- Title -->
-    <article
-      class="text-black mt-[60px] lg:mt-[64px] flex items-center justify-center"
-    >
-      <div>
-        <h1>{product.name}</h1>
-        <p>{product.description}</p>
-      </div>
-      <img class="w-1/2" src={product.cover_image} alt={product.name} />
-    </article>
-    <!-- Specs -->
     <article>
-      <h2>Especificaciones</h2>
-      <div>
+      <h1 class="text-5xl">{product.name}</h1>
+      <p>{product.description}</p>
+    </article>
+    <img class="w-1/2" src={product.cover_image} alt={product.name} />
+  </section>
+  <!-- Specs -->
+  <section class="flex flex-col gap-[20px]">
+    <h2 class="text-3xl">Especificaciones</h2>
+    <article>
+      <div class="flex flex-col gap-5 w-1/2">
         <p>
           Todos los sistemas ópticos emplean lentes de vidrio e incorporan
           revestimientos antirrayado y antirreflejos.
@@ -52,34 +50,57 @@ if (!product) {
           usuario.
         </p>
       </div>
-      {
-        product.specs ? (
-          <div>
-            {product.specs.map((spec) => (
-              <div>
-                <div>
-                  <h3>Potencia de aumento</h3>
-                  <p>{spec.magnification_power}</p>
-                </div>
-                <div>
-                  <h3>Peso</h3>
-                  <p>{spec.weight}</p>
-                </div>
-                <div>
-                  <h3>Ancho de campo</h3>
-                  <p>{spec.field_width}</p>
-                </div>
-                <div>
-                  <h3>Profundidad de campo</h3>
-                  <p>{spec.field_depth}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p>No hay especificaciones disponibles para este producto.</p>
-        )
-      }
     </article>
+    {
+      product.specs ? (
+        <article class="flex gap-[100px]">
+          {product.specs.map((spec) => (
+            <div class="min-w-[230px]">
+              <div>
+                <h3 class="text-2xl">Potencia de aumento</h3>
+                <p class="">{spec.magnification_power}</p>
+              </div>
+              <div>
+                <h3 class="text-2xl">Peso</h3>
+                <p>{spec.weight}</p>
+              </div>
+              <div>
+                <h3 class="text-2xl">Ancho de campo</h3>
+                <p>{spec.field_width}</p>
+              </div>
+              <div>
+                <h3 class="text-2xl">Profundidad de campo</h3>
+                <p>{spec.field_depth}</p>
+              </div>
+            </div>
+          ))}
+          <div class="min-w-[230px]">
+            <h3 class="text-2xl">Opciones de montura</h3>
+            <ul class="flex flex-col">
+              {product.frame_options.map((option) => (
+                <li>
+                  <a
+                    href={`/products/frames/${option.slug}`}
+                    class=" hover:underline"
+                  >
+                    {option.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="min-w-[230px]">
+            <h3 class="text-2xl">Paquete de la lupa</h3>
+            <div class="flex flex-col">
+              {product.frame_options.map((option) => (
+                <a href={`/products/frames/${option.slug}`}>{option.name}</a>
+              ))}
+            </div>
+          </div>
+        </article>
+      ) : (
+        <p>No hay especificaciones disponibles para este producto.</p>
+      )
+    }
   </section>
 </Layout>
