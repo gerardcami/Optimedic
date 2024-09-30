@@ -7,23 +7,547 @@
     "FEATURES": [
       {
         "title": "Qualitat",
-        "description": "Tots els nostres productes i serveis destaquen per la seva qualitat i precisió",
+        "description": "Tots els nostres productes i serveis destaquen per la seva <strong>qualitat</strong> i <strong>precisió</strong>",
         "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-stars' width='40' height='40' viewBox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M17.8 19.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z'></path><path d='M6.2 19.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z'></path><path d='M12 9.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z'></path></svg>"
       },
       {
         "title": "Líders de mercat",
-        "description": "Optimedic està constantment superant els límits per oferir els últims productes",
+        "description": "Optimedic està <strong>constantment</strong> superant els límits per oferir els <strong>últims productes</strong>",
         "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-rosette-number-1' width='40' height='40' viewBox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M10 10l2 -2v8'></path><path d='M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1'></path></svg>"
       },
       {
         "title": "Confiança",
-        "description": "Més de 200 metges referents ja han confiat en nosaltres",
+        "description": "Més de <strong>200 metges referents</strong> ja han confiat en nosaltres",
         "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-heart-handshake' width='40' height='40' viewBox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572'></path><path d='M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25'></path><path d='M12.5 15.5l2 2'></path><path d='M15 13l2 2'></path></svg>"
       },
       {
         "title": "Post venda",
-        "description": "Realitzem un servei de venda i post-venda completament personalitzat",
+        "description": "Realitzem un servei de venda i post-venda <strong>completament personalitzat</strong>",
         "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-shopping-bag-check' width='40' height='40' viewBox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M11.5 21h-2.926a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.5 3.248'></path><path d='M9 11v-5a3 3 0 0 1 6 0v5'></path><path d='M15 19l2 2l4 -4'></path></svg>"
+      }
+    ],
+    "PRODUCTS": [
+      {
+        "name": "Lupes",
+        "img": "/public/img/oscar-alonso1.jpg",
+        "subcategories": [
+          {
+            "name": "Lupes",
+            "description": "Troba el teu augment ideal amb les nostres lupes.",
+            "href": "/productos/lupas"
+          },
+          {
+            "name": "Muntures",
+            "description": "Muntures duradores i estèticament atractives que superaran les seves expectatives de rendiment i estil.",
+            "href": "/productos/monturas"
+          },
+          {
+            "name": "Il·luminadors frontals",
+            "description": "Muntures duradores i estèticament atractives que superaran les seves expectatives de rendiment i estil.",
+            "href": "/products/monturas"
+          }
+        ]
+      },
+      {
+        "name": "Cirurgia",
+        "img": "/public/img/IMG_0415.png",
+        "subcategories": [
+          {
+            "name": "MicroAire",
+            "description": "Un potent instrument de precisió dissenyat per a l'extracció de greix de petit o gran volum, el contorn corporal i la recol·lecció de greix.",
+            "href": "/productos/microaire"
+          },
+          {
+            "name": "Renuvion",
+            "description": "L'únic dispositiu aprovat per la FDA per al seu ús després d'una liposucció i l'únic dispositiu aprovat per la FDA per contraure el teixit tou subcutani.",
+            "href": "/productos/renuvion"
+          }
+        ]
+      },
+      {
+        "name": "Esdeveniments",
+        "img": "/public/img/barcelona-oculoplastics-resumen-grafico-sorteo-gafas-lupa.jpg",
+        "subcategories": [
+          {
+            "name": "Conferència",
+            "description": "Les dades dels seus clients estaran segures i protegides",
+            "href": "/productos/eventos"
+          }
+        ]
+      }
+    ]       
+  },
+  "LOUPES": {
+    "TITLE": "Lupas",
+    "SUBTITLE": "El aumento excepcional es esencial para todo, desde los exámenes rutinarios hasta los complicados. Trabajaremos con usted para encontrar el mejor nivel de aumento que le permita realizar su trabajo lo mejor posible.",
+    "DESCRIPTION_1": "Nuestros niveles de aumento van de <strong>2,5 a 5,5</strong>, incluyendo dos lupas de aumento variable, <strong>EyeZoom™</strong> y <strong>EyeZoom™ Mini</strong>. EyeZoom ofrece <strong>tres niveles de aumento en una sola lupa</strong> y ha ganado el <strong>Cellerant Best of Class Technology Award</strong> (premio de tecnología Mejor en su clase de Cellerant) <strong>tres veces</strong> desde su lanzamiento.",
+    "DESCRIPTION_2": "La <strong>graduación, distancia de trabajo y el ángulo de inclinación</strong> es personalizado. Además, <strong>se incluyen</strong> protectores laterales, banda para la cabeza, estuche personalizado, destornillador óptico y gamuza.",
+    "DESCRIPTION_3": "Todos los sistemas ópticos están hechos con <strong>lentes de vidrio recocido fino de grado A</strong> con revestimientos antiarañazos y antirreflejos. Todas las lentes de soporte están hechas con <strong>material de policarbonato de alto índice</strong>.",
+    "PRODUCTS": [
+      {
+        "type": "Aumento fijo",
+        "products": [
+          {
+            "name": "HDL™ 2.5 Micro",
+            "slug": "hdl-25-micro",
+            "cover_image": "/public/img/loupes/covers/HDL25Micro.jpg",
+            "description": "Óptica de tamaño micro que ofrece una comodidad ligera sin sacrificar el aumento.",
+            "specs": [
+              {
+                "magnification_power": "2,5x",
+                "weight": "39,15 g",
+                "field_width": "8,75 cm",
+                "field_depth": "17,80 cm"
+              }
+            ],
+            "frame_options": [
+              {
+                "name": "DragonFly™",
+                "slug": "dragonfly"
+              },
+              {
+                "name": "Phantom™",
+                "slug": "phantom"
+              },
+              {
+                "name": "Rydon™",
+                "slug": "rydon"
+              },
+              {
+                "name": "Tempo™",
+                "slug": "tempo"
+              },
+              {
+                "name": "Tempo™ Refined Fit",
+                "slug": "tempo-refined-fit"
+              },
+              {
+                "name": "Triumph™",
+                "slug": "triumph"
+              },
+              {
+                "name": "Victory™",
+                "slug": "victory"
+              }
+            ]
+          },
+          {
+            "name": "HDL™ 2.5 Macro",
+            "slug": "hdl-25-macro",
+            "cover_image": "/public/img/loupes/covers/HDL25Macro.jpg",
+            "description": "Las pruebas realizadas por terceros confirman que nuestras lupas ofrecen la calidad de imagen más clara del sector, con la mejor calidad de resolución óptica y transmisión de luz.",
+            "specs": [
+              {
+                "magnification_power": "2,5x",
+                "weight": "50,70 g",
+                "field_width": "10,40 cm",
+                "field_depth": "12,70 cm"
+              }
+            ],
+            "frame_options": [
+              {
+                "name": "DragonFly™",
+                "slug": "dragonfly"
+              },
+              {
+                "name": "Phantom™",
+                "slug": "phantom"
+              },
+              {
+                "name": "Rydon™",
+                "slug": "rydon"
+              },
+              {
+                "name": "Tempo™",
+                "slug": "tempo"
+              },
+              {
+                "name": "Tempo™ Refined Fit",
+                "slug": "tempo-refined-fit"
+              },
+              {
+                "name": "Triumph™",
+                "slug": "triumph"
+              },
+              {
+                "name": "Victory™",
+                "slug": "victory"
+              }
+            ]
+          },
+          {
+            "name": "HDL™ 3.0",
+            "slug": "hdl-30",
+            "cover_image": "/public/img/loupes/covers/HDL30.jpg",
+            "description": "Gracias a su diseño óptico, HDL es una de las lupas de 3,0 aumentos más ligeras que existen.",
+            "specs": [
+              {
+                "magnification_power": "3,0x",
+                "weight": "48,70 g",
+                "field_width": "7,90 cm",
+                "field_depth": "19,0 cm"
+              }
+            ],
+            "frame_options": [
+              {
+                "name": "DragonFly™",
+                "slug": "dragonfly"
+              },
+              {
+                "name": "Phantom™",
+                "slug": "phantom"
+              },
+              {
+                "name": "Rydon™",
+                "slug": "rydon"
+              },
+              {
+                "name": "Tempo™",
+                "slug": "tempo"
+              },
+              {
+                "name": "Tempo™ Refined Fit",
+                "slug": "tempo-refined-fit"
+              },
+              {
+                "name": "Triumph™",
+                "slug": "triumph"
+              },
+              {
+                "name": "Victory™",
+                "slug": "victory"
+              }
+            ]
+          },
+          {
+            "name": "HDL™ 3.5x",
+            "slug": "hdl-35x",
+            "cover_image": "/public/img/loupes/covers/HDL35x.jpg",
+            "description": "Aumento de mayor precisión diseñado con un amplio campo de visión.",
+            "specs": [
+              {
+                "magnification_power": "3,5x",
+                "weight": "67,50 g",
+                "field_width": "8,90 cm",
+                "field_depth": "9,10 cm"
+              }
+            ],
+            "frame_options": [
+              {
+                "name": "DragonFly™",
+                "slug": "dragonfly"
+              },
+              {
+                "name": "Phantom™",
+                "slug": "phantom"
+              },
+              {
+                "name": "Rydon™",
+                "slug": "rydon"
+              },
+              {
+                "name": "Tempo™",
+                "slug": "tempo"
+              },
+              {
+                "name": "Tempo™ Refined Fit",
+                "slug": "tempo-refined-fit"
+              },
+              {
+                "name": "Triumph™",
+                "slug": "triumph"
+              },
+              {
+                "name": "Victory™",
+                "slug": "victory"
+              }
+            ]
+          },
+          {
+            "name": "HDL™ 4.5x",
+            "slug": "hdl-45x",
+            "cover_image": "/public/img/loupes/covers/HDL45x.jpg",
+            "description": "Aumento de mayor precisión diseñado con un amplio campo de visión.",
+            "specs": [
+              {
+                "magnification_power": "4,5x",
+                "weight": "71,50 g",
+                "field_width": "7,50 cm",
+                "field_depth": "6,70 cm"
+              }
+            ],
+            "frame_options": [
+              {
+                "name": "DragonFly™",
+                "slug": "dragonfly"
+              },
+              {
+                "name": "Phantom™",
+                "slug": "phantom"
+              },
+              {
+                "name": "Rydon™",
+                "slug": "rydon"
+              },
+              {
+                "name": "Tempo™",
+                "slug": "tempo"
+              },
+              {
+                "name": "Tempo™ Refined Fit",
+                "slug": "tempo-refined-fit"
+              },
+              {
+                "name": "Triumph™",
+                "slug": "triumph"
+              },
+              {
+                "name": "Victory™",
+                "slug": "victory"
+              }
+            ]
+          },
+          {
+            "name": "HDL™ 5.5x",
+            "slug": "hdl-55x",
+            "cover_image": "/public/img/loupes/covers/HDL55x.jpg",
+            "description": "Nuestro aumento independiente más alto diseñado para brindar precisión y rendimiento.",
+            "specs": [
+              {
+                "magnification_power": "5,5x",
+                "weight": "74,40 g",
+                "field_width": "6,40 cm",
+                "field_depth": "5,90 cm"
+              }
+            ],
+            "frame_options": [
+              {
+                "name": "DragonFly™",
+                "slug": "dragonfly"
+              },
+              {
+                "name": "Phantom™",
+                "slug": "phantom"
+              },
+              {
+                "name": "Rydon™",
+                "slug": "rydon"
+              },
+              {
+                "name": "Tempo™",
+                "slug": "tempo"
+              },
+              {
+                "name": "Tempo™ Refined Fit",
+                "slug": "tempo-refined-fit"
+              },
+              {
+                "name": "Triumph™",
+                "slug": "triumph"
+              },
+              {
+                "name": "Victory™",
+                "slug": "victory"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Lupas intercambiables",
+        "products": [
+          {
+            "name": "OmniOptic™",
+            "slug": "omnioptic",
+            "cover_image": "/public/img/loupes/covers/OmniOptic.jpg",
+            "description": "Descubra la primera y única lupa de aumento intercambiable que permite a los clínicos seleccionar el poder de ampliación óptimo para cada procedimiento. ",
+            "frame_options": [
+              {
+                "name": "Phantom™",
+                "slug": "phantom"
+              },
+              {
+                "name": "Rydon™",
+                "slug": "rydon"
+              },
+              {
+                "name": "Tempo™",
+                "slug": "tempo"
+              },
+              {
+                "name": "Tempo™ Refined Fit",
+                "slug": "tempo-refined-fit"
+              },
+              {
+                "name": "Triumph™",
+                "slug": "triumph"
+              },
+              {
+                "name": "Victory™",
+                "slug": "victory"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Aumento variable",
+        "products": [
+          {
+            "name": "EyeZoom™ Mini",
+            "slug": "eyezoom-mini",
+            "cover_image": "/public/img/loupes/covers/EyeZoom_Mini.jpg",
+            "description": "Cambie sin problemas entre 2,5x y 3,5x con nuestra galardonada lupa de aumento variable.",
+            "specs": [],
+            "frame_options": [],
+            "magnification_variants": [
+              {
+                "variant": "2,5x",
+                "field_width": "10,10 cm",
+                "field_depth": "12,10 cm"
+              },
+              {
+                "variant": "3,5x",
+                "field_width": "8,10 cm",
+                "field_depth": "9,60 cm"
+              }
+            ]
+          },
+          {
+            "name": "EyeZoom™",
+            "slug": "eyezoom",
+            "cover_image": "/public/img/loupes/covers/EyeZoom.jpg",
+            "description": "La primera y única lupa de aumento variable 3 en 1. Cambie sin problemas entre los niveles de aumento 3x, 4x y 5x.",
+            "magnification_variants": [
+              {
+                "variant": "3,0x",
+                "field_width": "9,50 cm",
+                "field_depth": "11,90 cm"
+              },
+              {
+                "variant": "4,0x",
+                "field_width": "7,40 cm",
+                "field_depth": "9,70 cm"
+              },
+              {
+                "variant": "5,0x",
+                "field_width": "6,10 cm",
+                "field_depth": "7,60 cm"
+              }
+            ]
+          },
+          {
+            "name": "EyeZoom™ Max",
+            "slug": "eyezoom-max",
+            "cover_image": "/public/img/loupes/covers/EyeZoom_Max.jpg",
+            "description": "La primera lupa que ofrece ambos niveles de aumento ajustables de 3,5x y 6,5x.(revisar descripción)",
+            "magnification_variants": [
+              {
+                "variant": "2,5x",
+                "field_width": "8,80 cm",
+                "field_depth": "8,80 cm"
+              },
+              {
+                "variant": "6,5x",
+                "field_width": "5,60 cm",
+                "field_depth": "5,50 cm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Ergo",
+        "products": [
+          {
+            "name": "HDL™ Ergo 3.5x",
+            "slug": "hdl-ergo-35x",
+            "cover_image": "/public/img/loupes/covers/HDL_Ergo35x.jpg",
+            "description": "Al utilizar prismas refractivos que permiten a los médicos sentarse erguidos y reducir la inclinación del cuello, la lupa HDL Ergo es una opción ergonómica que ofrece comodidad durante todo el día.",
+            "specs": [
+              {
+                "magnification_power": "3,5x",
+                "weight": "61,10 g",
+                "field_width": "8,50 cm",
+                "field_depth": "8,0 cm"
+              }
+            ],
+            "frame_options": [
+              {
+                "name": "DragonFly™",
+                "slug": "dragonfly"
+              },
+              {
+                "name": "Phantom™",
+                "slug": "phantom"
+              },
+              {
+                "name": "Rydon™",
+                "slug": "rydon"
+              },
+              {
+                "name": "Tempo™",
+                "slug": "tempo"
+              },
+              {
+                "name": "Tempo™ Refined Fit",
+                "slug": "tempo-refined-fit"
+              },
+              {
+                "name": "Triumph™",
+                "slug": "triumph"
+              },
+              {
+                "name": "Victory™",
+                "slug": "victory"
+              }
+            ]
+          },
+          {
+            "name": "HDL Ergo™ 5.0x",
+            "slug": "hdl-ergo-50x",
+            "cover_image": "",
+            "description": "Nuestro mayor aumento Ergo",
+            "specs": [
+              {
+                "magnification_power": "5,0x",
+                "weight": "67,50 g",
+                "field_width": "6,50 cm",
+                "field_depth": "6,50 cm"
+              }
+            ],
+            "frame_options": [
+              {
+                "name": "DragonFly™",
+                "slug": "dragonfly"
+              },
+              {
+                "name": "Phantom™",
+                "slug": "phantom"
+              },
+              {
+                "name": "Rydon™",
+                "slug": "rydon"
+              },
+              {
+                "name": "Tempo™",
+                "slug": "tempo"
+              },
+              {
+                "name": "Tempo™ Refined Fit",
+                "slug": "tempo-refined-fit"
+              },
+              {
+                "name": "Triumph™",
+                "slug": "triumph"
+              },
+              {
+                "name": "Victory™",
+                "slug": "victory"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

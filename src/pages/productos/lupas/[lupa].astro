@@ -7,21 +7,21 @@ export async function getStaticPaths() {
   // Retorna las rutas que Astro debe generar estáticamente a partir de los slugs extraidos
   return loupesData.flatMap((loupeType) =>
     loupeType.products.map((product) => ({
-      params: { loupe: product.slug },
+      params: { lupa: product.slug },
     }))
   );
 }
 
 // Accede al parámetro de la ruta
-const { loupe } = Astro.params;
+const { lupa } = Astro.params;
 
 // Encontrar el producto basado en el slug
 const product = loupesData
   .flatMap((loupeType) => loupeType.products)
-  .find((product) => product.slug === loupe);
+  .find((product) => product.slug === lupa);
 
 if (!product) {
-  throw new Error(`Product not found for slug: ${loupe}`);
+  throw new Error(`Product not found for slug: ${lupa}`);
 }
 ---
 
