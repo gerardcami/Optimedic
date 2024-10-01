@@ -1,23 +1,18 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
-import { loupesData } from "../../../services/loupes-data";
+import type { Loupes } from "../../../types/products";
+import { getI18N } from "../../../i18n/";
 
-// Esta función genera las rutas estáticas para cada producto
-export async function getStaticPaths() {
-  // Retorna las rutas que Astro debe generar estáticamente a partir de los slugs extraidos
-  return loupesData.flatMap((loupeType) =>
-    loupeType.products.map((product) => ({
-      params: { lupa: product.slug },
-    }))
-  );
-}
+const { currentLocale = "es" } = Astro;
+const i18n = getI18N({ currentLocale });
+const loupesData = i18n.LOUPES.PRODUCTS;
 
 // Accede al parámetro de la ruta
 const { lupa } = Astro.params;
 
 // Encontrar el producto basado en el slug
 const product = loupesData
-  .flatMap((loupeType) => loupeType.products)
+  .flatMap((loupeType: Loupes) => loupeType.products)
   .find((product) => product.slug === lupa);
 
 if (!product) {
@@ -77,7 +72,7 @@ if (!product) {
           <div class="min-w-[230px]">
             <h3 class="text-2xl">Opciones de montura</h3>
             <ul class="flex flex-col">
-              {product.frame_options.map((option) => (
+              {product.frame_options?.map((option) => (
                 <li>
                   <a
                     href={`/products/frames/${option.slug}`}
@@ -92,7 +87,7 @@ if (!product) {
           <div class="min-w-[230px]">
             <h3 class="text-2xl">Paquete de la lupa</h3>
             <div class="flex flex-col">
-              {product.frame_options.map((option) => (
+              {product.frame_options?.map((option) => (
                 <a href={`/products/frames/${option.slug}`}>{option.name}</a>
               ))}
             </div>

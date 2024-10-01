@@ -14,29 +14,9 @@ export type Product = {
 };
 
 export type FrameOption = {
-  name: Name;
-  slug: Slug;
+  name: string;
+  slug: string;
 };
-
-export enum Name {
-  DragonFly = "DragonFly™",
-  Phantom = "Phantom™",
-  Rydon = "Rydon™",
-  Tempo = "Tempo™",
-  TempoRefinedFit = "Tempo™ Refined Fit",
-  Triumph = "Triumph™",
-  Victory = "Victory™",
-}
-
-export enum Slug {
-  Dragonfly = "dragonfly",
-  Phantom = "phantom",
-  Rydon = "rydon",
-  Tempo = "tempo",
-  TempoRefinedFit = "tempo-refined-fit",
-  Triumph = "triumph",
-  Victory = "victory",
-}
 
 export type MagnificationVariant = {
   variant: string;
