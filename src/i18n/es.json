@@ -1,6 +1,12 @@
 {
   "SEO_TITLE": "Optimedic",
   "SEO_DESCRIPTION": "",
+  "HEADER": {
+    "ITEM_1": "Productos",
+    "ITEM_2": "Eventos",
+    "ITEM_3": "Sobre nosotros",
+    "ITEM_4": "Contacto"
+  },
   "HOME_PAGE": {
     "TITLE": "Optimedic",
     "SLOGAN": "La precisión a su medida",

@@ -18,18 +18,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Header() {
+export default function Header({ i18n }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [navItems, setNavItems] = useState([]);
   const [products, setProducts] = useState([]);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    async function fetchProducts() {
-      const response = await import("../services/products.ts");
-      setProducts(response.productsData);
+    async function fetchNavContent() {
+      setNavItems(i18n.HEADER);
+      setProducts(i18n.HOME_PAGE.PRODUCTS);
     }
 
-    fetchProducts();
+    fetchNavContent();
 
     const handleScroll = () => {
       // El header se vuelve opaco tan pronto como se detecta cualquier desplazamiento
@@ -77,7 +78,7 @@ export default function Header() {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6">
-              Products
+              {navItems.ITEM_1}
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -132,13 +133,13 @@ export default function Header() {
           </Popover>
 
           <a href="/events" className="text-sm font-semibold leading-6">
-            Events
+            {navItems.ITEM_2}
           </a>
           <a href="/about" className="text-sm font-semibold leading-6">
-            About us
+            {navItems.ITEM_3}
           </a>
           <a href="/contact" className="text-sm font-semibold leading-6">
-            Contact
+            {navItems.ITEM_4}
           </a>
         </PopoverGroup>
         <button className="hidden lg:flex lg:flex-1 lg:justify-end">

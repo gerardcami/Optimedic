@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Slides } from "../services/carousel-data";
+import { Slides } from "../services/carousel";
 
 export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
