@@ -455,7 +455,7 @@ export const framesData = [
         slug: "dragonfly-pro",
         card_image: "/public/img/frames/dragonfly-pro/card.webp",
         description:
-          "Lleve la personalización a un nuevo nivel con bisagras de patillas flexibles, patillas plegables y almohadillas nasales ajustables.",
+          "Nuestro modelo premium PRO es compatible con toda la línea de telescopios Orascoptic y está cargado de características adicionales, incluyendo baterías adicionales, múltiples ajustes de intensidad de luz y un acabado de pintura cerámica extremadamente duradero.",
         details: [
           {
             detailed_description:
@@ -550,17 +550,17 @@ export const framesData = [
         slug: "dragonfly-neo",
         card_image: "/public/img/frames/dragonfly-neo/card.webp",
         description:
-          "Admite 5 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
+          "Admite 4 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
         details: [
           {
             detailed_description:
-              "Admite 5 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
+              "Admite 4 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
             intro_text_1:
               "Ha llegado la era de las lupas potenciadas. Hemos combinado nuestra óptica líder en el sector y nuestra galardonado iluminador frontal en una solución única y ligera.",
             intro_text_2:
               "Dragonfly™ es nuestra montura con alimentación por batería y circuito totalmente integrados que funciona con un iluminador frontal incorporado, liberándote de la molestia de los cables.",
             intro_text_3:
-              "Nuestro modelo básico NEO está disponible en un solo color y admite cinco opciones de aumento habituales.",
+              "Nuestro modelo básico NEO está disponible en un solo color y admite cuatro opciones de aumento habituales.",
             colors: [
               {
                 name: "Medianoche",
