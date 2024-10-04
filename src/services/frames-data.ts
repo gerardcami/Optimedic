@@ -447,4 +447,163 @@ export const framesData = [
       },
     ],
   },
+  {
+    type: "Potenciada",
+    products: [
+      {
+        name: "Dragonfly™ PRO",
+        slug: "dragonfly-pro",
+        card_image: "/public/img/frames/dragonfly-pro/card.webp",
+        description:
+          "Lleve la personalización a un nuevo nivel con bisagras de patillas flexibles, patillas plegables y almohadillas nasales ajustables.",
+        details: [
+          {
+            detailed_description:
+              "Nuestro modelo premium PRO es compatible con toda la línea de telescopios Orascoptic y está cargado de características adicionales, incluyendo baterías adicionales, múltiples ajustes de intensidad de luz y un acabado de pintura cerámica extremadamente duradero.",
+            intro_text_1:
+              "Ha llegado la era de las lupas potenciadas. Hemos combinado nuestra óptica líder en el sector y nuestra galardonado iluminador frontal en una solución única y ligera.",
+            intro_text_2:
+              "Dragonfly™ es nuestra montura con alimentación por batería y circuito totalmente integrados que funciona con un iluminador frontal incorporado, liberándote de la molestia de los cables.",
+            intro_text_3:
+              "Dragonfly™ PRO cuenta con Cerakote, un recubrimiento de polímero cerámico que ofrece una durabilidad, dureza, resistencia a los arañazos, resistencia a la corrosión y resistencia química líderes en el sector.",
+            colors: [
+              {
+                name: "Amatista",
+                image: "/public/img/frames/dragonfly-pro/amethyst.png",
+              },
+              {
+                name: "Carbón",
+                image: "/public/img/frames/dragonfly-pro/charcoal.png",
+              },
+              {
+                name: "Neptuno",
+                image: "/public/img/frames/dragonfly-pro/neptune.png",
+              },
+              {
+                name: "Oliva",
+                image: "/public/img/frames/dragonfly-pro/olive.png",
+              },
+            ],
+            specs: [
+              {
+                weight: "129g con oculares HDL™ 2,5 Micro",
+                light_intensity: "Bajo/Alto | Lúmenes",
+                color_rendering_index: "95 CRI",
+                color_temperature: "6500º K",
+                est_charge_time: "Menos de 2 horas",
+                est_batery_life:
+                  "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
+                included_batteries: "6 included",
+              },
+            ],
+            loupe_options: [
+              {
+                name: "HDL™ 2.5 Micro",
+                slug: "hdl-25-micro",
+              },
+              {
+                name: "HDL™ 2.5 Macro",
+                slug: "hdl-25-macro",
+              },
+              {
+                name: "HDL™ 3.0",
+                slug: "hdl-30",
+              },
+              {
+                name: "HDL™ 3.5x",
+                slug: "hdl-35x",
+              },
+              {
+                name: "HDL™ 4.5x",
+                slug: "hdl-45x",
+              },
+              {
+                name: "HDL™ 5.5x",
+                slug: "hdl-55x",
+              },
+              {
+                name: "EyeZoom™ Mini",
+                slug: "eyezoom-mini",
+              },
+              {
+                name: "EyeZoom™",
+                slug: "eyezoom",
+              },
+              {
+                name: "EyeZoom™ Max",
+                slug: "eyezoom-max",
+              },
+              {
+                name: "HDL™ Ergo 3.5x",
+                slug: "hdl-ergo-35x",
+              },
+              {
+                name: "HDL Ergo™ 5.0x",
+                slug: "hdl-ergo-50x",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name: "Dragonfly™ NEO",
+        slug: "dragonfly-neo",
+        card_image: "/public/img/frames/dragonfly-neo/card.webp",
+        description:
+          "Admite 5 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
+        details: [
+          {
+            detailed_description:
+              "Admite 5 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
+            intro_text_1:
+              "Ha llegado la era de las lupas potenciadas. Hemos combinado nuestra óptica líder en el sector y nuestra galardonado iluminador frontal en una solución única y ligera.",
+            intro_text_2:
+              "Dragonfly™ es nuestra montura con alimentación por batería y circuito totalmente integrados que funciona con un iluminador frontal incorporado, liberándote de la molestia de los cables.",
+            intro_text_3:
+              "Nuestro modelo básico NEO está disponible en un solo color y admite cinco opciones de aumento habituales.",
+            colors: [
+              {
+                name: "Medianoche",
+                image: "/public/img/frames/dragonfly-neo/midnight.png",
+              },
+            ],
+            specs: [
+              {
+                weight: "129g con oculares HDL™ 2,5 Micro",
+                light_intensity: "98 Lúmenes",
+                color_rendering_index: "95 CRI",
+                color_temperature: "6500º K",
+                est_charge_time: "Menos de 2 horas",
+                est_batery_life:
+                  "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
+                included_batteries: "4 included",
+              },
+            ],
+            loupe_options: [
+              {
+                name: "HDL™ 2.5 Micro",
+                slug: "hdl-25-micro",
+              },
+              {
+                name: "HDL™ 2.5 Macro",
+                slug: "hdl-25-macro",
+              },
+              {
+                name: "HDL™ 3.0",
+                slug: "hdl-30",
+              },
+              {
+                name: "HDL™ 3.5x",
+                slug: "hdl-35x",
+              },
+              {
+                name: "HDL™ Ergo 3.5x",
+                slug: "hdl-ergo-35x",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];

@@ -6,19 +6,17 @@ interface Props {
 
 const { title, description } = Astro.props;
 
-// Importamos los componentes necesarios
 import Footer from "../components/Footer.astro";
 import ViewTransitions from "astro/components/ViewTransitions.astro";
 import Header from "../components/header";
 
-// Obtenemos el i18n
 import { getI18N } from "../i18n";
 const { currentLocale = "es" } = Astro;
-const i18n = getI18N({ currentLocale }); // Obtenemos el objeto de idioma basado en la configuración actual
+const i18n = getI18N({ currentLocale });
 ---
 
 <!doctype html>
-<html lang={currentLocale}> <!-- Usamos el idioma actual -->
+<html lang={currentLocale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -68,17 +66,12 @@ const i18n = getI18N({ currentLocale }); // Obtenemos el objeto de idioma basado
     </style>
   </head>
   <body class="font-sans min-h-screen flex flex-col">
-    <!-- Pasamos `i18n` como prop al componente `Header` -->
     <Header i18n={i18n} client:visible />
-
-    <!-- Estructura del contenido -->
     <main
       class="flex-grow max-w-[1200px] mx-auto flex flex-col items-center gap-[100px] mb-[100px] mt-[60px] lg:mt-[64px]"
     >
       <slot />
     </main>
-    
-    <!-- Footer -->
     <Footer />
   </body>
 </html>
