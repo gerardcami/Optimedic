@@ -16,6 +16,7 @@ export type Detail = {
   intro_text_1: string;
   intro_text_2?: string;
   intro_text_3?: string;
+  intro_image?: string;
   colors: Color[];
   specs: Spec[];
   loupe_options?: LoupeOption[];

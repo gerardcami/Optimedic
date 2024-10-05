@@ -578,6 +578,7 @@
                 "intro_text_1": "Diseñadas y fabricadas por el famoso icono de las gafas Rudy Project®, la montura Rydon™ ofrece un ajuste verdaderamente a medida para cada usuario. Con las bisagras flexibles, las terminales de las patillas flexibles y las plaquetas nasales ajustables, esta montura lleva la personalización a un nuevo nivel.",
                 "intro_text_2": "La construcción exclusiva de semibordeado admite también dos formas de lente de soporte diferentes, lo que permite adaptar más la lupa al usuario al acomodar ángulos de declinación pronunciados y geometrías faciales específicas.",
                 "intro_text_3": "La Rydon admite una amplia gama de prescripciones incluidas las bifocales.",
+                "intro_image": "/public/img/frames/rydon/intro.webp",
                 "colors": [
                   {
                     "name": "Negro",
@@ -646,6 +647,7 @@
                 "intro_text_1": "Fabricada en titanio ligero, Phantom es la montura deportiva con graduación incorporada más ligera del mercado. Phantom es un 15% más ligera que la principal competidora, con graduación.",
                 "intro_text_2": "Todas las mejores características - puntas de patilla flexibles, puente nasal ajustable, canal de control de cables y bisagras flexibles - sin el peso añadido.",
                 "intro_text_3": "Disponible en cinco colores impresionantes, Phantom es la elección perfecta para quienes priorizan la comodidad y el estilo.",
+                "intro_image": "/public/img/frames/phantom/intro.webp",
                 "colors": [
                   {
                     "name": "Negro",
@@ -692,6 +694,7 @@
                 "detailed_description": "Esta montura icónica emplea una función integrada de control por cable y admite todos los niveles de aumento.",
                 "intro_text_1": "Combinando rendimiento y comodidad, Triumph™ es una ligera montura de titanio construida exclusivamente para lupas. El control por cable integrado elimina las distracciones y optimiza la eficacia. Elija cualquier nivel de aumento e incorpore su estilo personal con una de las cinco combinaciones de colores bicolores de moda. Las patillas ajustables y el puente nasal permiten un ajuste personalizado y una mayor comodidad.",
                 "intro_text_2": "Triumph™ está disponible en tamaño pequeño, mediano y grande y admite todo tipo de graduaciones.",
+                "intro_image": "/public/img/frames/triumph/intro.webp",
                 "colors": [
                   {
                     "name": "Negro",
@@ -771,6 +774,7 @@
                 "detailed_description": "Esta montura icónica aporta un diseño elegante y minimalista que admite todos los niveles de aumento.",
                 "intro_text_1": "Fabricada pensando en el rendimiento, la construcción ligera de titanio de Tempo™ es lo suficientemente duradera como para soportar la línea completa de lupas y frontales Orascoptic. La incorporación de patillas ajustables, un canal de control de cables y una almohadilla nasal en forma de silla de montar también permite un ajuste personalizable y una mayor comodidad.",
                 "intro_text_2": "Tempo™ is available in small, medium, and large and supports all prescription types.",
+                "intro_image": "/public/img/frames/tempo/intro.webp",
                 "colors": [
                   {
                     "name": "Amatista",
@@ -851,6 +855,7 @@
                 "intro_text_1": "Diga adiós a las incómodas lupas que se deslizan por la nariz o se apoyan en las mejillas. Esta versión optimizada de nuestra popular montura Tempo™ se ha diseñado para adaptarse cómodamente a los clínicos que tienen un puente nasal más bajo y pómulos prominentes.",
                 "intro_text_2": "Diseñado con un exclusivo alambre de puente nasal para permitir un ajuste cómodo y seguro en un puente nasal menos pronunciado, Tempo™ Refined Fit se diseñó con la altura de montura ideal para evitar la desalineación de la óptica causada por monturas apoyadas en los pómulos. ",
                 "intro_text_3": "Tempo™ Refined Fit está disponible en las tallas refinadas pequeña, mediana y grande y admite todo tipo de prescripciones.",
+                "intro_image": "/public/img/frames/tempo-re/intro.webp",
                 "colors": [
                   {
                     "name": "Amatista",
@@ -929,6 +934,7 @@
               {
                 "detailed_description": "Fabricada en titanio, la montura Victory™ admite todas las graduaciones y resulta atractiva para los clínicos que prefieren gafas pequeñas y compactas. ",
                 "intro_text_1": "La pequeña y sofisticada montura Victory™ se inspira en la moda europea. Su pequeño perfil y su fiable estructura de titanio la convierten en una elección muy popular entre los médicos que buscan una montura de lupa ligera. ",
+                "intro_image": "/public/img/frames/victory/intro.webp",
                 "colors": [
                   {
                     "name": "Negro",
@@ -998,6 +1004,7 @@
                 "intro_text_1": "Ha llegado la era de las lupas potenciadas. Hemos combinado nuestra óptica líder en el sector y nuestra galardonado iluminador frontal en una solución única y ligera.",
                 "intro_text_2": "Dragonfly™ es nuestra montura con alimentación por batería y circuito totalmente integrados que funciona con un iluminador frontal incorporado, liberándote de la molestia de los cables.",
                 "intro_text_3": "Dragonfly™ PRO cuenta con Cerakote, un recubrimiento de polímero cerámico que ofrece una durabilidad, dureza, resistencia a los arañazos, resistencia a la corrosión y resistencia química líderes en el sector.",
+                "intro_image": "/public/img/frames/dragonfly-pro/intro.webp",
                 "colors": [
                   {
                     "name": "Amatista",
@@ -1087,6 +1094,7 @@
                 "intro_text_1": "Ha llegado la era de las lupas potenciadas. Hemos combinado nuestra óptica líder en el sector y nuestra galardonado iluminador frontal en una solución única y ligera.",
                 "intro_text_2": "Dragonfly™ es nuestra montura con alimentación por batería y circuito totalmente integrados que funciona con un iluminador frontal incorporado, liberándote de la molestia de los cables.",
                 "intro_text_3": "Nuestro modelo básico NEO está disponible en un solo color y admite cuatro opciones de aumento habituales.",
+                "intro_image": "/public/img/frames/dragonfly-neo/intro.webp",
                 "colors": [
                   {
                     "name": "Medianoche",

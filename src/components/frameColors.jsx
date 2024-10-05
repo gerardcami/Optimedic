@@ -24,21 +24,21 @@ export default function FrameColors({ frame, colors }) {
   };
 
   return (
-    <article className="flex flex-col gap-4">
-      <h2 className="text-3xl font-semibold">Opciones de color</h2>
-      <div className="flex justify-evenly items-center">
-        <div className="shadow-xl rounded-lg">
+    <article className="flex flex-col gap-8">
+      <h2 className="text-3xl font-bold ">Color options</h2>
+      <div className="flex gap-10">
+        <div className="w-2/3 shadow-2xl shadow-[#076b61] rounded-lg flex justify-center items-center">
           <img
             src={selectedColor.image}
             alt={`Color seleccionado: ${selectedColor.name}`}
-            className={`w-full object-fill rounded-lg transition-opacity duration-300 ${
+            className={`object-fill rounded-lg transition-opacity duration-300 ${
               isFading ? "opacity-0" : "opacity-100"
             }`}
           />
         </div>
 
-        <div className="flex gap-4">
-          <ul className="flex flex-col gap-4">
+        <div>
+          <ul className=" w-full flex flex-col gap-4">
             {colors.map((color) => (
               <li
                 key={color.name}
@@ -54,7 +54,7 @@ export default function FrameColors({ frame, colors }) {
                   alt={color.name}
                   className="w-16 h-16 object-cover rounded-md"
                 />
-                <div className="flex flex-col gap-1 justify-center">
+                <div className="flex flex-col gap-1 justify-center select-none">
                   <p>{frame + " " + color.name}</p>
                   <p>Color: {color.name}</p>
                 </div>
