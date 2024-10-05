@@ -27,7 +27,7 @@ export default function FrameColors({ frame, colors }) {
     <article className="flex flex-col gap-8">
       <h2 className="text-3xl font-bold ">Color options</h2>
       <div className="flex gap-10">
-        <div className="w-2/3 shadow-2xl shadow-[#076b61] rounded-lg flex justify-center items-center">
+        <div className="w-2/3 rounded-lg flex justify-center items-center shadow-2xl">
           <img
             src={selectedColor.image}
             alt={`Color seleccionado: ${selectedColor.name}`}
@@ -37,8 +37,8 @@ export default function FrameColors({ frame, colors }) {
           />
         </div>
 
-        <div>
-          <ul className=" w-full flex flex-col gap-4">
+        <div className="w-1/3">
+          <ul className="w-fit flex flex-col gap-4">
             {colors.map((color) => (
               <li
                 key={color.name}

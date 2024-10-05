@@ -8,17 +8,17 @@ export type Product = {
   slug: string;
   card_image: string;
   description: string;
-  details: Detail[];
+  details: Details;
 };
 
-export type Detail = {
+export type Details = {
   detailed_description: string;
   intro_text_1: string;
   intro_text_2?: string;
   intro_text_3?: string;
-  intro_image?: string;
+  intro_image: string;
   colors: Color[];
-  specs: Spec[];
+  specs: Specs;
   loupe_options?: LoupeOption[];
 };
 
@@ -32,7 +32,7 @@ export type LoupeOption = {
   slug: string;
 };
 
-export type Spec = {
+export type Specs = {
   materials?: string;
   sizes?: string;
   weight?: string;
