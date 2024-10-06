@@ -564,6 +564,8 @@
     "DESCRIPTION_2": "La <strong>graduación, distancia de trabajo y el ángulo de inclinación</strong> es personalizado. Además, <strong>se incluyen</strong> protectores laterales, banda para la cabeza, estuche personalizado, destornillador óptico y gamuza.",
     "DESCRIPTION_3": "Las <strong>puntas de las patillas flexibles</strong> para un <strong>ajuste seguro</strong>, las <strong>monturas reforzadas</strong> para mantener la <strong>convergencia ocular</strong> y las <strong>plaquetas nasales ajustables</strong> para un <strong>confort óptimo</strong> hacen que nuestras monturas destaquen por encima de las demás.",
     "TEXTS": {
+      "text_color_options": "Opciones de color",
+      "text_color": "Color",
       "text_specs": "Especificaciones",
       "text_materials": "Materiales",
       "text_sizes": "Tamaños disponibles",
@@ -574,7 +576,8 @@
       "text_est_charge_time": "Tiempo de carga estimado",
       "text_est_battery_life": "Duración de batería estimada",
       "text_included_batteries": "Baterías",
-      "text_loupe_options": "Opciones de lupa"
+      "text_loupe_options": "Opciones de lupa",
+      "text_all_loupe_options": "Disponible con todas las lupas"
     },    
     "PRODUCTS": [
       {

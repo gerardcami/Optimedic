@@ -3,23 +3,16 @@ import PropTypes from "prop-types";
 
 export default function FrameColors({ frame, colors }) {
   const [selectedColor, setSelectedColor] = useState(colors[0]);
-  const [isFading, setIsFading] = useState(false);
-
-  // Controla la animación de fading cuando cambia el color seleccionado.
-  useEffect(() => {
-    if (isFading) {
-      const timer = setTimeout(() => {
-        setIsFading(false);
-      }, 300);
-
-      return () => clearTimeout(timer); // Limpia el temporizador al desmontar o cambiar de color
-    }
-  }, [isFading]);
+  const [isFadingOut, setIsFadingOut] = useState(false);
 
   const handleColorChange = (color) => {
     if (color.name !== selectedColor.name) {
-      setIsFading(true);
-      setSelectedColor(color);
+      setIsFadingOut(true);
+
+      setTimeout(() => {
+        setSelectedColor(color);
+        setIsFadingOut(false);
+      }, 300);
     }
   };
 
@@ -32,7 +25,7 @@ export default function FrameColors({ frame, colors }) {
             src={selectedColor.image}
             alt={`Color seleccionado: ${selectedColor.name}`}
             className={`object-fill rounded-lg transition-opacity duration-300 ${
-              isFading ? "opacity-0" : "opacity-100"
+              isFadingOut ? "opacity-0" : "opacity-100"
             }`}
           />
         </div>
@@ -43,7 +36,7 @@ export default function FrameColors({ frame, colors }) {
               <li
                 key={color.name}
                 onClick={() => handleColorChange(color)}
-                className={`cursor-pointer border-2 p-2 rounded-lg flex gap-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
+                className={`cursor-pointer border-2 p-2 px-4 rounded-lg flex gap-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
                   color.name === selectedColor.name
                     ? "border-[#076b61]"
                     : "border-gray-300"
@@ -51,12 +44,12 @@ export default function FrameColors({ frame, colors }) {
               >
                 <img
                   src={color.image}
-                  alt={color.name}
-                  className="w-16 h-16 object-cover rounded-md"
+                  alt={`Color disponible: ${selectedColor.name}`}
+                  className=" h-20 object-cover rounded-md"
                 />
                 <div className="flex flex-col gap-1 justify-center select-none">
-                  <p>{frame + " " + color.name}</p>
-                  <p>Color: {color.name}</p>
+                  <p>{`${frame} ${color.name}`}</p>
+                  <p>{`Color: ${color.name}`}</p>
                 </div>
               </li>
             ))}

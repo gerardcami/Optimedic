@@ -43,3 +43,20 @@ export type Specs = {
   est_batery_life?: string;
   included_batteries?: string;
 };
+
+export type FramesTexts = {
+  text_color_options: string;
+  text_color: string;
+  text_specs?: string;
+  text_materials?: string;
+  text_sizes?: string;
+  text_weight?: string;
+  text_light_intensity?: string;
+  text_color_rendering_index?: string;
+  text_color_temperature?: string;
+  text_est_charge_time?: string;
+  text_est_battery_life?: string;
+  text_included_batteries?: string;
+  text_loupe_options?: string;
+  text_all_loupe_options?: string;
+};
