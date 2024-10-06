@@ -9,12 +9,12 @@ const { specs, texts } = Astro.props;
 ---
 
 <article class="flex flex-col gap-5">
-  <h3 class="text-2xl font-bold">{texts.text_specs}</h3>
+  <h2 class="text-3xl font-bold">{texts.text_specs}</h2>
   <div class="flex flex-col flex-wrap max-h-[300px] gap-4">
     {
       specs?.materials && (
         <div>
-          <h4 class="text-lg font-bold">{texts.text_materials}</h4>
+          <h4 class="text-xl font-bold">{texts.text_materials}</h4>
           <p set:html={specs.materials} />
         </div>
       )
@@ -23,7 +23,7 @@ const { specs, texts } = Astro.props;
     {
       specs?.sizes && (
         <div>
-          <h4 class="text-lg font-bold">{texts.text_sizes}</h4>
+          <h4 class="text-xl font-bold">{texts.text_sizes}</h4>
           <p set:html={specs.sizes} />
         </div>
       )
@@ -32,7 +32,7 @@ const { specs, texts } = Astro.props;
     {
       specs?.weight && (
         <div>
-          <h4 class="text-lg font-bold">{texts.text_weight}</h4>
+          <h4 class="text-xl font-bold">{texts.text_weight}</h4>
           <p set:html={specs.weight} />
         </div>
       )
@@ -41,7 +41,7 @@ const { specs, texts } = Astro.props;
     {
       specs?.light_intensity && (
         <div>
-          <h4 class="text-lg font-bold">{texts.text_light_intensity}</h4>
+          <h4 class="text-xl font-bold">{texts.text_light_intensity}</h4>
           <p set:html={specs.light_intensity} />
         </div>
       )
@@ -50,7 +50,7 @@ const { specs, texts } = Astro.props;
     {
       specs?.color_rendering_index && (
         <div>
-          <h4 class="text-lg font-bold">{texts.text_color_rendering_index}</h4>
+          <h4 class="text-xl font-bold">{texts.text_color_rendering_index}</h4>
           <p set:html={specs.color_rendering_index} />
         </div>
       )
@@ -59,7 +59,7 @@ const { specs, texts } = Astro.props;
     {
       specs?.color_temperature && (
         <div>
-          <h4 class="text-lg font-bold">{texts.text_color_temperature}</h4>
+          <h4 class="text-xl font-bold">{texts.text_color_temperature}</h4>
           <p set:html={specs.color_temperature} />
         </div>
       )
@@ -68,7 +68,7 @@ const { specs, texts } = Astro.props;
     {
       specs?.est_charge_time && (
         <div>
-          <h4 class="text-lg font-bold">{texts.text_est_charge_time}</h4>
+          <h4 class="text-xl font-bold">{texts.text_est_charge_time}</h4>
           <p set:html={specs.est_charge_time} />
         </div>
       )
@@ -77,7 +77,7 @@ const { specs, texts } = Astro.props;
     {
       specs?.est_batery_life && (
         <div>
-          <h4 class="text-lg font-bold">{texts.text_est_battery_life}</h4>
+          <h4 class="text-xl font-bold">{texts.text_est_battery_life}</h4>
           <p set:html={specs.est_batery_life} />
         </div>
       )
@@ -86,7 +86,7 @@ const { specs, texts } = Astro.props;
     {
       specs?.included_batteries && (
         <div>
-          <h4 class="text-lg font-bold">{texts.text_included_batteries}</h4>
+          <h4 class="text-xl font-bold">{texts.text_included_batteries}</h4>
           <p set:html={specs.included_batteries} />
         </div>
       )
