@@ -1,15 +1,44 @@
-export const framesData = [
-  {
-    type: "Deportiva",
-    products: [
-      {
-        name: "Rydon™",
-        slug: "rydon",
-        card_image: "/public/img/frames/rydon/card.webp",
-        description:
-          "Lleve la personalización a un nuevo nivel con bisagras de patillas flexibles, patillas plegables y almohadillas nasales ajustables.",
-        details: [
-          {
+export const framesData = {
+  TITLE: "Monturas",
+  SUBTITLE:
+    "Tanto si prefiere estilos deportivos como icónicos, estamos seguros de que tenemos una montura que le encantará.",
+  DESCRIPTION_1:
+    "Escoger la montura correcta para su telescopio es tan importante como escoger la <strong>ampliación correcta</strong>. En <strong>Optimedic</strong>, nos esforzamos para ofrecerle monturas <strong>duraderas</strong> y <strong>stéticamente atractivas</strong> que superarán sus expectativas de <strong>rendimiento</strong> y <strong>estilo</strong>.",
+  DESCRIPTION_2:
+    "La <strong>graduación, distancia de trabajo y el ángulo de inclinación</strong> es personalizado. Además, <strong>se incluyen</strong> protectores laterales, banda para la cabeza, estuche personalizado, destornillador óptico y gamuza.",
+  DESCRIPTION_3:
+    "Las <strong>puntas de las patillas flexibles</strong> para un <strong>ajuste seguro</strong>, las <strong>monturas reforzadas</strong> para mantener la <strong>convergencia ocular</strong> y las <strong>plaquetas nasales ajustables</strong> para un <strong>confort óptimo</strong> hacen que nuestras monturas destaquen por encima de las demás.",
+  TEXTS: {
+    text_selected_color: "Color seleccionado",
+    text_available_color: "Color disponible",
+    text_product_image: "Imagen del producto",
+    text_color_options: "Opciones de color",
+    text_color: "Color",
+    text_specs: "Especificaciones",
+    text_materials: "Materiales",
+    text_sizes: "Tamaños disponibles",
+    text_weight: "Peso",
+    text_light_intensity: "Intensidad de luz",
+    text_color_rendering_index: "CRI (Índice de Reproducción cromática)",
+    text_color_temperature: "Temperatura de color",
+    text_est_charge_time: "Tiempo de carga estimado",
+    text_est_battery_life: "Duración de batería estimada",
+    text_included_batteries: "Baterías",
+    text_loupe_options: "Opciones de lupa",
+    text_all_loupe_options: "Disponible con todas las lupas",
+  },
+  LOUPES_PATH: "../lupas/",
+  PRODUCTS: [
+    {
+      type: "Deportiva",
+      products: [
+        {
+          name: "Rydon™",
+          slug: "rydon",
+          card_image: "/public/img/frames/rydon/card.webp",
+          description:
+            "Lleve la personalización a un nuevo nivel con bisagras de patillas flexibles, patillas plegables y almohadillas nasales ajustables.",
+          details: {
             detailed_description:
               "Esta clásica y cómoda montura deportiva ofrece un ajuste personalizado y elegante con bisagras de patillas flexibles, los brazos de las patillas plegables y almohadillas nasales ajustables",
             intro_text_1:
@@ -18,6 +47,7 @@ export const framesData = [
               "La construcción exclusiva de semibordeado admite también dos formas de lente de soporte diferentes, lo que permite adaptar más la lupa al usuario al acomodar ángulos de declinación pronunciados y geometrías faciales específicas.",
             intro_text_3:
               "La Rydon admite una amplia gama de prescripciones incluidas las bifocales.",
+            intro_image: "/public/img/frames/rydon/intro.webp",
             colors: [
               {
                 name: "Negro",
@@ -40,13 +70,11 @@ export const framesData = [
                 image: "/public/img/frames/rydon/carey.png",
               },
             ],
-            specs: [
-              {
-                materials:
-                  "Carbono, magnesio, silicio, grilamida y titanio avanzados",
-                sizes: "Tamaño único",
-              },
-            ],
+            specs: {
+              materials:
+                "Carbono, magnesio, silicio, grilamida y titanio avanzados",
+              sizes: "Tamaño único",
+            },
             loupe_options: [
               {
                 name: "HDL™ 2.5 Micro",
@@ -74,16 +102,14 @@ export const framesData = [
               },
             ],
           },
-        ],
-      },
-      {
-        name: "Phantom™",
-        slug: "phantom",
-        card_image: "/public/img/frames/phantom/card.webp",
-        description:
-          "Phantom, fabricada en titanio ligero, es la montura deportiva con graduación incorporada más ligera del mercado.",
-        details: [
-          {
+        },
+        {
+          name: "Phantom™",
+          slug: "phantom",
+          card_image: "/public/img/frames/phantom/card.webp",
+          description:
+            "Phantom, fabricada en titanio ligero, es la montura deportiva con graduación incorporada más ligera del mercado.",
+          details: {
             detailed_description:
               "Comodidad ligera sin comprometer el rendimiento.",
             intro_text_1:
@@ -92,6 +118,7 @@ export const framesData = [
               "Todas las mejores características - puntas de patilla flexibles, puente nasal ajustable, canal de control de cables y bisagras flexibles - sin el peso añadido.",
             intro_text_3:
               "Disponible en cinco colores impresionantes, Phantom es la elección perfecta para quienes priorizan la comodidad y el estilo.",
+            intro_image: "/public/img/frames/phantom/intro.webp",
             colors: [
               {
                 name: "Negro",
@@ -114,34 +141,31 @@ export const framesData = [
                 image: "/public/img/frames/phantom/slate.png",
               },
             ],
-            specs: [
-              {
-                materials: "Titanio",
-                sizes: "Pequeño · Mediano",
-              },
-            ],
+            specs: {
+              materials: "Titanio",
+              sizes: "Pequeño · Mediano",
+            },
           },
-        ],
-      },
-    ],
-  },
-  {
-    type: "Icónica",
-    products: [
-      {
-        name: "Triumph™",
-        slug: "triumph",
-        card_image: "/public/img/frames/triumph/card.webp",
-        description:
-          "Esta montura icónica emplea una función de control de cables incorporada y está disponible en cinco impresionantes colores bicolores.",
-        details: [
-          {
+        },
+      ],
+    },
+    {
+      type: "Icónica",
+      products: [
+        {
+          name: "Triumph™",
+          slug: "triumph",
+          card_image: "/public/img/frames/triumph/card.webp",
+          description:
+            "Esta montura icónica emplea una función de control de cables incorporada y está disponible en cinco impresionantes colores bicolores.",
+          details: {
             detailed_description:
               "Esta montura icónica emplea una función integrada de control por cable y admite todos los niveles de aumento.",
             intro_text_1:
               "Combinando rendimiento y comodidad, Triumph™ es una ligera montura de titanio construida exclusivamente para lupas. El control por cable integrado elimina las distracciones y optimiza la eficacia. Elija cualquier nivel de aumento e incorpore su estilo personal con una de las cinco combinaciones de colores bicolores de moda. Las patillas ajustables y el puente nasal permiten un ajuste personalizado y una mayor comodidad.",
             intro_text_2:
               "Triumph™ está disponible en tamaño pequeño, mediano y grande y admite todo tipo de graduaciones.",
+            intro_image: "/public/img/frames/triumph/intro.webp",
             colors: [
               {
                 name: "Negro",
@@ -164,12 +188,10 @@ export const framesData = [
                 image: "/public/img/frames/triumph/slate.png",
               },
             ],
-            specs: [
-              {
-                materials: "Titanio",
-                sizes: "Pequeño · Mediano · Grande",
-              },
-            ],
+            specs: {
+              materials: "Titanio",
+              sizes: "Pequeño · Mediano · Grande",
+            },
             loupe_options: [
               {
                 name: "HDL™ 2.5 Micro",
@@ -209,22 +231,21 @@ export const framesData = [
               },
             ],
           },
-        ],
-      },
-      {
-        name: "Tempo™",
-        slug: "tempo",
-        card_image: "/public/img/frames/tempo/card.webp",
-        description:
-          "Esta montura icónica aporta un diseño elegante y minimalista para el clínico moderno de hoy en día.",
-        details: [
-          {
+        },
+        {
+          name: "Tempo™",
+          slug: "tempo",
+          card_image: "/public/img/frames/tempo/card.webp",
+          description:
+            "Esta montura icónica aporta un diseño elegante y minimalista para el clínico moderno de hoy en día.",
+          details: {
             detailed_description:
               "Esta montura icónica aporta un diseño elegante y minimalista que admite todos los niveles de aumento.",
             intro_text_1:
               "Fabricada pensando en el rendimiento, la construcción ligera de titanio de Tempo™ es lo suficientemente duradera como para soportar la línea completa de lupas y frontales Orascoptic. La incorporación de patillas ajustables, un canal de control de cables y una almohadilla nasal en forma de silla de montar también permite un ajuste personalizable y una mayor comodidad.",
             intro_text_2:
               "Tempo™ is available in small, medium, and large and supports all prescription types.",
+            intro_image: "/public/img/frames/tempo/intro.webp",
             colors: [
               {
                 name: "Amatista",
@@ -247,12 +268,10 @@ export const framesData = [
                 image: "/public/img/frames/tempo/slate.png",
               },
             ],
-            specs: [
-              {
-                materials: "Titanio",
-                sizes: "Pequeño · Mediano · Grande",
-              },
-            ],
+            specs: {
+              materials: "Titanio",
+              sizes: "Pequeño · Mediano · Grande",
+            },
             loupe_options: [
               {
                 name: "HDL™ 2.5 Micro",
@@ -292,16 +311,14 @@ export const framesData = [
               },
             ],
           },
-        ],
-      },
-      {
-        name: "Tempo™ Refined Fit",
-        slug: "tempo-refined-fit",
-        card_image: "/public/img/frames/tempo-re/card.webp",
-        description:
-          "Esta montura de ajuste refinado se ha diseñado para proporcionar una comodidad óptima a los clínicos con pómulos prominentes o un puente nasal bajo.",
-        details: [
-          {
+        },
+        {
+          name: "Tempo™ Refined Fit",
+          slug: "tempo-refined-fit",
+          card_image: "/public/img/frames/tempo-re/card.webp",
+          description:
+            "Esta montura de ajuste refinado se ha diseñado para proporcionar una comodidad óptima a los clínicos con pómulos prominentes o un puente nasal bajo.",
+          details: {
             detailed_description:
               "Tempo™ Refined fit. Porque las lupas deben adaptarse cómodamente a todo el mundo.",
             intro_text_1:
@@ -310,6 +327,7 @@ export const framesData = [
               "Diseñado con un exclusivo alambre de puente nasal para permitir un ajuste cómodo y seguro en un puente nasal menos pronunciado, Tempo™ Refined Fit se diseñó con la altura de montura ideal para evitar la desalineación de la óptica causada por monturas apoyadas en los pómulos. ",
             intro_text_3:
               "Tempo™ Refined Fit está disponible en las tallas refinadas pequeña, mediana y grande y admite todo tipo de prescripciones.",
+            intro_image: "/public/img/frames/tempo-re/intro.webp",
             colors: [
               {
                 name: "Amatista",
@@ -332,12 +350,10 @@ export const framesData = [
                 image: "/public/img/frames/tempo-re/slate.png",
               },
             ],
-            specs: [
-              {
-                materials: "Titanio",
-                sizes: "Pequeño · Mediano · Grande",
-              },
-            ],
+            specs: {
+              materials: "Titanio",
+              sizes: "Pequeño · Mediano · Grande",
+            },
             loupe_options: [
               {
                 name: "HDL™ 2.5 Micro",
@@ -377,20 +393,19 @@ export const framesData = [
               },
             ],
           },
-        ],
-      },
-      {
-        name: "Victory™",
-        slug: "victory",
-        card_image: "/public/img/frames/victory/card.webp",
-        description:
-          "Inspirada en la moda europea, esta montura tiene un perfil pequeño pero sofisticado.",
-        details: [
-          {
+        },
+        {
+          name: "Victory™",
+          slug: "victory",
+          card_image: "/public/img/frames/victory/card.webp",
+          description:
+            "Inspirada en la moda europea, esta montura tiene un perfil pequeño pero sofisticado.",
+          details: {
             detailed_description:
               "Fabricada en titanio, la montura Victory™ admite todas las graduaciones y resulta atractiva para los clínicos que prefieren gafas pequeñas y compactas. ",
             intro_text_1:
               "La pequeña y sofisticada montura Victory™ se inspira en la moda europea. Su pequeño perfil y su fiable estructura de titanio la convierten en una elección muy popular entre los médicos que buscan una montura de lupa ligera. ",
+            intro_image: "/public/img/frames/victory/intro.webp",
             colors: [
               {
                 name: "Negro",
@@ -404,18 +419,15 @@ export const framesData = [
                 name: "Merlot",
                 image: "/public/img/frames/victory/merlot.png",
               },
-
               {
                 name: "Pizarra",
                 image: "/public/img/frames/victory/slate.png",
               },
             ],
-            specs: [
-              {
-                materials: "Titanio",
-                sizes: "Pequeño · Mediano · Grande",
-              },
-            ],
+            specs: {
+              materials: "Titanio",
+              sizes: "Pequeño · Mediano · Grande",
+            },
             loupe_options: [
               {
                 name: "HDL™ 2.5 Micro",
@@ -443,21 +455,19 @@ export const framesData = [
               },
             ],
           },
-        ],
-      },
-    ],
-  },
-  {
-    type: "Potenciada",
-    products: [
-      {
-        name: "Dragonfly™ PRO",
-        slug: "dragonfly-pro",
-        card_image: "/public/img/frames/dragonfly-pro/card.webp",
-        description:
-          "Nuestro modelo premium PRO es compatible con toda la línea de telescopios Orascoptic y está cargado de características adicionales, incluyendo baterías adicionales, múltiples ajustes de intensidad de luz y un acabado de pintura cerámica extremadamente duradero.",
-        details: [
-          {
+        },
+      ],
+    },
+    {
+      type: "Potenciada",
+      products: [
+        {
+          name: "Dragonfly™ PRO",
+          slug: "dragonfly-pro",
+          card_image: "/public/img/frames/dragonfly-pro/card.webp",
+          description:
+            "Nuestro modelo premium PRO es compatible con toda la línea de telescopios Orascoptic y está cargado de características adicionales, incluyendo baterías adicionales, múltiples ajustes de intensidad de luz y un acabado de pintura cerámica extremadamente duradero.",
+          details: {
             detailed_description:
               "Nuestro modelo premium PRO es compatible con toda la línea de telescopios Orascoptic y está cargado de características adicionales, incluyendo baterías adicionales, múltiples ajustes de intensidad de luz y un acabado de pintura cerámica extremadamente duradero.",
             intro_text_1:
@@ -466,6 +476,7 @@ export const framesData = [
               "Dragonfly™ es nuestra montura con alimentación por batería y circuito totalmente integrados que funciona con un iluminador frontal incorporado, liberándote de la molestia de los cables.",
             intro_text_3:
               "Dragonfly™ PRO cuenta con Cerakote, un recubrimiento de polímero cerámico que ofrece una durabilidad, dureza, resistencia a los arañazos, resistencia a la corrosión y resistencia química líderes en el sector.",
+            intro_image: "/public/img/frames/dragonfly-pro/intro.webp",
             colors: [
               {
                 name: "Amatista",
@@ -484,18 +495,16 @@ export const framesData = [
                 image: "/public/img/frames/dragonfly-pro/olive.png",
               },
             ],
-            specs: [
-              {
-                weight: "129g con oculares HDL™ 2,5 Micro",
-                light_intensity: "Bajo/Alto | Lúmenes",
-                color_rendering_index: "95 CRI",
-                color_temperature: "6500º K",
-                est_charge_time: "Menos de 2 horas",
-                est_batery_life:
-                  "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
-                included_batteries: "6 included",
-              },
-            ],
+            specs: {
+              weight: "129g con oculares HDL™ 2,5 Micro",
+              light_intensity: "Bajo/Alto | 66/98 Lúmenes",
+              color_rendering_index: "95 CRI",
+              color_temperature: "6500º K",
+              est_charge_time: "Menos de 2 horas",
+              est_battery_life:
+                "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
+              included_batteries: "6 included",
+            },
             loupe_options: [
               {
                 name: "HDL™ 2.5 Micro",
@@ -543,16 +552,14 @@ export const framesData = [
               },
             ],
           },
-        ],
-      },
-      {
-        name: "Dragonfly™ NEO",
-        slug: "dragonfly-neo",
-        card_image: "/public/img/frames/dragonfly-neo/card.webp",
-        description:
-          "Admite 4 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
-        details: [
-          {
+        },
+        {
+          name: "Dragonfly™ NEO",
+          slug: "dragonfly-neo",
+          card_image: "/public/img/frames/dragonfly-neo/card.webp",
+          description:
+            "Admite 4 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
+          details: {
             detailed_description:
               "Admite 4 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
             intro_text_1:
@@ -561,24 +568,23 @@ export const framesData = [
               "Dragonfly™ es nuestra montura con alimentación por batería y circuito totalmente integrados que funciona con un iluminador frontal incorporado, liberándote de la molestia de los cables.",
             intro_text_3:
               "Nuestro modelo básico NEO está disponible en un solo color y admite cuatro opciones de aumento habituales.",
+            intro_image: "/public/img/frames/dragonfly-neo/intro.webp",
             colors: [
               {
                 name: "Medianoche",
                 image: "/public/img/frames/dragonfly-neo/midnight.png",
               },
             ],
-            specs: [
-              {
-                weight: "129g con oculares HDL™ 2,5 Micro",
-                light_intensity: "98 Lúmenes",
-                color_rendering_index: "95 CRI",
-                color_temperature: "6500º K",
-                est_charge_time: "Menos de 2 horas",
-                est_batery_life:
-                  "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
-                included_batteries: "4 included",
-              },
-            ],
+            specs: {
+              weight: "129g con oculares HDL™ 2,5 Micro",
+              light_intensity: "98 Lúmenes",
+              color_rendering_index: "95 CRI",
+              color_temperature: "6500º K",
+              est_charge_time: "Menos de 2 horas",
+              est_battery_life:
+                "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
+              included_batteries: "4 included",
+            },
             loupe_options: [
               {
                 name: "HDL™ 2.5 Micro",
@@ -602,8 +608,8 @@ export const framesData = [
               },
             ],
           },
-        ],
-      },
-    ],
-  },
-];
+        },
+      ],
+    },
+  ],
+};
