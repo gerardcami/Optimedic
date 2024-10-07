@@ -9,7 +9,7 @@ export default defineConfig({
   output: 'server',
   i18n: {
     defaultLocale: 'es', // Idioma por defecto
-    locales: ['es', 'ca'], // Idiomas locales
+    locales: ['es', 'ca', 'en'], // Idiomas locales
     routing: {
       prefixDefaultLocale: false // true: es -> /es  ca -> /ca (cambia la url)
     }

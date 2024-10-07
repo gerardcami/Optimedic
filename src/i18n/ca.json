@@ -40,17 +40,17 @@
           {
             "name": "Lupes",
             "description": "Troba el teu augment ideal amb les nostres lupes.",
-            "href": "/productes/lupes"
+            "href": "/ca/productes/lupes"
           },
           {
-            "name": "Montures",
+            "name": "Muntures",
             "description": "Montures duradores i estèticament atractives que superaran les teves expectatives de rendiment i estil.",
-            "href": "/productes/montures"
+            "href": "/ca/productes/muntures"
           },
           {
             "name": "Il·luminadors frontals",
             "description": "Montures duradores i estèticament atractives que superaran les teves expectatives de rendiment i estil.",
-            "href": "/productes/montures"
+            "href": "/ca/productes/illuminadors-frontals"
           }
         ]
       },
@@ -61,12 +61,12 @@
           {
             "name": "MicroAire",
             "description": "Un potent instrument de precisió dissenyat per a l'extracció de greix de petit o gran volum, el contorn corporal i la recol·lecció de greix.",
-            "href": "/productes/microaire"
+            "href": "/ca/productes/microaire"
           },
           {
             "name": "Renuvion",
             "description": "L'únic dispositiu aprovat per la FDA per al seu ús després d'una liposucció i l'únic dispositiu aprovat per la FDA per contraure el teixit tou subcutani.",
-            "href": "/productes/renuvion"
+            "href": "/ca/productes/renuvion"
           }
         ]
       },
@@ -77,7 +77,7 @@
           {
             "name": "Conferència",
             "description": "Les dades dels teus clients estaran segures i protegides",
-            "href": "/productes/esdeveniments"
+            "href": "/ca/productes/esdeveniments"
           }
         ]
       }
@@ -101,12 +101,65 @@
       "text_field_depth": "Profunditat de camp",
       "text_frame_options": "Opcions de montura"
     },
-    "FRAMES_PATH": "/productes/montures/",
-    "LOUPES_PATH": "/productes/lupes/",
+    "FRAMES_PATH": "/ca/productes/muntures/",
+    "LOUPES_PATH": "/ca/productes/lupes/",
     "PRODUCTS": [
       {
         "type": "Aument fix",
         "products": [
+          {
+            "name": "HDL™ 2.5 Micro",
+            "slug": "hdl-25-micro",
+            "card_image": "/public/img/loupes/hdl-25-micro/card.webp",
+            "description": "Aquesta òptica de mida micro ofereix una comoditat lleugera i una visualització superior per a tot tipus d'usuaris de lupes.",
+            "details": {
+              "detailed_description": "Òptica de mida micro que ofereix una comoditat lleugera sense sacrificar l'augment.",
+              "intro_text_1": "Superant els límits d'una microòptica típica, aquesta lupa proporciona un generós camp de visió amb claredat de vora a vora.",
+              "intro_text_2": "Amb una mida tan compacta, es disposa d'espai de visió addicional per sobre del telescopi, cosa que facilita la lectura de gràfics i les consultes amb els pacients.",
+              "intro_image": "/public/img/loupes/hdl-25-micro/intro.webp",
+              "specs_image": "/public/img/loupes/hdl-25-micro/specs.webp",
+              "specs": {
+                "magnification_power": "2,5x",
+                "weight": "39,15 g",
+                "field_width": "8,75 cm",
+                "field_depth": "17,8 cm"
+              },
+              "frame_options": [
+                {
+                  "name": "Rydon™",
+                  "slug": "rydon"
+                },
+                {
+                  "name": "Phantom™",
+                  "slug": "phantom"
+                },
+                {
+                  "name": "Triumph™",
+                  "slug": "triumph"
+                },
+                {
+                  "name": "Tempo™",
+                  "slug": "tempo"
+                },
+                {
+                  "name": "Tempo™ Refined Fit",
+                  "slug": "tempo-refined-fit"
+                },
+                {
+                  "name": "Victory™",
+                  "slug": "victory"
+                },
+                {
+                  "name": "DragonFly™ PRO",
+                  "slug": "dragonfly-pro"
+                },
+                {
+                  "name": "DragonFly™ NEO",
+                  "slug": "dragonfly-neo"
+                }
+              ]
+            }
+          },          
           {
             "name": "HDL™ 2.5 Macro",
             "slug": "hdl-25-macro",
@@ -729,8 +782,8 @@
       "text_loupe_options": "Opcions de lupa",
       "text_all_loupe_options": "Disponible amb totes les lupes"
     },
-    "LOUPES_PATH": "/productes/lupes/",
-    "FRAMES_PATH": "/productes/muntures/",
+    "LOUPES_PATH": "/ca/productes/lupes/",
+    "FRAMES_PATH": "/ca/productes/muntures/",
     "PRODUCTS": [
       {
         "type": "Esportiva",

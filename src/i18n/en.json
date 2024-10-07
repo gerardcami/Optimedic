@@ -35,22 +35,22 @@
     "PRODUCTS": [
       {
         "name": "Loupes",
-        "img": "/public/img/oscar-alonso1.jpg",
+        "img": "/en/public/img/oscar-alonso1.jpg",
         "subcategories": [
           {
             "name": "Loupes",
             "description": "Find your ideal magnification with our loupes.",
-            "href": "/products/loupes"
+            "href": "/en/products/loupes"
           },
           {
             "name": "Frames",
             "description": "Durable and aesthetically pleasing frames that will exceed your expectations in performance and style.",
-            "href": "/products/frames"
+            "href": "/en/products/frames"
           },
           {
             "name": "Headlights",
             "description": "Durable and aesthetically pleasing frames that will exceed your expectations in performance and style.",
-            "href": "/products/frames"
+            "href": "/en/products/headlights"
           }
         ]
       },
@@ -61,12 +61,12 @@
           {
             "name": "MicroAire",
             "description": "A powerful precision instrument designed for small or large volume fat extraction, body contouring, and fat harvesting.",
-            "href": "/products/microaire"
+            "href": "/en/products/microaire"
           },
           {
             "name": "Renuvion",
             "description": "The only device approved by the FDA for use after liposuction and the only device approved by the FDA to contract subcutaneous soft tissue.",
-            "href": "/products/renuvion"
+            "href": "/en/products/renuvion"
           }
         ]
       },
@@ -77,7 +77,7 @@
           {
             "name": "Event Organization",
             "description": "We organize events for your company",
-            "href": "/products/events"
+            "href": "/en/products/events"
           }
         ]
       }
@@ -101,8 +101,8 @@
       "text_field_depth": "Field depth",
       "text_frame_options": "Frame options"
     },
-    "FRAMES_PATH": "/products/frames/",
-    "LOUPES_PATH": "/products/loupes/",
+    "FRAMES_PATH": "/en/loupes/frames/",
+    "LOUPES_PATH": "/en/products/loupes/",
     "PRODUCTS": [
       {
         "type": "Fixed magnification",
@@ -782,8 +782,8 @@
       "text_loupe_options": "Loupe options",
       "text_all_loupe_options": "Available with all loupes"
     },
-    "LOUPES_PATH": "/products/loupes/",
-    "FRAMES_PATH": "/products/frames/",
+    "LOUPES_PATH": "en/products/loupes/",
+    "FRAMES_PATH": "en/products/frames/",
     "PRODUCTS": [
       {
         "type": "Sport",
