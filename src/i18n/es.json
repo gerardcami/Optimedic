@@ -564,6 +564,9 @@
     "DESCRIPTION_2": "La <strong>graduación, distancia de trabajo y el ángulo de inclinación</strong> es personalizado. Además, <strong>se incluyen</strong> protectores laterales, banda para la cabeza, estuche personalizado, destornillador óptico y gamuza.",
     "DESCRIPTION_3": "Las <strong>puntas de las patillas flexibles</strong> para un <strong>ajuste seguro</strong>, las <strong>monturas reforzadas</strong> para mantener la <strong>convergencia ocular</strong> y las <strong>plaquetas nasales ajustables</strong> para un <strong>confort óptimo</strong> hacen que nuestras monturas destaquen por encima de las demás.",
     "TEXTS": {
+      "text_selected_color": "Color seleccionado",
+      "text_available_color": "Color disponible",
+      "text_product_image": "Imagen del producto",
       "text_color_options": "Opciones de color",
       "text_color": "Color",
       "text_specs": "Especificaciones",
@@ -578,7 +581,8 @@
       "text_included_batteries": "Baterías",
       "text_loupe_options": "Opciones de lupa",
       "text_all_loupe_options": "Disponible con todas las lupas"
-    },    
+    },
+    "LOUPES_PATH": "../lupas/",
     "PRODUCTS": [
       {
         "type": "Deportiva",
@@ -1022,7 +1026,7 @@
                 "color_rendering_index": "95 CRI",
                 "color_temperature": "6500º K",
                 "est_charge_time": "Menos de 2 horas",
-                "est_batery_life": "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
+                "est_battery_life": "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
                 "included_batteries": "6 included"
               },
               "loupe_options": [
@@ -1096,7 +1100,7 @@
                 "color_rendering_index": "95 CRI",
                 "color_temperature": "6500º K",
                 "est_charge_time": "Menos de 2 horas",
-                "est_batery_life": "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
+                "est_battery_life": "Hasta 5 horas 40 minutos <small>dependiendo de la configuración de la luz</small>",
                 "included_batteries": "4 included"
               },
               "loupe_options": [

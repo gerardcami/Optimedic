@@ -1,93 +1,85 @@
 ---
-import type { FramesTexts, Specs } from "../types/frames";
+import type { Texts, Specs } from "../types/frames";
 
 interface Props {
   specs: Specs;
-  texts: FramesTexts;
+  texts: Texts;
 }
 const { specs, texts } = Astro.props;
 ---
 
-<article class="flex flex-col gap-5">
+<article class="flex flex-col gap-5 shadow-2xl p-8 rounded-lg">
   <h2 class="text-3xl font-bold">{texts.text_specs}</h2>
-  <div class="flex flex-col flex-wrap max-h-[300px] gap-4">
+  <div class="flex flex-col flex-wrap max-h-[400px] gap-4">
     {
       specs?.materials && (
-        <div>
-          <h4 class="text-xl font-bold">{texts.text_materials}</h4>
-          <p set:html={specs.materials} />
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold">{texts.text_materials}</h3>
+          <p set:html={specs.materials} class="text-gray-700" />
         </div>
       )
     }
-
     {
       specs?.sizes && (
-        <div>
-          <h4 class="text-xl font-bold">{texts.text_sizes}</h4>
-          <p set:html={specs.sizes} />
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold">{texts.text_sizes}</h3>
+          <p set:html={specs.sizes} class="text-gray-700" />
         </div>
       )
     }
-
     {
       specs?.weight && (
-        <div>
-          <h4 class="text-xl font-bold">{texts.text_weight}</h4>
-          <p set:html={specs.weight} />
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold">{texts.text_weight}</h3>
+          <p set:html={specs.weight} class="text-gray-700" />
         </div>
       )
     }
-
     {
       specs?.light_intensity && (
-        <div>
-          <h4 class="text-xl font-bold">{texts.text_light_intensity}</h4>
-          <p set:html={specs.light_intensity} />
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold">{texts.text_light_intensity}</h3>
+          <p set:html={specs.light_intensity} class="text-gray-700" />
         </div>
       )
     }
-
     {
       specs?.color_rendering_index && (
-        <div>
-          <h4 class="text-xl font-bold">{texts.text_color_rendering_index}</h4>
-          <p set:html={specs.color_rendering_index} />
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold">{texts.text_color_rendering_index}</h3>
+          <p set:html={specs.color_rendering_index} class="text-gray-700" />
         </div>
       )
     }
-
     {
       specs?.color_temperature && (
-        <div>
-          <h4 class="text-xl font-bold">{texts.text_color_temperature}</h4>
-          <p set:html={specs.color_temperature} />
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold">{texts.text_color_temperature}</h3>
+          <p set:html={specs.color_temperature} class="text-gray-700" />
         </div>
       )
     }
-
     {
       specs?.est_charge_time && (
-        <div>
-          <h4 class="text-xl font-bold">{texts.text_est_charge_time}</h4>
-          <p set:html={specs.est_charge_time} />
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold">{texts.text_est_charge_time}</h3>
+          <p set:html={specs.est_charge_time} class="text-gray-700" />
         </div>
       )
     }
-
     {
-      specs?.est_batery_life && (
-        <div>
-          <h4 class="text-xl font-bold">{texts.text_est_battery_life}</h4>
-          <p set:html={specs.est_batery_life} />
+      specs?.est_battery_life && (
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold">{texts.text_est_battery_life}</h3>
+          <p set:html={specs.est_battery_life} class="text-gray-700" />
         </div>
       )
     }
-
     {
       specs?.included_batteries && (
-        <div>
-          <h4 class="text-xl font-bold">{texts.text_included_batteries}</h4>
-          <p set:html={specs.included_batteries} />
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold">{texts.text_included_batteries}</h3>
+          <p set:html={specs.included_batteries} class="text-gray-700" />
         </div>
       )
     }
