@@ -1,24 +1,23 @@
 ---
-import Layout from "../../../../layouts/Layout.astro";
-import type { Product } from "../../../../types/frames";
-import FrameColors from "../../../../components/frameColors";
-import { getI18N } from "../../../../i18n/";
-import FrameSpecs from "../../../../components/FrameSpecs.astro";
+import Layout from "../../../layouts/Layout.astro";
+import type { Product } from "../../../types/loupes";
+import { getI18N } from "../../../i18n/";
+import LoupeSpecs from "../../../components/LoupeSpecs.astro";
 
 const { currentLocale = "es" } = Astro;
 const i18n = getI18N({ currentLocale });
 
-const framesTexts = i18n.FRAMES.TEXTS;
-const framesData = i18n.FRAMES.PRODUCTS;
+const loupesTexts = i18n.LOUPES.TEXTS;
+const loupesData = i18n.LOUPES.PRODUCTS;
 
-const { frame } = Astro.params;
+const { loupe } = Astro.params;
 
-const product = framesData
-  .flatMap((frameType: Product) => frameType.products)
-  .find((product) => product.slug === frame);
+const product = loupesData
+  .flatMap((loupeType: Product) => loupeType.products)
+  .find((product) => product.slug === loupe);
 
 if (!product) {
-  throw new Error(`Product not found for slug: ${frame}`);
+  throw new Error(`Product not found for slug: ${loupe}`);
 }
 
 const details = product.details;
@@ -65,35 +64,44 @@ const details = product.details;
       />
     </article>
   </section>
-  <FrameColors
-    client:visible
-    frame={product.name}
-    colors={details.colors}
-    texts={framesTexts}
-  />
-  <section class="w-full flex flex-col gap-4">
-    <FrameSpecs texts={framesTexts} specs={details.specs} />
-    <article class="flex flex-col bg-white shadow-2xl p-12 rounded-lg flex-1">
-      <h2 class="text-3xl mb-12 font-bold">{framesTexts.text_loupe_options}</h2>
+
+  <section class="flex items-center justify-between">
+    <img
+      src={details?.specs_image}
+      alt=""
+      class="w-[500px] shadow-2xl"
+      style="border-radius: 32% 68% 68% 32% / 50% 58% 42% 50%;"
+    />
+    <div class="w-1/2">
+      <h2 class="text-3xl mb-8 font-bold">{loupesTexts.text_title_specs}</h2>
+      <div class="flex flex-col gap-4">
+        <p set:html={loupesTexts.text_intro_specs_1} class="text-gray-700" />
+        <p set:html={loupesTexts.text_intro_specs_2} class="text-gray-700" />
+        <p
+          class="italic font-bold text-sm"
+          set:html={loupesTexts.text_specs_disclaimer}
+          class="text-gray-700"
+        />
+      </div>
+    </div>
+  </section>
+  <section class="w-full flex gap-4">
+    <LoupeSpecs texts={loupesTexts} specs={details.specs} />
+    <article
+      class="flex w-1/2 flex-col bg-white shadow-2xl p-12 rounded-lg flex-1"
+    >
+      <h2 class="text-3xl mb-12 font-bold">{loupesTexts.text_frame_options}</h2>
       <div class="flex flex-col gap-2">
         {
-          details.loupe_options ? (
-            details.loupe_options.map((option) => (
+          details.frame_options &&
+            details.frame_options.map((option) => (
               <a
-                href={`${i18n.FRAMES.LOUPES_PATH}${option.slug}`}
+                href={`${i18n.LOUPES.FRAMES_PATH}${option.slug}`}
                 class="hover:underline transition-colors duration-200 text-teal-600 hover:text-teal-800 border-b pb-2 mb-2"
               >
                 {option.name}
               </a>
             ))
-          ) : (
-            <a
-              href={i18n.FRAMES.LOUPES_PATH}
-              class="hover:underline transition-colors duration-200 text-teal-600 hover:text-teal-800"
-            >
-              {framesTexts.text_all_loupe_options}
-            </a>
-          )
         }
       </div>
     </article>

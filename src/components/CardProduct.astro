@@ -3,22 +3,28 @@ import { getI18N } from "../i18n/";
 const { currentLocale = "es" } = Astro;
 const i18n = getI18N({ currentLocale });
 
-const framesData = i18n.FRAMES.PRODUCTS;
-const framesPath = i18n.FRAMES.FRAMES_PATH;
+interface Props {
+  productType: "LOUPES" | "FRAMES" | "HEADLIGHTS";
+}
+
+const { productType } = Astro.props;
+
+const products = i18n[productType]["PRODUCTS"];
+const productsPath = i18n[productType]["PRODUCT_PATH"];
 ---
 
 <section class="flex flex-col gap-[50px]">
   {
-    framesData.map((frames) => (
+    products.map((type) => (
       <article class="flex flex-col gap-4">
         <header>
-          <h2 class="text-3xl font-bold">{frames.type}</h2>
+          <h2 class="text-3xl font-bold">{type.type}</h2>
         </header>
         <div class="grid grid-cols-3 gap-[50px]">
-          {frames.products.map((productData) => (
+          {type.products.map((productData) => (
             <div class="flex flex-col gap-4">
               <a
-                href={`${framesPath}${productData.slug}`}
+                href={`${productsPath}${productData.slug}`}
                 class="shadow-2xl relative rounded-md overflow-hidden flex flex-col h-full cursor-pointer transform transition-transform hover:shadow-lg hover:scale-105"
               >
                 <div

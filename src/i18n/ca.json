@@ -102,7 +102,7 @@
       "text_frame_options": "Opcions de montura"
     },
     "FRAMES_PATH": "/ca/productes/muntures/",
-    "LOUPES_PATH": "/ca/productes/lupes/",
+    "PRODUCT_PATH": "/ca/productes/lupes/",
     "PRODUCTS": [
       {
         "type": "Aument fix",
@@ -159,7 +159,7 @@
                 }
               ]
             }
-          },          
+          },
           {
             "name": "HDL™ 2.5 Macro",
             "slug": "hdl-25-macro",
@@ -783,7 +783,7 @@
       "text_all_loupe_options": "Disponible amb totes les lupes"
     },
     "LOUPES_PATH": "/ca/productes/lupes/",
-    "FRAMES_PATH": "/ca/productes/muntures/",
+    "PRODUCT_PATH": "/ca/productes/muntures/",
     "PRODUCTS": [
       {
         "type": "Esportiva",
@@ -1324,6 +1324,131 @@
                   "slug": "hdl-ergo-35x"
                 }
               ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "HEADLIGHTS": {
+    "TITLE": "Il·luminadors frontals",
+    "SUBTITLE": "Disposar d'una il·luminació adequada durant els procediments i exàmens és crucial per assegurar-se de no passar per alt detalls crítics a simple vista. Tot i que l'ampliació pot millorar el seu camp visual, una il·luminació adequada ajuda a eliminar les ombres que poden obstaculitzar el seu camp de visió.",
+    "DESCRIPTION_1": "Els nostres <strong>il·luminadors frontals</strong> tenen el <strong>millor rendiment lumínic global</strong> entre els principals competidors, segons proves realitzades per tercers. Gràcies a <strong>TruColor™</strong>, la nostra tecnologia pionera en fars, tots els fars <strong>Orascoptic</strong> ofereixen una il·luminació amb un <strong>CRI intens</strong> que eclipsa la competència.",
+    "DESCRIPTION_2": "Trobi la solució d'il·luminació per millorar la seva visibilitat reduint les ombres en el seu camp de visió. La nostra tecnologia <strong>TruColor™</strong> millora el <strong>brillantor</strong>, la <strong>nitidesa</strong> i la <strong>profunditat</strong>.",
+    "DESCRIPTION_3": "Cada il·luminador frontal és sotmès a rigoroses proves específiques per assegurar el seu compliment amb els estàndards de llum blava establerts per la <strong>Comissió Electrotècnica Internacional</strong>. A més, les nostres <strong>fonts de llum sense fils</strong> s'adapten perfectament a totes les nostres <strong>montures</strong>, garantint versatilitat i rendiment òptim.",
+    "TEXTS": {
+      "text_product_image": "Imatge del producte",
+      "text_features": "Característiques",
+      "text_specs": "Especificacions",
+      "text_weight": "Pes",
+      "text_light_intensity": "Intensitat de llum",
+      "text_color_rendering_index": "CRI (Índex de Reproducció cromàtica)",
+      "text_intensity_control": "Control d'intensitat",
+      "text_color_temperature": "Temperatura de color",
+      "text_focus": "Enfocament",
+      "text_est_charge_time": "Temps de càrrega estimat",
+      "text_est_battery_life": "Durada de bateria estimada",
+      "text_battery_type": "Tipus de bateria"
+    },
+    "PRODUCT_PATH": "/productes/illuminadores-frontales/",
+    "PRODUCTS": [
+      {
+        "type": "",
+        "products": [
+          {
+            "name": "Endeavour™ MD",
+            "slug": "endeavour-md",
+            "card_image": "/public/img/headlights/endeavour-md/card.webp",
+            "description": "Exclusiu per al camp quirúrgic, l'Endeavour™ MD presenta una distribució uniforme de fins a 85 llumens de llum i ofereix fins a 24 hores d'emissió de llum constant amb CRI 92+.",
+            "details": {
+              "detailed_description": "El nostre faròptim per a cirurgians.",
+              "intro": {
+                "intro_text_1": "Exclusiu per al camp quirúrgic, l'Endeavour™ MD compta amb una distribució uniforme de fins a 115 llumens de llum i ofereix fins a vint-i-quatre hores d'emissió de llum constant amb CRI 92+.",
+                "intro_text_2": "Ajusti fàcilment la configuració de la llum sense haver de ficar la mà a la butxaca. Utilitzant el far més petit d'Orascoptic i la bateria de major durada, l'Endeavour™ MD és una solució de far fiable i lleugera.",
+                "intro_text_3": "L'Endeavour™ MD està disponible amb dos paquets de bateries per garantir una experiència sense problemes per a cada usuari.",
+                "intro_image": "/public/img/headlights/endeavour-md/intro.webp"
+              },
+              "specs": {
+                "weight": "10 g",
+                "light_intensity": "Baix/Mitjà/Alt | 68/90/115 llumens",
+                "color_rendering_index": "92 CRI",
+                "intensity_control": "Control tàctil fins a 115 llumens",
+                "color_temperature": "6500 K",
+                "focus": "Focus de 6,98 cm <small>amb feix enfocat de 30,5 cm</small>",
+                "est_charge_time": "Fins a 6 hores <small>(Es pot fer servir mentre es recarrega)</small>",
+                "est_battery_life": "De 11 a 24 hores <small>segons l'ajust de llum</small>"
+              }
+            }
+          },
+          {
+            "name": "Endeavour™ XL",
+            "slug": "endeavour-xl",
+            "card_image": "/public/img/headlights/endeavour-xl/card.webp",
+            "description": "Amb un 25% més d'autonomia que el far Endeavour™ estàndard, l'Endeavour™ XL proporciona fins a 24 hores de bateria contínua.",
+            "details": {
+              "detailed_description": "Amb més autonomia i una llum més brillant que el far Endeavour™ estàndard, l'Endeavour™ XL proporciona fins a 24 hores de durada contínua de la bateria i 115 llumens de brillantor.",
+              "intro": {
+                "intro_text_1": "L'il·luminador frontal Endeavour™ XL proporciona un feix de llum precís que ajuda a il·luminar detalls crítics que sovint poden passar-se per alt a simple vista.",
+                "intro_text_2": "Amb l'addició de múltiples intensitats de llum de fins a 115 llumens, l'il·luminador frontal permet a l'usuari seleccionar l'emissió de llum òptima per a cada procediment.",
+                "intro_text_3": "La tecnologia de corrent constant també garanteix que la potència lumínica de la làmpada frontal no disminueixi durant el temps de funcionament de la bateria.",
+                "intro_text_4": "L'Endeavour™ XL té una garantia de tres anys per al cable i el LED i d'un any per a la bateria.",
+                "intro_image": "/public/img/headlights/endeavour-xl/intro.webp"
+              },
+              "specs": {
+                "weight": "10 g",
+                "light_intensity": "Baix/Mitjà/Alt | 68/90/115 llumens",
+                "color_rendering_index": "92 CRI",
+                "intensity_control": "Control tàctil fins a 115 llumens",
+                "color_temperature": "6500 K",
+                "focus": "Focus de 6,98 cm <small>amb feix enfocat de 30,5 cm</small>",
+                "est_charge_time": "Fins a 6 hores <small>(Es pot fer servir mentre es recarrega)</small>",
+                "est_battery_life": "De 11 a 24 hores <small>segons l'ajust de llum</small>"
+              }
+            }
+          },
+          {
+            "name": "Spark™",
+            "slug": "spark",
+            "card_image": "/public/img/headlights/spark/card.webp",
+            "description": "Un il·luminador frontal sense fils que s'integra pràcticament amb qualsevol model de lupa o muntura d'ulleres.",
+            "details": {
+              "detailed_description": "Spark™ és el nostre innovador il·luminador frontal sense fils, pendent de patent, que s'integra pràcticament amb qualsevol model de lupa o muntura d'ulleres. El nostre disseny exclusiu distribueix el pes uniformement pel pont de la muntura minimitzant la pressió sobre el nas.",
+              "features": [
+                {
+                  "title": "Punt circular uniforme",
+                  "description": "Una llum enfocada amb precisió proporciona una major visibilitat durant els procediments"
+                },
+                {
+                  "title": "Compatible amb la llum blava",
+                  "description": "Complix les normes de seguretat de la Comissió Electrotècnica Internacional (CEI) relatives a les proves de llum blava"
+                },
+                {
+                  "title": "Tecnologia de corrent constant",
+                  "description": "La luminositat no disminueix durant el temps de funcionament de la bateria"
+                },
+                {
+                  "title": "Controls tàctils avançats",
+                  "description": "Encès i apagat de la llum amb facilitat entre procediments i consultes de pacients"
+                },
+                {
+                  "title": "Carregador versàtil",
+                  "description": "Un carregador micro USB ofereix una major comoditat per a la càrrega en moviment"
+                },
+                {
+                  "title": "Avís de bateria baixa",
+                  "description": "Un indicador de bateria baixa s'il·lumina quan la capacitat de la bateria és per sota del vint per cent"
+                }
+              ],
+              "specs": {
+                "weight": "29,1 g",
+                "light_intensity": "40 llumens",
+                "color_rendering_index": "92 CRI",
+                "battery_type": "Ió de liti",
+                "color_temperature": "6500 K",
+                "focus": "Focus de 6,98 cm <small>amb feix enfocat de 30,5 cm</small>",
+                "est_charge_time": "Fins a 2 hores",
+                "est_battery_life": "Fins a 6 hores <small>(2 bateries)</small>"
+              }
             }
           }
         ]

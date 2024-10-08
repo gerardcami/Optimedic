@@ -1,10 +1,14 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
-import FramesTitle from "../../../components/FramesTitle.astro";
-import CardFrames from "../../../components/CardFrames.astro";
+import ProductTitle from "../../../components/ProductTitle.astro";
+import CardProduct from "../../../components/CardProduct.astro";
+
+import { getI18N } from "../../../i18n/";
+const { currentLocale = "es" } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
-<Layout title="Monturas" description="">
-  <FramesTitle />
-  <CardFrames />
+<Layout title={i18n.FRAMES.TITLE} description="">
+  <ProductTitle productType="FRAMES" />
+  <CardProduct productType="FRAMES" />
 </Layout>

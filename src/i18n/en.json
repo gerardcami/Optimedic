@@ -101,8 +101,8 @@
       "text_field_depth": "Field depth",
       "text_frame_options": "Frame options"
     },
-    "FRAMES_PATH": "/en/loupes/frames/",
-    "LOUPES_PATH": "/en/products/loupes/",
+    "FRAMES_PATH": "/en/products/frames/",
+    "PRODUCT_PATH": "/en/products/loupes/",
     "PRODUCTS": [
       {
         "type": "Fixed magnification",
@@ -783,7 +783,7 @@
       "text_all_loupe_options": "Available with all loupes"
     },
     "LOUPES_PATH": "en/products/loupes/",
-    "FRAMES_PATH": "en/products/frames/",
+    "PRODUCT_PATH": "en/products/frames/",
     "PRODUCTS": [
       {
         "type": "Sport",
@@ -1324,6 +1324,131 @@
                   "slug": "hdl-ergo-35x"
                 }
               ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "HEADLIGHTS": {
+    "TITLE": "Headlights",
+    "SUBTITLE": "Having adequate lighting during procedures and examinations is crucial to ensure that critical details are not overlooked. While magnification can enhance your field of view, proper lighting helps eliminate shadows that can obstruct your line of sight.",
+    "DESCRIPTION_1": "Our <strong>headlights</strong> have the <strong>best overall luminous performance</strong> among leading competitors, according to third-party testing. Thanks to <strong>TruColor™</strong>, our pioneering headlight technology, all <strong>Orascoptic</strong> headlights provide illumination with an <strong>intense CRI</strong> that eclipses the competition.",
+    "DESCRIPTION_2": "Find the lighting solution to enhance your visibility by reducing shadows in your field of view. Our <strong>TruColor™</strong> technology improves <strong>brightness</strong>, <strong>clarity</strong>, and <strong>depth</strong>.",
+    "DESCRIPTION_3": "Each headlight undergoes rigorous specific testing to ensure compliance with the blue light standards set by the <strong>International Electrotechnical Commission</strong>. Additionally, our <strong>wireless light sources</strong> fit perfectly with all our <strong>mounts</strong>, ensuring versatility and optimal performance.",
+    "TEXTS": {
+      "text_product_image": "Product Image",
+      "text_features": "Features",
+      "text_specs": "Specifications",
+      "text_weight": "Weight",
+      "text_light_intensity": "Light Intensity",
+      "text_color_rendering_index": "CRI (Color Rendering Index)",
+      "text_intensity_control": "Intensity Control",
+      "text_color_temperature": "Color Temperature",
+      "text_focus": "Focus",
+      "text_est_charge_time": "Estimated Charge Time",
+      "text_est_battery_life": "Estimated Battery Life",
+      "text_battery_type": "Battery Type"
+    },
+    "PRODUCT_PATH": "/products/headlights/",
+    "PRODUCTS": [
+      {
+        "type": "",
+        "products": [
+          {
+            "name": "Endeavour™ MD",
+            "slug": "endeavour-md",
+            "card_image": "/public/img/headlights/endeavour-md/card.webp",
+            "description": "Exclusive to the surgical field, the Endeavour™ MD features an even distribution of up to 85 lumens of light and provides up to 24 hours of constant light output with CRI 92+.",
+            "details": {
+              "detailed_description": "Our optimal headlight for surgeons.",
+              "intro": {
+                "intro_text_1": "Exclusive to the surgical field, the Endeavour™ MD has an even distribution of up to 115 lumens of light and offers up to twenty-four hours of constant light output with CRI 92+.",
+                "intro_text_2": "Easily adjust the light settings without having to reach into your pocket. Using Orascoptic's smallest headlight and the longest-lasting battery, the Endeavour™ MD is a reliable and lightweight headlight solution.",
+                "intro_text_3": "The Endeavour™ MD is available with two battery packs to ensure a seamless experience for every user.",
+                "intro_image": "/public/img/headlights/endeavour-md/intro.webp"
+              },
+              "specs": {
+                "weight": "10 g",
+                "light_intensity": "Low/Medium/High | 68/90/115 lumens",
+                "color_rendering_index": "92 CRI",
+                "intensity_control": "Touch control up to 115 lumens",
+                "color_temperature": "6500 K",
+                "focus": "Focus of 6.98 cm <small>with a focused beam of 30.5 cm</small>",
+                "est_charge_time": "Up to 6 hours <small>(Can be used while charging)</small>",
+                "est_battery_life": "From 11 to 24 hours <small>depending on light setting</small>"
+              }
+            }
+          },
+          {
+            "name": "Endeavour™ XL",
+            "slug": "endeavour-xl",
+            "card_image": "/public/img/headlights/endeavour-xl/card.webp",
+            "description": "With 25% more battery life than the standard Endeavour™ headlight, the Endeavour™ XL provides up to 24 hours of continuous battery life.",
+            "details": {
+              "detailed_description": "With greater battery life and brighter light than the standard Endeavour™ headlight, the Endeavour™ XL provides up to 24 hours of continuous battery life and 115 lumens of brightness.",
+              "intro": {
+                "intro_text_1": "The Endeavour™ XL headlight provides a precise beam of light that helps illuminate critical details that can often be overlooked at first glance.",
+                "intro_text_2": "With the addition of multiple light intensities of up to 115 lumens, the headlight allows the user to select the optimal light output for each procedure.",
+                "intro_text_3": "Constant current technology also ensures that the brightness of the headlight does not diminish during battery runtime.",
+                "intro_text_4": "The Endeavour™ XL has a three-year warranty for the cable and LED, and a one-year warranty for the battery.",
+                "intro_image": "/public/img/headlights/endeavour-xl/intro.webp"
+              },
+              "specs": {
+                "weight": "10 g",
+                "light_intensity": "Low/Medium/High | 68/90/115 lumens",
+                "color_rendering_index": "92 CRI",
+                "intensity_control": "Touch control up to 115 lumens",
+                "color_temperature": "6500 K",
+                "focus": "Focus of 6.98 cm <small>with a focused beam of 30.5 cm</small>",
+                "est_charge_time": "Up to 6 hours <small>(Can be used while charging)</small>",
+                "est_battery_life": "From 11 to 24 hours <small>depending on light setting</small>"
+              }
+            }
+          },
+          {
+            "name": "Spark™",
+            "slug": "spark",
+            "card_image": "/public/img/headlights/spark/card.webp",
+            "description": "A wireless headlight that integrates seamlessly with any model of loupes or eyeglass frames.",
+            "details": {
+              "detailed_description": "Spark™ is our innovative wireless headlight, patent-pending, that integrates seamlessly with any model of loupes or eyeglass frames. Our exclusive design distributes weight evenly across the bridge of the frame, minimizing pressure on the nose.",
+              "features": [
+                {
+                  "title": "Uniform Circular Spot",
+                  "description": "A precisely focused light provides greater visibility during procedures."
+                },
+                {
+                  "title": "Compatible with Blue Light",
+                  "description": "Meets the safety standards set by the International Electrotechnical Commission (IEC) regarding blue light testing."
+                },
+                {
+                  "title": "Constant Current Technology",
+                  "description": "Brightness does not decrease during battery runtime."
+                },
+                {
+                  "title": "Advanced Touch Controls",
+                  "description": "Easily turn the light on and off between procedures and patient consultations."
+                },
+                {
+                  "title": "Versatile Charger",
+                  "description": "A micro USB charger offers greater convenience for on-the-go charging."
+                },
+                {
+                  "title": "Low Battery Warning",
+                  "description": "A low battery indicator lights up when the battery capacity falls below twenty percent."
+                }
+              ],
+              "specs": {
+                "weight": "29.1 g",
+                "light_intensity": "40 lumens",
+                "color_rendering_index": "92 CRI",
+                "battery_type": "Lithium-ion",
+                "color_temperature": "6500 K",
+                "focus": "Focus of 6.98 cm <small>with a focused beam of 30.5 cm</small>",
+                "est_charge_time": "Up to 2 hours",
+                "est_battery_life": "Up to 6 hours <small>(2 batteries)</small>"
+              }
             }
           }
         ]

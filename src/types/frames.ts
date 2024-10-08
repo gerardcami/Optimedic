@@ -6,7 +6,7 @@ export type Frames = {
   DESCRIPTION_3: string;
   TEXTS: Texts;
   LOUPES_PATH: string;
-  FRAMES_PATH: string;
+  PRODUCT_PATH: string;
   PRODUCTS: Product[];
 };
 

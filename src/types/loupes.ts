@@ -6,7 +6,7 @@ export type Loupes = {
   DESCRIPTION_3: string;
   TEXTS: Texts;
   FRAMES_PATH: string;
-  LOUPES_PATH: string;
+  PRODUCT_PATH: string;
   PRODUCTS: Product[];
 };
 

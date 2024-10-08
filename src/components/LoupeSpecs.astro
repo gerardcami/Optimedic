@@ -8,48 +8,52 @@ interface Props {
 const { specs, texts } = Astro.props;
 ---
 
-<article class="w-1/2 flex flex-col gap-5 shadow-2xl p-8 rounded-lg">
-  <div class="flex flex-col flex-wrap gap-4">
-    {
-      specs?.magnification_power && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold">{texts.text_magnification_power}</h3>
-          <p set:html={specs.magnification_power} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.weight && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold">{texts.text_weight}</h3>
-          <p set:html={specs.weight} class="text-gray-700" />
-        </div>
-      )
-    }
+<article class="w-1/2 flex flex-col gap-4 shadow-2xl p-12 rounded-lg">
+  {
+    specs?.magnification_power && (
+      <div class="border-b pb-2 mb-2">
+        <h3 class="text-xl font-bold text-teal-600">
+          {texts.text_magnification_power}
+        </h3>
+        <p set:html={specs.magnification_power} class="text-gray-700" />
+      </div>
+    )
+  }
+  {
+    specs?.weight && (
+      <div class="border-b pb-2 mb-2">
+        <h3 class="text-xl font-bold text-teal-600">{texts.text_weight}</h3>
+        <p set:html={specs.weight} class="text-gray-700" />
+      </div>
+    )
+  }
 
-    {
-      specs?.weight && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold">{texts.text_weight}</h3>
-          <p set:html={specs.weight} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.field_width && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold">{texts.text_field_width}</h3>
-          <p set:html={specs.field_width} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.field_depth && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold">{texts.text_field_depth}</h3>
-          <p set:html={specs.field_depth} class="text-gray-700" />
-        </div>
-      )
-    }
-  </div>
+  {
+    specs?.weight && (
+      <div class="border-b pb-2 mb-2">
+        <h3 class="text-xl font-bold text-teal-600">{texts.text_weight}</h3>
+        <p set:html={specs.weight} class="text-gray-700" />
+      </div>
+    )
+  }
+  {
+    specs?.field_width && (
+      <div class="border-b pb-2 mb-2">
+        <h3 class="text-xl font-bold text-teal-600">
+          {texts.text_field_width}
+        </h3>
+        <p set:html={specs.field_width} class="text-gray-700" />
+      </div>
+    )
+  }
+  {
+    specs?.field_depth && (
+      <div class="border-b pb-2 mb-2">
+        <h3 class="text-xl font-bold text-teal-600">
+          {texts.text_field_depth}
+        </h3>
+        <p set:html={specs.field_depth} class="text-gray-700" />
+      </div>
+    )
+  }
 </article>

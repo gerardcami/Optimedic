@@ -1,5 +1,5 @@
 ---
-import type { Texts, Specs } from "../types/frames";
+import type { Texts, Specs } from "../types/headlights";
 
 interface Props {
   specs: Specs;
@@ -8,27 +8,9 @@ interface Props {
 const { specs, texts } = Astro.props;
 ---
 
-<article class="flex flex-col shadow-2xl p-12 rounded-lg">
+<article class="shadow-2xl p-12 rounded-lg">
   <h2 class="text-3xl mb-12 font-bold">{texts.text_specs}</h2>
-  <div class="flex flex-col flex-wrap max-h-[400px] gap-4">
-    {
-      specs?.materials && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">
-            {texts.text_materials}
-          </h3>
-          <p set:html={specs.materials} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.sizes && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">{texts.text_sizes}</h3>
-          <p set:html={specs.sizes} class="text-gray-700" />
-        </div>
-      )
-    }
+  <div class="flex flex-col flex-wrap md:max-h-[400px] gap-4">
     {
       specs?.weight && (
         <div class="border-b pb-2 mb-2">
@@ -58,12 +40,30 @@ const { specs, texts } = Astro.props;
       )
     }
     {
+      specs?.intensity_control && (
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold text-teal-600">
+            {texts.text_intensity_control}
+          </h3>
+          <p set:html={specs.intensity_control} class="text-gray-700" />
+        </div>
+      )
+    }
+    {
       specs?.color_temperature && (
         <div class="border-b pb-2 mb-2">
           <h3 class="text-xl font-bold text-teal-600">
             {texts.text_color_temperature}
           </h3>
           <p set:html={specs.color_temperature} class="text-gray-700" />
+        </div>
+      )
+    }
+    {
+      specs?.focus && (
+        <div class="border-b pb-2 mb-2">
+          <h3 class="text-xl font-bold text-teal-600">{texts.text_focus}</h3>
+          <p set:html={specs.focus} class="text-gray-700" />
         </div>
       )
     }
@@ -88,12 +88,12 @@ const { specs, texts } = Astro.props;
       )
     }
     {
-      specs?.included_batteries && (
+      specs?.battery_type && (
         <div class="border-b pb-2 mb-2">
           <h3 class="text-xl font-bold text-teal-600">
-            {texts.text_included_batteries}
+            {texts.text_battery_type}
           </h3>
-          <p set:html={specs.included_batteries} class="text-gray-700" />
+          <p set:html={specs.battery_type} class="text-gray-700" />
         </div>
       )
     }
