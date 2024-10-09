@@ -24,7 +24,7 @@ const productsPath = i18n[productType]["PRODUCT_PATH"];
         </header>
         <div class="flex flex-col lg:grid lg:grid-cols-3 gap-[50px]">
           {type.products.map((productData) => (
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 max-w-[350px]">
               <a
                 href={`${productsPath}${productData.slug}`}
                 class="shadow-2xl relative rounded-md overflow-hidden flex flex-col h-full cursor-pointer transform transition-transform hover:shadow-lg hover:scale-105"

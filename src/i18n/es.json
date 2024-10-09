@@ -175,12 +175,12 @@
         ]
       },
       {
-        "name": "Events",
+        "name": "Eventos",
         "img": "/public/img/barcelona-oculoplastics-resumen-grafico-sorteo-gafas-lupa.jpg",
         "subcategories": [
           {
-            "name": "Conference",
-            "description": "Your customers’ data will be safe and secure",
+            "name": "Organización de eventos",
+            "description": "Organizamos eventos para sus empresas.",
             "href": "/productos/eventos"
           }
         ]

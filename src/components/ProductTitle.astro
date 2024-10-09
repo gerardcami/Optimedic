@@ -12,7 +12,7 @@ const { productType } = Astro.props;
 const product = i18n[productType];
 ---
 
-<section class="flex flex-col gap-12">
+<section class="flex flex-col gap-12 px-12 lg:px-0">
   <h1
     class="text-6xl text-center lg:text-start font-semibold"
     set:html={product.TITLE}

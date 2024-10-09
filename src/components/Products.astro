@@ -25,7 +25,7 @@ const productsData = i18n.HOME_PAGE.PRODUCTS;
             <div class="flex flex-col items-center space-y-2">
               {product.subcategories.map((subcategory, subIndex) => (
                 <a
-                  href={`/products/${subcategory.name.toLowerCase()}`}
+                  href={subcategory.href}
                   class="text-white text-lg font-medium transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out hover:underline"
                   style={{ transitionDelay: `${subIndex * 100}ms` }}
                 >
