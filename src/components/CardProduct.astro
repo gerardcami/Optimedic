@@ -16,11 +16,13 @@ const productsPath = i18n[productType]["PRODUCT_PATH"];
 <section class="flex flex-col gap-[50px]">
   {
     products.map((type) => (
-      <article class="flex flex-col gap-4">
+      <article class="flex py-12 flex-col gap-4">
         <header>
-          <h2 class="text-3xl font-bold">{type.type}</h2>
+          <h2 class="text-center text-3xl mb-12 font-bold lg:text-start">
+            {type.type}
+          </h2>
         </header>
-        <div class="grid grid-cols-3 gap-[50px]">
+        <div class="flex flex-col lg:grid lg:grid-cols-3 gap-[50px]">
           {type.products.map((productData) => (
             <div class="flex flex-col gap-4">
               <a

@@ -14,6 +14,8 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
+import LanguageDropdown from "./LanguageDropdown";
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -26,7 +28,7 @@ export default function Header({ i18n }) {
 
   useEffect(() => {
     async function fetchNavContent() {
-      setNavItems(i18n.HEADER);
+      setNavItems(i18n.HEADER.NAV_ITEMS);
       setProducts(i18n.HOME_PAGE.PRODUCTS);
     }
 
@@ -57,7 +59,7 @@ export default function Header({ i18n }) {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/">
+          <a href={i18n.HEADER.HOME_LINK}>
             <img
               className="h-8 w-auto"
               src="/public/Imagotip Blanc.jpg"
@@ -78,7 +80,7 @@ export default function Header({ i18n }) {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6">
-              {navItems.ITEM_1}
+              {navItems.length > 0 && navItems[0].name}
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -131,71 +133,54 @@ export default function Header({ i18n }) {
               </PopoverPanel>
             </Transition>
           </Popover>
-
-          <a href="/events" className="text-sm font-semibold leading-6">
-            {navItems.ITEM_2}
-          </a>
-          <a href="/about" className="text-sm font-semibold leading-6">
-            {navItems.ITEM_3}
-          </a>
-          <a href="/contact" className="text-sm font-semibold leading-6">
-            {navItems.ITEM_4}
-          </a>
+          {navItems.slice(1).map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-sm font-semibold leading-6"
+            >
+              {item.name}
+            </a>
+          ))}
         </PopoverGroup>
-        <button className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="icon icon-tabler icon-tabler-moon-filled"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="#000000"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z"
-              strokeWidth="0"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <LanguageDropdown />
+        </div>
       </nav>
       <Dialog
         className="lg:hidden"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <DialogPanel className="fixed inset-y-0 right-0 z-30 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
+        <DialogPanel
+          className="fixed inset-y-0 right-0 z-30 w-full overflow-y-auto bg-white px-6 py-8 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 shadow-lg rounded-lg transition-all duration-300 ease-in-out transform translate-x-0"
+          style={{
+            backdropFilter: "blur(5px)", // Efecto de desenfoque en el fondo
+            backgroundColor: "rgba(255, 255, 255, 0.95)", // Fondo con un poco de transparencia
+          }}
+        >
+          <div className="flex items-center justify-between mb-4">
+            <div className="lg:hidden">
+              <LanguageDropdown />
+            </div>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 transition duration-200"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="h-6 w-6 text-gray-700" aria-hidden="true" />
             </button>
           </div>
+
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
+            <div className="-my-6 divide-y divide-gray-300/10">
+              <div className="gap-4 py-6 flex flex-col">
+                <Disclosure as="div">
                   {({ open }) => (
                     <>
-                      <DisclosureButton className="flex w-full items-center justify-between rounded-lg mt-3 py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Products
+                      <DisclosureButton className="flex w-full items-center justify-between rounded-lg mt-3 py-2 pl-4 pr-4 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100 transition duration-200">
+                        {navItems.length > 0 && navItems[0].name}
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -219,7 +204,7 @@ export default function Header({ i18n }) {
                                 key={subcategory.name}
                                 as="a"
                                 href={subcategory.href}
-                                className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                className="block w-full rounded-lg py-2 pl-8 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50 transition duration-200"
                               >
                                 {subcategory.name}
                               </DisclosureButton>
@@ -230,24 +215,19 @@ export default function Header({ i18n }) {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="/events"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Events
-                </a>
-                <a
-                  href="/about"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  About us
-                </a>
-                <a
-                  href="/contact"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Contact
-                </a>
+
+                {/* Render other navigation items */}
+                <div className="flex flex-col gap-4">
+                  {navItems.slice(1).map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="flex items-center justify-start rounded-lg py-3 pl-4 pr-4 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100 transition duration-200"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

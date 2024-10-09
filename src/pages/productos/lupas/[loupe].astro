@@ -25,7 +25,7 @@ const details = product.details;
 
 <Layout title={product.name} description="">
   <section
-    class="w-[calc(100vw-5px)] py-12 flex items-center justify-center gap-8 px-8 md:px-16 shadow-[0_20px_25px_-4px_rgba(7,107,97,0.5)] bg-gradient-to-r from-teal-500 to-teal-700 text-white"
+    class="w-[calc(100vw-5px)] py-12 flex flex-col lg:flex-row items-center justify-center gap-8 px-8 md:px-16 shadow-[0_20px_25px_-4px_rgba(7,107,97,0.5)] bg-gradient-to-r from-teal-500 to-teal-700 text-white"
   >
     <div class="lg:w-1/2 flex flex-col gap-6 px-4 mx-auto">
       <h1
@@ -49,8 +49,10 @@ const details = product.details;
     </div>
   </section>
 
-  <section class="w-full flex flex-col gap-[100px]">
-    <article class="flex gap-[100px] justify-between items-center">
+  <section class="w-full">
+    <article
+      class="flex flex-col px-12 text-center lg:flex-row lg:text-start gap-[100px] justify-between items-center"
+    >
       <div class="flex flex-col gap-5">
         {details.intro_text_1 && <p>{details.intro_text_1}</p>}
         {details.intro_text_2 && <p>{details.intro_text_2}</p>}
@@ -65,14 +67,16 @@ const details = product.details;
     </article>
   </section>
 
-  <section class="flex items-center justify-between">
+  <section
+    class="flex flex-col-reverse mt-12 px-12 text-center lg:flex-row lg:text-start gap-[100px] justify-between items-center"
+  >
     <img
       src={details?.specs_image}
       alt=""
       class="w-[500px] shadow-2xl"
       style="border-radius: 32% 68% 68% 32% / 50% 58% 42% 50%;"
     />
-    <div class="w-1/2">
+    <div class="lg:w-1/2">
       <h2 class="text-3xl mb-8 font-bold">{loupesTexts.text_title_specs}</h2>
       <div class="flex flex-col gap-4">
         <p set:html={loupesTexts.text_intro_specs_1} class="text-gray-700" />
@@ -85,10 +89,10 @@ const details = product.details;
       </div>
     </div>
   </section>
-  <section class="w-full flex gap-4">
+  <section class="w-full flex flex-col lg:flex-row gap-4 mt-12">
     <LoupeSpecs texts={loupesTexts} specs={details.specs} />
     <article
-      class="flex w-1/2 flex-col bg-white shadow-2xl p-12 rounded-lg flex-1"
+      class="flex lg:w-1/2 flex-col bg-white shadow-2xl p-12 rounded-lg flex-1"
     >
       <h2 class="text-3xl mb-12 font-bold">{loupesTexts.text_frame_options}</h2>
       <div class="flex flex-col gap-2">

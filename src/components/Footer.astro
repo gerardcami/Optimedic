@@ -1,3 +1,14 @@
+---
+import type { FooterSections, Link } from "../types/FooterSections";
+
+import { getI18N } from "../i18n/";
+
+const { currentLocale = "es" } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const footerData: FooterSections = i18n.FOOTER;
+---
+
 <footer class="bg-[#076b61]">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
@@ -12,154 +23,34 @@
         </a>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:flex sm:gap-[50px]">
-        <div>
-          <h2
-            class="mb-2 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-          >
-            Related
-          </h2>
-          <ul
-            class="text-gray-500 dark:text-gray-400 font-medium flex flex-col gap-1"
-          >
-            <li>
-              <a href="/" class="hover:underline"> Home </a>
-            </li>
-            <li>
-              <a href="/events" class="hover:underline"> Events </a>
-            </li>
-            <li>
-              <a href="/about" class="hover:underline"> About us </a>
-            </li>
-            <li>
-              <a href="https://tailwindcss.com/" class="hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2
-            class="mb-2 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-          >
-            Products
-          </h2>
-          <ul
-            class="text-gray-500 dark:text-gray-400 font-medium flex flex-col gap-1"
-          >
-            <li>
-              <a href="/products/loupes" class="hover:underline"> Loupes </a>
-            </li>
-            <li>
-              <a href="/products/frames" class="hover:underline"> Frames </a>
-            </li>
-            <li>
-              <a href="/products/microaire" class="hover:underline">
-                MicroAire
-              </a>
-            </li>
-            <li>
-              <a href="/products/renuvion" class="hover:underline">
-                Renuvion
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h2
-            class="mb-2 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-          >
-            Legal
-          </h2>
-          <ul
-            class="text-gray-500 dark:text-gray-400 font-medium flex flex-col gap-1"
-          >
-            <li>
-              <a href="/privacy" class="hover:underline">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="/terms" class="hover:underline">Terms &amp; Conditions</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2
-            class="mb-2 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-          >
-            Contact
-          </h2>
-          <ul class="text-gray-400 font-medium flex flex-col gap-1">
-            <li>
-              <a href="#" class="hover:underline flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-mail"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="#99a3af"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path
-                    d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
-                  ></path>
-                  <path d="M3 7l9 6l9 -6"></path>
-                </svg>
-                info@optimedic.es
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-phone"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="#99a3af"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path
-                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
-                  ></path>
-                </svg>
-                +34 938 43 03 36
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-brand-whatsapp"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 22 22"
-                  stroke-width="2"
-                  stroke="#99a3af"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
-                  <path
-                    d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
-                  ></path>
-                </svg>
-                Whatsapp
-              </a>
-            </li>
-          </ul>
-        </div>
+        {
+          footerData.SECTIONS.map((section) => (
+            <div>
+              <h2 class="mb-2 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                {section.TITLE}
+              </h2>
+              <ul class="text-gray-400 font-medium flex flex-col gap-1">
+                {section.LINKS.map((link: Link) => (
+                  <li>
+                    <a
+                      href={link.href}
+                      class="hover:underline flex items-center gap-2"
+                    >
+                      {link?.name ? (
+                        link.name
+                      ) : (
+                        <>
+                          <span set:html={link.svgIcon} class="w-5 h-5" />
+                          {link.data}
+                        </>
+                      )}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
       </div>
     </div>
     <hr class="my-6 sm:mx-auto border-gray-400 lg:my-8" />
@@ -167,7 +58,7 @@
       <span class="text-sm text-gray-400 sm:text-center">
         © 2024{" "}
         <a href="https://flowbite.com/" class="hover:underline">Optimedic</a>
-        . All Rights Reserved.
+        . {footerData.COPYRIGHT}
       </span>
       <div class="flex gap-4 mt-4 sm:justify-center sm:mt-0 text-gray-400">
         <a

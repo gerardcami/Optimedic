@@ -7,13 +7,13 @@ const productsData = i18n.HOME_PAGE.PRODUCTS;
 ---
 
 <section
-  class="w-full h-[500px] grid grid-cols-[repeat(4,1fr)] grid-rows-[repeat(2,1fr)] gap-4"
+  class="w-full flex flex-col px-12 lg:grid lg:grid-cols-[repeat(4,1fr)] lg:grid-rows-[repeat(2,1fr)] gap-4"
 >
   {
     productsData.map((product, index) => (
       <article
-        class={`relative bg-cover bg-center rounded-lg overflow-hidden ${
-          index === 0 ? "col-span-4" : index === 1 ? "col-span-3" : ""
+        class={`relative bg-cover bg-center rounded-lg overflow-hidden h-[250px] ${
+          index === 0 ? "col-span-4" : index === 1 ? "col-span-3" : "col-span-1"
         } group`}
         style={{ backgroundImage: `url(${product.img})` }}
       >

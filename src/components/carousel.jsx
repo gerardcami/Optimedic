@@ -5,6 +5,9 @@ export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = Slides;
   const intervalRef = useRef(null);
+  const startX = useRef(0);
+  const isDragging = useRef(false);
+  const carouselRef = useRef(null);
 
   const startAutoSlide = () => {
     intervalRef.current = setInterval(() => {
@@ -34,13 +37,71 @@ export default function Carousel() {
     resetInterval();
   };
 
+  const handleMouseDown = (e) => {
+    e.preventDefault(); // Prevent dragging of the image
+    startX.current = e.clientX;
+    isDragging.current = true;
+    carouselRef.current.style.cursor = "grabbing"; // Change cursor to grabbing
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging.current) return;
+    const distance = startX.current - e.clientX;
+    if (distance > 50) {
+      handleNextClick();
+      isDragging.current = false;
+    } else if (distance < -50) {
+      handlePrevClick();
+      isDragging.current = false;
+    }
+  };
+
+  const handleMouseUp = () => {
+    isDragging.current = false;
+    carouselRef.current.style.cursor = "default"; // Reset cursor
+  };
+
+  const handleTouchStart = (e) => {
+    e.preventDefault(); // Prevent dragging of the image
+    startX.current = e.touches[0].clientX;
+    isDragging.current = true;
+    carouselRef.current.style.cursor = "grabbing"; // Change cursor to grabbing
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging.current) return;
+    const distance = startX.current - e.touches[0].clientX;
+    if (distance > 50) {
+      handleNextClick();
+      isDragging.current = false;
+    } else if (distance < -50) {
+      handlePrevClick();
+      isDragging.current = false;
+    }
+  };
+
+  const handleTouchEnd = () => {
+    isDragging.current = false;
+    carouselRef.current.style.cursor = "default"; // Reset cursor
+  };
+
   useEffect(() => {
     startAutoSlide();
     return () => clearInterval(intervalRef.current); // Clear interval on component unmount
   }, []);
 
   return (
-    <section className="relative w-[80%]" data-carousel="slide">
+    <section
+      ref={carouselRef} // Set ref to the carousel
+      className="relative w-[80%]"
+      data-carousel="slide"
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <div className="relative h-56 overflow-hidden rounded-lg md:h-[500px]">
         {slides.map((slide, index) => (
           <div
@@ -54,6 +115,7 @@ export default function Carousel() {
               src={slide.image}
               className="block w-full h-full object-cover"
               alt={`Slide ${slide.id}`}
+              draggable="false"
             />
           </div>
         ))}
@@ -67,18 +129,17 @@ export default function Carousel() {
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
+            className="w-6 h-6 text-white dark:text-gray-800"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            viewBox="0 0 6 10"
+            viewBox="0 0 24 24"
           >
             <path
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M5 1 1 5l4 4"
+              d="M15 19l-7-7 7-7"
             />
           </svg>
           <span className="sr-only">Previous</span>
@@ -92,18 +153,17 @@ export default function Carousel() {
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
+            className="w-6 h-6 text-white dark:text-gray-800"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            viewBox="0 0 6 10"
+            viewBox="0 0 24 24"
           >
             <path
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="m1 9 4-4-4-4"
+              d="M9 5l7 7-7 7"
             />
           </svg>
           <span className="sr-only">Next</span>

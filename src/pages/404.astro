@@ -1,21 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { getI18N } from "../i18n/";
+
+const { currentLocale = "es" } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const notFoundData = i18n.PAGE_NOT_FOUND;
 ---
 
 <Layout title="404" description="Page not found">
-  <main class="grid h-screen place-items-center bg-white">
-    <div class="text-center">
-      <p class="text-base font-semibold text-indigo-600">404</p>
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-        Página no encontrada
-      </h1>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a
-          href="../"
-          class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >Volver a inicio</a
-        >
-      </div>
+  <div
+    class="h-[calc(100vh-60px)] lg:h-[calc(100vh-64px)] text-center w-full flex flex-col justify-center items-center gap-4"
+  >
+    <p class="text-6xl font-semibold text-teal-600">404</p>
+    <h1
+      class="text-3xl mt-12 font-bold tracking-tight text-gray-900 sm:text-5xl"
+    >
+      {notFoundData.TITLE}
+    </h1>
+    <div class="mt-12 flex items-center justify-center gap-x-6">
+      <a
+        href={notFoundData.HOME_PAGE}
+        class="rounded-md bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        >{notFoundData.BUTTON}</a
+      >
     </div>
-  </main>
+  </div>
 </Layout>

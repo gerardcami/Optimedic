@@ -4,7 +4,9 @@ const { currentLocale = "es" } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
 
-<section class="h-[100vh] w-full flex items-center justify-around">
+<section
+  class="h-[calc(100vh-60px)] lg:h-[calc(100vh-64px)] w-full flex items-center justify-around"
+>
   <div class="flex flex-col gap-6">
     <h1 class="text-6xl">{i18n.HOME_PAGE.TITLE}</h1>
     <h3 class="text-4xl">{i18n.HOME_PAGE.SLOGAN}</h3>
