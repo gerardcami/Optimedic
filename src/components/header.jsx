@@ -62,7 +62,7 @@ export default function Header({ i18n }) {
           <a href={i18n.HEADER.HOME_LINK}>
             <img
               className="h-8 w-auto"
-              src="/public/Imagotip Blanc.jpg"
+              src="/Imagotip Blanc.jpg"
               alt="Optimedic logo"
             />
           </a>

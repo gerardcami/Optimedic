@@ -35,7 +35,7 @@
     "PRODUCTS": [
       {
         "name": "Lupes",
-        "img": "/public/img/oscar-alonso1.jpg",
+        "img": "/img/oscar-alonso1.jpg",
         "subcategories": [
           {
             "name": "Lupes",
@@ -56,7 +56,7 @@
       },
       {
         "name": "Cirurgia",
-        "img": "/public/img/IMG_0415.png",
+        "img": "/img/IMG_0415.png",
         "subcategories": [
           {
             "name": "MicroAire",
@@ -72,7 +72,7 @@
       },
       {
         "name": "Esdeveniments",
-        "img": "/public/img/barcelona-oculoplastics-resum-grafic-sorteig-gafes-lupa.jpg",
+        "img": "/img/barcelona-oculoplastics-resum-grafic-sorteig-gafes-lupa.jpg",
         "subcategories": [
           {
             "name": "Conferència",
@@ -110,14 +110,14 @@
           {
             "name": "HDL™ 2.5 Micro",
             "slug": "hdl-25-micro",
-            "card_image": "/public/img/loupes/hdl-25-micro/card.webp",
+            "card_image": "/img/loupes/hdl-25-micro/card.webp",
             "description": "Aquesta òptica de mida micro ofereix una comoditat lleugera i una visualització superior per a tot tipus d'usuaris de lupes.",
             "details": {
               "detailed_description": "Òptica de mida micro que ofereix una comoditat lleugera sense sacrificar l'augment.",
               "intro_text_1": "Superant els límits d'una microòptica típica, aquesta lupa proporciona un generós camp de visió amb claredat de vora a vora.",
               "intro_text_2": "Amb una mida tan compacta, es disposa d'espai de visió addicional per sobre del telescopi, cosa que facilita la lectura de gràfics i les consultes amb els pacients.",
-              "intro_image": "/public/img/loupes/hdl-25-micro/intro.webp",
-              "specs_image": "/public/img/loupes/hdl-25-micro/specs.webp",
+              "intro_image": "/img/loupes/hdl-25-micro/intro.webp",
+              "specs_image": "/img/loupes/hdl-25-micro/specs.webp",
               "specs": {
                 "magnification_power": "2,5x",
                 "weight": "39,15 g",
@@ -163,15 +163,15 @@
           {
             "name": "HDL™ 2.5 Macro",
             "slug": "hdl-25-macro",
-            "card_image": "/public/img/loupes/hdl-25-macro/card.webp",
+            "card_image": "/img/loupes/hdl-25-macro/card.webp",
             "description": "Aquesta lupa quirúrgica feta a mida presenta una claredat de vora a vora i un generós camp de visió per a l'usuari.",
             "details": {
               "detailed_description": "Les proves realitzades per tercers confirmen que les nostres lupes ofereixen la qualitat d'imatge més nítida del sector, amb la millor resolució òptica i transmissió de llum de la seva categoria.",
               "intro_text_1": "La HDL™ 2.5 Macro es distingeix pel seu gran amplada de camp, que permet introduir instruments en el camp de visió amb facilitat.",
               "intro_text_2": "El bisell allargat també redueix la inclinació del cap en aprofitar els angles de declinació més pronunciats.",
               "intro_text_3": "Un recent estudi de laboratori de tercers confirma que oferim la lupa de 2,5 augments més nítida del sector.",
-              "intro_image": "/public/img/loupes/hdl-25-macro/intro.webp",
-              "specs_image": "/public/img/loupes/hdl-25-macro/specs.webp",
+              "intro_image": "/img/loupes/hdl-25-macro/intro.webp",
+              "specs_image": "/img/loupes/hdl-25-macro/specs.webp",
               "specs": {
                 "magnification_power": "2,5x",
                 "weight": "50,7 g",
@@ -217,14 +217,14 @@
           {
             "name": "HDL™ 3.0",
             "slug": "hdl-30",
-            "card_image": "/public/img/loupes/hdl-30/card.webp",
+            "card_image": "/img/loupes/hdl-30/card.webp",
             "description": "La lupa ideal per als clínics que desitgen un major augment sense renunciar a una sensació de lleugeresa.",
             "details": {
               "detailed_description": "Compacta i lleugera, aquesta lupa està dissenyada per oferir una comoditat rarament associada a les òptiques galileanes de potència d'augment equivalent.",
               "intro_text_1": "Aquesta lupa feta a mida compta amb una claredat de vora a vora i un generós camp de visió.",
               "intro_text_2": "Amb un disseny compacte i lleuger, la HDL™ 3.0x és la lupa ideal per als metges que desitgen un major augment sense renunciar a la sensació de lleugeresa.",
-              "intro_image": "/public/img/loupes/hdl-30/intro.webp",
-              "specs_image": "/public/img/loupes/hdl-30/specs.webp",
+              "intro_image": "/img/loupes/hdl-30/intro.webp",
+              "specs_image": "/img/loupes/hdl-30/specs.webp",
               "specs": {
                 "magnification_power": "3,0x",
                 "weight": "48,7 g",
@@ -270,14 +270,14 @@
           {
             "name": "HDL™ 3.5x",
             "slug": "hdl-35x",
-            "card_image": "/public/img/loupes/hdl-35x/card.webp",
+            "card_image": "/img/loupes/hdl-35x/card.webp",
             "description": "Augment de major precisió dissenyat amb un ampli camp de visió.",
             "details": {
               "detailed_description": "Augment de major precisió dissenyat amb un ampli camp de visió.",
               "intro_text_1": "Les nostres lupes de camp ampliat de 3,5x augmentos estan dissenyades per a professionals que realitzen procediments exigents.",
               "intro_text_2": "Els prismas HDL™ permeten interaccions precises, major visibilitat i un angle de declinació personalitzable que us permet realitzar els procediments que necessiteu amb precisió.",
-              "intro_image": "/public/img/loupes/hdl-35x/intro.webp",
-              "specs_image": "/public/img/loupes/hdl-35x/specs.webp",
+              "intro_image": "/img/loupes/hdl-35x/intro.webp",
+              "specs_image": "/img/loupes/hdl-35x/specs.webp",
               "specs": {
                 "magnification_power": "3,5x",
                 "weight": "67,5 g",
@@ -323,14 +323,14 @@
           {
             "name": "HDL™ 4.5x",
             "slug": "hdl-45x",
-            "card_image": "/public/img/loupes/hdl-45x/card.webp",
+            "card_image": "/img/loupes/hdl-45x/card.webp",
             "description": "Augment de major precisió dissenyat amb un ampli camp de visió.",
             "details": {
               "detailed_description": "Major augment dissenyat per a una major precisió i rendiment.",
               "intro_text_1": "Amb un augment de 4,5x, aquestes lupes prismàtiques de camp ampliat estan dissenyades per a professionals que busquen un major detall i augment.",
               "intro_text_2": "Els prismas HDL™ ofereixen una major visibilitat i un angle de declinació personalitzable, alhora que us permeten realitzar els procediments que necessiteu amb precisió.",
-              "intro_image": "/public/img/loupes/hdl-45x/intro.webp",
-              "specs_image": "/public/img/loupes/hdl-45x/specs.webp",
+              "intro_image": "/img/loupes/hdl-45x/intro.webp",
+              "specs_image": "/img/loupes/hdl-45x/specs.webp",
               "specs": {
                 "magnification_power": "4,5x",
                 "weight": "71,5 g",
@@ -372,14 +372,14 @@
           {
             "name": "HDL™ 5.5x",
             "slug": "hdl-55x",
-            "card_image": "/public/img/loupes/hdl-55x/card.webp",
+            "card_image": "/img/loupes/hdl-55x/card.webp",
             "description": "El nostre major augment autònom dissenyat per oferir precisió i rendiment.",
             "details": {
               "detailed_description": "El nostre major augment autònom dissenyat per oferir precisió i rendiment.",
               "intro_text_1": "Amb un augment de 5,5x, aquestes lupes prismàtiques de camp ampliat estan dissenyades per a professionals que realitzen procediments exigents.",
               "intro_text_2": "Els prismas HDL™ permeten interaccions precises, visibilitat millorada i un angle de declinació personalitzable que us permet realitzar els procediments que necessiteu amb precisió.",
-              "intro_image": "/public/img/loupes/hdl-55x/intro.webp",
-              "specs_image": "/public/img/loupes/hdl-55x/specs.webp",
+              "intro_image": "/img/loupes/hdl-55x/intro.webp",
+              "specs_image": "/img/loupes/hdl-55x/specs.webp",
               "specs": {
                 "magnification_power": "5,5x",
                 "weight": "74,4 g",
@@ -430,14 +430,14 @@
           {
             "name": "OmniOptic™",
             "slug": "omnioptic",
-            "card_image": "/public/img/loupes/omnioptic/card.webp",
+            "card_image": "/img/loupes/omnioptic/card.webp",
             "description": "Descobreix la primera i única lupa d'augment intercanviable que permet als clínics seleccionar el poder d'ampliació òptim per a cada procediment.",
             "details": {
               "detailed_description": "La primera i única lupa d'augments intercanviables.",
               "intro_text_1": "Amb la possibilitat d'escollir entre quatre nivells diferents d'augment (que van de 2,5x a 5,5x), l'OmniOptic és un sistema ideal per als usuaris que busquen augmentar la seva potència d'augment al llarg de la seva carrera.",
               "intro_text_2": "El disseny exclusiu inclou un anclatge magnètic integrat en la lent portadora de la muntura, cosa que permet als clínics augmentar la potència d'augment sense haver d'adquirir diversos parells de lupes.",
-              "intro_image": "/public/img/loupes/omnioptic/intro.webp",
-              "specs_image": "/public/img/loupes/omnioptic/specs.webp",
+              "intro_image": "/img/loupes/omnioptic/intro.webp",
+              "specs_image": "/img/loupes/omnioptic/specs.webp",
               "specs": {
                 "magnification_power": "2,5x · 3,5x · 4,5x · 5,5x",
                 "weight": "57,3 g en 2,5x · 75,3 g en 3,5x · 79,1 g en 4,5x · 82,1 g en 5,5x"
@@ -482,15 +482,15 @@
           {
             "name": "EyeZoom™",
             "slug": "eyezoom",
-            "card_image": "/public/img/loupes/eyezoom/card.webp",
+            "card_image": "/img/loupes/eyezoom/card.webp",
             "description": "La primera lupa d'augment ajustable, EyeZoom™, ofereix tres nivells d'augment ajustables que van de 3x a 5x.",
             "details": {
               "detailed_description": "La primera i única lupa d'augment variable 3 en 1. Canvia sense problemes entre els nivells d'augment 3x, 4x i 5x.",
               "intro_text_1": "El seu dia és variable, les seves lupes també haurien de ser-ho. La nostra tecnologia ofereix claredat de vora a vora, resolució d'alta definició i la possibilitat de canviar entre augments. Aconsegueix unes lupes tan àgils com tu.",
               "intro_text_2": "A mesura que augmenta l'augment, disminueix el camp de visió. És la física de l'augment. Amb EyeZoom™ obtindràs el millor dels dos mons.",
               "intro_text_3": "Destaca amb la nostra premiada tecnologia EyeZoom™.",
-              "intro_image": "/public/img/loupes/eyezoom/intro.webp",
-              "specs_image": "/public/img/loupes/eyezoom/specs.webp",
+              "intro_image": "/img/loupes/eyezoom/intro.webp",
+              "specs_image": "/img/loupes/eyezoom/specs.webp",
               "specs": {
                 "magnification_power": "3x · 4x · 5x",
                 "weight": "82,2 g",
@@ -536,14 +536,14 @@
           {
             "name": "EyeZoom™ Mini",
             "slug": "eyezoom-mini",
-            "card_image": "/public/img/loupes/eyezoom-mini/card.webp",
+            "card_image": "/img/loupes/eyezoom-mini/card.webp",
             "description": "La EyeZoom™ Mini, la segona lupa d'augment ajustable llançada sota la marca EyeZoom™, ofereix augments que van de 2,5x a 3,5x.",
             "details": {
               "detailed_description": "La segona incorporació a la família d'augments variables Orascoptic permet alternar sense problemes entre els nivells d'augment 2,5x i 3,5x.",
               "intro_text_1": "EyeZoom™ Mini incorpora una tecnologia d'augment variable en dos passos que permet a l'usuari alternar entre 2,5x i 3,5x.",
               "intro_text_2": "Una distància de treball constant en cada nivell d'augment ajuda a reduir la necessitat de reposicionament al alternar entre els nivells d'augment.",
-              "intro_image": "/public/img/loupes/eyezoom-mini/intro.webp",
-              "specs_image": "/public/img/loupes/eyezoom-mini/specs.webp",
+              "intro_image": "/img/loupes/eyezoom-mini/intro.webp",
+              "specs_image": "/img/loupes/eyezoom-mini/specs.webp",
               "specs": {
                 "magnification_power": "2,5x · 3,5x",
                 "weight": "73,7 g",
@@ -589,15 +589,15 @@
           {
             "name": "EyeZoom™ Max",
             "slug": "eyezoom-max",
-            "card_image": "/public/img/loupes/eyezoom-max/card.webp",
+            "card_image": "/img/loupes/eyezoom-max/card.webp",
             "description": "La primera lupa que ofereix nivells d'augment ajustables de 3,5x i 6,5x.",
             "details": {
               "detailed_description": "L'última incorporació a la família d'augments variables d'Orascoptic i el nostre major augment fins a la data. Canvia sense problemes entre els nivells d'augment 3,5x i 6,5x.",
               "intro_text_1": "EyeZoom™ Max, la nostra major potència d'augment fins a la data, ofereix una resolució d'alta definició i una agudesa visual millorada.",
               "intro_text_2": "El generós tamany de camp de l'augment de 3,5x, combinat amb la capacitat de realitzar procediments precisos amb l'augment de 6,5x, crea una experiència versàtil amb la lupa.",
               "intro_text_3": "Ideal per als metges generals que realitzen procediments d'endodòncia, EyeZoom™ Max elimina la necessitat de canviar de lupa durant els procediments.",
-              "intro_image": "/public/img/loupes/eyezoom-max/intro.webp",
-              "specs_image": "/public/img/loupes/eyezoom-max/specs.webp",
+              "intro_image": "/img/loupes/eyezoom-max/intro.webp",
+              "specs_image": "/img/loupes/eyezoom-max/specs.webp",
               "specs": {
                 "magnification_power": "3,5x · 6,5x",
                 "weight": "92,7 g",
@@ -648,15 +648,15 @@
           {
             "name": "HDL™ Ergo 3.5x",
             "slug": "hdl-ergo-35x",
-            "card_image": "/public/img/loupes/hdl-ergo-35x/card.webp",
+            "card_image": "/img/loupes/hdl-ergo-35x/card.webp",
             "description": "En utilitzar prismes refractius que permeten als clínics seure drets i reduir la inclinació del coll, la lupa HDL™ Ergo és una opció ergonòmica que ofereix comoditat durant tot el dia.",
             "details": {
               "detailed_description": "Centrant-se en l'ergonomia, aquesta lupa de desviació està dissenyada per millorar la postura i reduir les molèsties al coll.",
               "intro_text_1": "La lupa Ergo d'alta definició li permet treballar amb comoditat i preservar la seva carrera. La nostra òptica de deflexió millora la postura sense sacrificar la visió. En utilitzar prismes refractius que permeten als clínics seure drets i reduir la inclinació del coll, la lupa HDL Ergo és una opció ergonòmica que ofereix comoditat durant tot el dia.",
               "intro_text_2": "La nostra lupa Ergo d'alta definició amb augment verificat de 3,5x supera la competència.",
               "intro_text_3": "Millori la seva postura, millori el seu rendiment.",
-              "intro_image": "/public/img/loupes/hdl-ergo-35x/intro.webp",
-              "specs_image": "/public/img/loupes/hdl-ergo-35x/specs.webp",
+              "intro_image": "/img/loupes/hdl-ergo-35x/intro.webp",
+              "specs_image": "/img/loupes/hdl-ergo-35x/specs.webp",
               "specs": {
                 "magnification_power": "3,5x",
                 "weight": "67,6 g",
@@ -702,15 +702,15 @@
           {
             "name": "HDL Ergo™ 5.0x",
             "slug": "hdl-ergo-50x",
-            "card_image": "/public/img/loupes/hdl-ergo-50x/card.webp",
+            "card_image": "/img/loupes/hdl-ergo-50x/card.webp",
             "description": "El nostre nivell més alt ofert en una lupa de desviació, la qual cosa la converteix en la lupa triada pels clínics que realitzen procediments exigents i desitgen protegir la seva postura.",
             "details": {
               "detailed_description": "El nostre major augment Ergo i centrat en l'ergonomia, aquesta lupa de desviació està dissenyada per millorar la postura i reduir les molèsties al coll.",
               "intro_text_1": "La lupa Ergo d'alta definició li permet treballar amb comoditat i preservar la seva carrera. La nostra òptica de deflexió millora la postura sense sacrificar la visió. En utilitzar prismes refractius que permeten als clínics seure drets i reduir la inclinació del coll, la lupa HDL Ergo és una opció ergonòmica que ofereix comoditat durant tot el dia.",
               "intro_text_2": "El nostre augment HDL Ergo 5.0x és el nostre nivell més alt ofert en una lupa de desviació, convertint-la en la lupa de elecció per als clínics que realitzen procediments exigents.",
               "intro_text_3": "Millori la seva postura, millori el seu rendiment.",
-              "intro_image": "/public/img/loupes/hdl-ergo-50x/intro.webp",
-              "specs_image": "/public/img/loupes/hdl-ergo-50x/specs.webp",
+              "intro_image": "/img/loupes/hdl-ergo-50x/intro.webp",
+              "specs_image": "/img/loupes/hdl-ergo-50x/specs.webp",
               "specs": {
                 "magnification_power": "5,0x",
                 "weight": "67,2 g",
@@ -791,34 +791,34 @@
           {
             "name": "Rydon™",
             "slug": "rydon",
-            "card_image": "/public/img/frames/rydon/card.webp",
+            "card_image": "/img/frames/rydon/card.webp",
             "description": "Porta la personalització a un nou nivell amb frontisses de terminals flexibles, terminals plegables i coixinets nasals ajustables.",
             "details": {
               "detailed_description": "Aquesta clàssica i còmoda muntura esportiva ofereix un ajust personalitzat i elegant amb frontisses de terminals flexibles, els braços dels terminals plegables i coixinets nasals ajustables.",
               "intro_text_1": "Dissenyada i fabricada per l'icona famosa de les ulleres Rudy Project®, la muntura Rydon™ ofereix un ajust realment a mida per a cada usuari. Amb les frontisses flexibles, els terminals flexibles i les plaquetes nasals ajustables, aquesta muntura porta la personalització a un nou nivell.",
               "intro_text_2": "La construcció exclusiva de mig muntura admet també dues formes diferents de suport de lent, cosa que permet adaptar més la lupa a l'usuari acomodant angles de declinació pronunciats i geometries facials específiques.",
               "intro_text_3": "La Rydon admet una àmplia gamma de prescripcions incloses les bifocals.",
-              "intro_image": "/public/img/frames/rydon/intro.webp",
+              "intro_image": "/img/frames/rydon/intro.webp",
               "colors": [
                 {
                   "name": "Negre",
-                  "image": "/public/img/frames/rydon/black.png"
+                  "image": "/img/frames/rydon/black.png"
                 },
                 {
                   "name": "Blau",
-                  "image": "/public/img/frames/rydon/blue.png"
+                  "image": "/img/frames/rydon/blue.png"
                 },
                 {
                   "name": "Carboni",
-                  "image": "/public/img/frames/rydon/carbon.png"
+                  "image": "/img/frames/rydon/carbon.png"
                 },
                 {
                   "name": "Merlot",
-                  "image": "/public/img/frames/rydon/merlot.png"
+                  "image": "/img/frames/rydon/merlot.png"
                 },
                 {
                   "name": "Carei",
-                  "image": "/public/img/frames/rydon/carey.png"
+                  "image": "/img/frames/rydon/carey.png"
                 }
               ],
               "specs": {
@@ -856,34 +856,34 @@
           {
             "name": "Phantom™",
             "slug": "phantom",
-            "card_image": "/public/img/frames/phantom/card.webp",
+            "card_image": "/img/frames/phantom/card.webp",
             "description": "Phantom, fabricada en titani lleuger, és la muntura esportiva amb graduació incorporada més lleugera del mercat.",
             "details": {
               "detailed_description": "Comoditat lleugera sense comprometre el rendiment.",
               "intro_text_1": "Fabricada en titani lleuger, Phantom és la muntura esportiva amb graduació incorporada més lleugera del mercat. Phantom és un 15% més lleugera que la principal competidora, amb graduació.",
               "intro_text_2": "Totes les millors característiques - puntes de terminal flexibles, pont nasal ajustable, canal de control de cables i frontisses flexibles - sense el pes afegit.",
               "intro_text_3": "Disponible en cinc colors impressionants, Phantom és l'elecció perfecta per a aquells que prioritzen la comoditat i l'estil.",
-              "intro_image": "/public/img/frames/phantom/intro.webp",
+              "intro_image": "/img/frames/phantom/intro.webp",
               "colors": [
                 {
                   "name": "Negre",
-                  "image": "/public/img/frames/phantom/black.png"
+                  "image": "/img/frames/phantom/black.png"
                 },
                 {
                   "name": "Iris",
-                  "image": "/public/img/frames/phantom/iris.png"
+                  "image": "/img/frames/phantom/iris.png"
                 },
                 {
                   "name": "Or rosa",
-                  "image": "/public/img/frames/phantom/rosegold.png"
+                  "image": "/img/frames/phantom/rosegold.png"
                 },
                 {
                   "name": "Safir",
-                  "image": "/public/img/frames/phantom/sapphire.png"
+                  "image": "/img/frames/phantom/sapphire.png"
                 },
                 {
                   "name": "Pissarra",
-                  "image": "/public/img/frames/phantom/slate.png"
+                  "image": "/img/frames/phantom/slate.png"
                 }
               ],
               "specs": {
@@ -900,33 +900,33 @@
           {
             "name": "Triumph™",
             "slug": "triumph",
-            "card_image": "/public/img/frames/triumph/card.webp",
+            "card_image": "/img/frames/triumph/card.webp",
             "description": "Aquesta muntura icònica utilitza una funció de control de cables incorporada i està disponible en cinc impressionants colors bicolors.",
             "details": {
               "detailed_description": "Aquesta muntura icònica utilitza una funció integrada de control per cable i admet tots els nivells d'augment.",
               "intro_text_1": "Combinant rendiment i comoditat, Triumph™ és una lleugera muntura de titani construïda exclusivament per a lupes. El control per cable integrat elimina les distraccions i optimitza l'eficàcia. Trieu qualsevol nivell d'augment i incorporeu el vostre estil personal amb una de les cinc combinacions de colors bicolors de moda. Les terminals ajustables i el pont nasal permeten un ajust personalitzat i una major comoditat.",
               "intro_text_2": "Triumph™ està disponible en mida petita, mitjana i gran i admet tot tipus de graduacions.",
-              "intro_image": "/public/img/frames/triumph/intro.webp",
+              "intro_image": "/img/frames/triumph/intro.webp",
               "colors": [
                 {
                   "name": "Negre",
-                  "image": "/public/img/frames/triumph/black.png"
+                  "image": "/img/frames/triumph/black.png"
                 },
                 {
                   "name": "Daurat",
-                  "image": "/public/img/frames/triumph/gold.png"
+                  "image": "/img/frames/triumph/gold.png"
                 },
                 {
                   "name": "Or rosa",
-                  "image": "/public/img/frames/triumph/rosegold.png"
+                  "image": "/img/frames/triumph/rosegold.png"
                 },
                 {
                   "name": "Safir",
-                  "image": "/public/img/frames/triumph/sapphire.png"
+                  "image": "/img/frames/triumph/sapphire.png"
                 },
                 {
                   "name": "Pissarra",
-                  "image": "/public/img/frames/triumph/slate.png"
+                  "image": "/img/frames/triumph/slate.png"
                 }
               ],
               "specs": {
@@ -976,33 +976,33 @@
           {
             "name": "Tempo™",
             "slug": "tempo",
-            "card_image": "/public/img/frames/tempo/card.webp",
+            "card_image": "/img/frames/tempo/card.webp",
             "description": "Aquesta muntura icònica ofereix un disseny elegant i minimalista per al clínic modern d'avui.",
             "details": {
               "detailed_description": "Aquesta muntura icònica ofereix un disseny elegant i minimalista que admet tots els nivells d'augment.",
               "intro_text_1": "Fabricada pensant en el rendiment, la construcció lleugera de titani de Tempo™ és prou resistent per suportar tota la gamma de lupes i frontals Orascoptic. La incorporació de terminals ajustables, un canal de control de cables i una coixinera nasal en forma de cadira de muntar també permet un ajust personalitzable i una major comoditat.",
               "intro_text_2": "Tempo™ està disponible en mides petites, mitjanes i grans i admet tot tipus de graduacions.",
-              "intro_image": "/public/img/frames/tempo/intro.webp",
+              "intro_image": "/img/frames/tempo/intro.webp",
               "colors": [
                 {
                   "name": "Ametista",
-                  "image": "/public/img/frames/tempo/amethyst.png"
+                  "image": "/img/frames/tempo/amethyst.png"
                 },
                 {
                   "name": "Negre",
-                  "image": "/public/img/frames/tempo/black.png"
+                  "image": "/img/frames/tempo/black.png"
                 },
                 {
                   "name": "Blau",
-                  "image": "/public/img/frames/tempo/blue.png"
+                  "image": "/img/frames/tempo/blue.png"
                 },
                 {
                   "name": "Merlot",
-                  "image": "/public/img/frames/tempo/merlot.png"
+                  "image": "/img/frames/tempo/merlot.png"
                 },
                 {
                   "name": "Pissarra",
-                  "image": "/public/img/frames/tempo/slate.png"
+                  "image": "/img/frames/tempo/slate.png"
                 }
               ],
               "specs": {
@@ -1052,34 +1052,34 @@
           {
             "name": "Tempo™ Refined Fit",
             "slug": "tempo-refined-fit",
-            "card_image": "/public/img/frames/tempo-re/card.webp",
+            "card_image": "/img/frames/tempo-re/card.webp",
             "description": "Aquesta muntura d'ajust refinat ha estat dissenyada per proporcionar una comoditat òptima als clínics amb pòmuls prominents o un pont nasal baix.",
             "details": {
               "detailed_description": "Tempo™ Refined Fit. Perquè les lupes s'han d'adaptar còmodament a tothom.",
               "intro_text_1": "Digueu adéu a les incòmodes lupes que es llisquen pel nas o que es recolzen a les galtes. Aquesta versió optimitzada de la nostra popular muntura Tempo™ ha estat dissenyada per adaptar-se còmodament als clínics amb un pont nasal més baix i pòmuls prominents.",
               "intro_text_2": "Dissenyada amb un exclusiu filferro de pont nasal per permetre un ajust còmode i segur en un pont nasal menys pronunciat, Tempo™ Refined Fit s'ha concebut amb l'alçada de muntura ideal per evitar la desalineació de l'òptica causada per muntures recolzades als pòmuls.",
               "intro_text_3": "Tempo™ Refined Fit està disponible en les talles refinades petita, mitjana i gran i admet tot tipus de prescripcions.",
-              "intro_image": "/public/img/frames/tempo-re/intro.webp",
+              "intro_image": "/img/frames/tempo-re/intro.webp",
               "colors": [
                 {
                   "name": "Ametista",
-                  "image": "/public/img/frames/tempo-re/amethyst.png"
+                  "image": "/img/frames/tempo-re/amethyst.png"
                 },
                 {
                   "name": "Negre",
-                  "image": "/public/img/frames/tempo-re/black.png"
+                  "image": "/img/frames/tempo-re/black.png"
                 },
                 {
                   "name": "Blau",
-                  "image": "/public/img/frames/tempo-re/blue.png"
+                  "image": "/img/frames/tempo-re/blue.png"
                 },
                 {
                   "name": "Merlot",
-                  "image": "/public/img/frames/tempo-re/merlot.png"
+                  "image": "/img/frames/tempo-re/merlot.png"
                 },
                 {
                   "name": "Pissarra",
-                  "image": "/public/img/frames/tempo-re/slate.png"
+                  "image": "/img/frames/tempo-re/slate.png"
                 }
               ],
               "specs": {
@@ -1129,28 +1129,28 @@
           {
             "name": "Victory™",
             "slug": "victory",
-            "card_image": "/public/img/frames/victory/card.webp",
+            "card_image": "/img/frames/victory/card.webp",
             "description": "Inspirada en la moda europea, aquesta muntura té un perfil petit però sofisticat.",
             "details": {
               "detailed_description": "Fabricada en titani, la muntura Victory™ admet totes les graduacions i resulta atractiva per als clínics que prefereixen ulleres petites i compactes.",
               "intro_text_1": "La petita i sofisticada muntura Victory™ s'inspira en la moda europea. El seu petit perfil i la seva fiable estructura de titani la converteixen en una elecció molt popular entre els metges que busquen una muntura de lupa lleugera.",
-              "intro_image": "/public/img/frames/victory/intro.webp",
+              "intro_image": "/img/frames/victory/intro.webp",
               "colors": [
                 {
                   "name": "Negre",
-                  "image": "/public/img/frames/victory/black.png"
+                  "image": "/img/frames/victory/black.png"
                 },
                 {
                   "name": "Blau",
-                  "image": "/public/img/frames/victory/blue.png"
+                  "image": "/img/frames/victory/blue.png"
                 },
                 {
                   "name": "Merlot",
-                  "image": "/public/img/frames/victory/merlot.png"
+                  "image": "/img/frames/victory/merlot.png"
                 },
                 {
                   "name": "Pissarra",
-                  "image": "/public/img/frames/victory/slate.png"
+                  "image": "/img/frames/victory/slate.png"
                 }
               ],
               "specs": {
@@ -1193,30 +1193,30 @@
           {
             "name": "Dragonfly™ PRO",
             "slug": "dragonfly-pro",
-            "card_image": "/public/img/frames/dragonfly-pro/card.webp",
+            "card_image": "/img/frames/dragonfly-pro/card.webp",
             "description": "El nostre model premium PRO és compatible amb tota la línia de telescopis Orascoptic i inclou característiques addicionals, com bateries extres, múltiples ajustaments d'intensitat de llum i un acabat de pintura ceràmica extremadament durador.",
             "details": {
               "detailed_description": "El nostre model premium PRO és compatible amb tota la línia de telescopis Orascoptic i inclou característiques addicionals, com bateries extres, múltiples ajustaments d'intensitat de llum i un acabat de pintura ceràmica extremadament durador.",
               "intro_text_1": "Ha arribat l'era de les lupes potenciades. Hem combinat la nostra òptica líder en el sector amb el nostre guardonat il·luminador frontal en una solució única i lleugera.",
               "intro_text_2": "Dragonfly™ és la nostra muntura amb alimentació per bateria i circuit totalment integrats, que funciona amb un il·luminador frontal incorporat, alliberant-te de la molèstia dels cables.",
               "intro_text_3": "Dragonfly™ PRO compta amb Cerakote, un recobriment de polímer ceràmic que ofereix una durabilitat, duresa, resistència a les ratllades, resistència a la corrosió i resistència química líders en el sector.",
-              "intro_image": "/public/img/frames/dragonfly-pro/intro.webp",
+              "intro_image": "/img/frames/dragonfly-pro/intro.webp",
               "colors": [
                 {
                   "name": "Ametista",
-                  "image": "/public/img/frames/dragonfly-pro/amethyst.png"
+                  "image": "/img/frames/dragonfly-pro/amethyst.png"
                 },
                 {
                   "name": "Carbó",
-                  "image": "/public/img/frames/dragonfly-pro/charcoal.png"
+                  "image": "/img/frames/dragonfly-pro/charcoal.png"
                 },
                 {
                   "name": "Neptú",
-                  "image": "/public/img/frames/dragonfly-pro/neptune.png"
+                  "image": "/img/frames/dragonfly-pro/neptune.png"
                 },
                 {
                   "name": "Oliva",
-                  "image": "/public/img/frames/dragonfly-pro/olive.png"
+                  "image": "/img/frames/dragonfly-pro/olive.png"
                 }
               ],
               "specs": {
@@ -1279,18 +1279,18 @@
           {
             "name": "Dragonfly™ NEO",
             "slug": "dragonfly-neo",
-            "card_image": "/public/img/frames/dragonfly-neo/card.webp",
+            "card_image": "/img/frames/dragonfly-neo/card.webp",
             "description": "Admet 4 potències d'augment populars - la lupa preferida tant pels estudiants d'odontologia com pels residents de medicina.",
             "details": {
               "detailed_description": "Admet 4 potències d'augment populars - la lupa preferida tant pels estudiants d'odontologia com pels residents de medicina.",
               "intro_text_1": "Ha arribat l'era de les lupes potenciades. Hem combinat la nostra òptica líder en el sector amb el nostre guardonat il·luminador frontal en una solució única i lleugera.",
               "intro_text_2": "Dragonfly™ és la nostra muntura amb alimentació per bateria i circuit totalment integrats, que funciona amb un il·luminador frontal incorporat, alliberant-te de la molèstia dels cables.",
               "intro_text_3": "El nostre model bàsic NEO està disponible en un sol color i admet quatre opcions d'augment habituals.",
-              "intro_image": "/public/img/frames/dragonfly-neo/intro.webp",
+              "intro_image": "/img/frames/dragonfly-neo/intro.webp",
               "colors": [
                 {
                   "name": "Mitjanit",
-                  "image": "/public/img/frames/dragonfly-neo/midnight.png"
+                  "image": "/img/frames/dragonfly-neo/midnight.png"
                 }
               ],
               "specs": {
@@ -1358,7 +1358,7 @@
           {
             "name": "Endeavour™ MD",
             "slug": "endeavour-md",
-            "card_image": "/public/img/headlights/endeavour-md/card.webp",
+            "card_image": "/img/headlights/endeavour-md/card.webp",
             "description": "Exclusiu per al camp quirúrgic, l'Endeavour™ MD presenta una distribució uniforme de fins a 85 llumens de llum i ofereix fins a 24 hores d'emissió de llum constant amb CRI 92+.",
             "details": {
               "detailed_description": "El nostre faròptim per a cirurgians.",
@@ -1366,7 +1366,7 @@
                 "intro_text_1": "Exclusiu per al camp quirúrgic, l'Endeavour™ MD compta amb una distribució uniforme de fins a 115 llumens de llum i ofereix fins a vint-i-quatre hores d'emissió de llum constant amb CRI 92+.",
                 "intro_text_2": "Ajusti fàcilment la configuració de la llum sense haver de ficar la mà a la butxaca. Utilitzant el far més petit d'Orascoptic i la bateria de major durada, l'Endeavour™ MD és una solució de far fiable i lleugera.",
                 "intro_text_3": "L'Endeavour™ MD està disponible amb dos paquets de bateries per garantir una experiència sense problemes per a cada usuari.",
-                "intro_image": "/public/img/headlights/endeavour-md/intro.webp"
+                "intro_image": "/img/headlights/endeavour-md/intro.webp"
               },
               "specs": {
                 "weight": "10 g",
@@ -1383,7 +1383,7 @@
           {
             "name": "Endeavour™ XL",
             "slug": "endeavour-xl",
-            "card_image": "/public/img/headlights/endeavour-xl/card.webp",
+            "card_image": "/img/headlights/endeavour-xl/card.webp",
             "description": "Amb un 25% més d'autonomia que el far Endeavour™ estàndard, l'Endeavour™ XL proporciona fins a 24 hores de bateria contínua.",
             "details": {
               "detailed_description": "Amb més autonomia i una llum més brillant que el far Endeavour™ estàndard, l'Endeavour™ XL proporciona fins a 24 hores de durada contínua de la bateria i 115 llumens de brillantor.",
@@ -1392,7 +1392,7 @@
                 "intro_text_2": "Amb l'addició de múltiples intensitats de llum de fins a 115 llumens, l'il·luminador frontal permet a l'usuari seleccionar l'emissió de llum òptima per a cada procediment.",
                 "intro_text_3": "La tecnologia de corrent constant també garanteix que la potència lumínica de la làmpada frontal no disminueixi durant el temps de funcionament de la bateria.",
                 "intro_text_4": "L'Endeavour™ XL té una garantia de tres anys per al cable i el LED i d'un any per a la bateria.",
-                "intro_image": "/public/img/headlights/endeavour-xl/intro.webp"
+                "intro_image": "/img/headlights/endeavour-xl/intro.webp"
               },
               "specs": {
                 "weight": "10 g",
@@ -1409,7 +1409,7 @@
           {
             "name": "Spark™",
             "slug": "spark",
-            "card_image": "/public/img/headlights/spark/card.webp",
+            "card_image": "/img/headlights/spark/card.webp",
             "description": "Un il·luminador frontal sense fils que s'integra pràcticament amb qualsevol model de lupa o muntura d'ulleres.",
             "details": {
               "detailed_description": "Spark™ és el nostre innovador il·luminador frontal sense fils, pendent de patent, que s'integra pràcticament amb qualsevol model de lupa o muntura d'ulleres. El nostre disseny exclusiu distribueix el pes uniformement pel pont de la muntura minimitzant la pressió sobre el nas.",
