@@ -26,7 +26,7 @@ const details = product.details;
 
 <Layout title={product.name} description="">
   <section
-    class="w-[calc(100vw-5px)] py-12 flex flex-col lg:flex-row items-center justify-center gap-8 px-8 md:px-16 shadow-[0_20px_25px_-4px_rgba(7,107,97,0.5)] bg-gradient-to-r from-teal-500 to-teal-700 text-white"
+    class="w-screen py-12 flex flex-col lg:flex-row items-center justify-center gap-8 px-8 md:px-16 shadow-2xl bg-gradient-to-r from-teal-500 to-teal-700 text-white"
   >
     <div class="lg:w-1/2 flex flex-col gap-6 px-4 mx-auto">
       <h1
@@ -50,14 +50,14 @@ const details = product.details;
     </div>
   </section>
 
-  <section class="w-full">
+  <section class="w-full mt-[100px] md:mt-0">
     <article
       class="flex flex-col px-12 text-center lg:flex-row lg:text-start gap-[100px] justify-between items-center"
     >
-      <div class="flex flex-col gap-5">
-        {details.intro_text_1 && <p>{details.intro_text_1}</p>}
-        {details.intro_text_2 && <p>{details.intro_text_2}</p>}
-        {details.intro_text_3 && <p>{details.intro_text_3}</p>}
+      <div class="px-12 lg:px-0 flex flex-col gap-6">
+        <p>{details?.intro_text_1}</p>
+        <p>{details?.intro_text_2}</p>
+        <p>{details?.intro_text_3}</p>
       </div>
       <img
         src={details?.intro_image}
@@ -73,9 +73,13 @@ const details = product.details;
     colors={details.colors}
     texts={framesTexts}
   />
-  <section class="w-full mt-12 flex flex-col gap-4">
+  <section
+    class="w-full flex flex-col mt-[100px] md:mt-0 md:px-12 lg:flex-row gap-4"
+  >
     <FrameSpecs texts={framesTexts} specs={details.specs} />
-    <article class="flex flex-col bg-white shadow-2xl p-12 rounded-lg flex-1">
+    <article
+      class="flex flex-col bg-white shadow-2xl p-12 md:rounded-lg flex-1"
+    >
       <h2 class="text-3xl mb-12 font-bold">{framesTexts.text_loupe_options}</h2>
       <div class="flex flex-col gap-2">
         {

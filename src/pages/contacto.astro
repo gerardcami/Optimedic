@@ -1,0 +1,45 @@
+---
+import { ContactForm } from "../components/contactForm"; // Importa el componente ContactForm en React
+import Layout from "../layouts/Layout.astro"; // Importa el layout general de la página
+---
+
+<Layout title="Contacta con nosotros" description="Contacta con nosotros">
+  <div
+    class="flex flex-col lg:flex-row w-screen min-h-[calc(100vh-60px)] md:min-h-[calc(100vh-64px)]"
+  >
+    <section class="w-full lg:w-1/2 pt-32 pb-20 px-12 lg:px-24 lg:py-48">
+      <div class="px-12 lg:px-0 h-full flex flex-col gap-6">
+        <h1 class="text-4xl font-bold">Contacta con nosotros</h1>
+        <p class="text-lg">
+          Si tienes alguna duda o consulta, no dudes en contactarnos. Rellena el
+          siguiente formulario y nos pondremos en contacto contigo. También
+          puedes llamarnos o escribirnos por email.
+        </p>
+        <div>
+          <h2 class="text-xl font-semibold">Dirección</h2>
+          <p>Carrer Pompeu Fabra 12</p>
+          <p>08480 L'Ametlla del Vallès</p>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold">Teléfono</h2>
+          <p>
+            <a href="tel:+34 938 43 03 36" class="underline">
+              +34 938 43 03 36
+            </a>
+          </p>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold">Email</h2>
+          <p>
+            <a href="mailto:info@optimedic.es" class="underline">
+              info@optimedic.es
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="w-full lg:w-1/2 pb-32 pt-20 px-24 lg:py-48 lg:border-l">
+      <ContactForm />
+    </section>
+  </div>
+</Layout>

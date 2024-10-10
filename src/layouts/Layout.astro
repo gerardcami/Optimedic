@@ -69,7 +69,7 @@ const i18n = getI18N({ currentLocale });
   <body class="font-sans min-h-screen flex flex-col overflow-x-hidden">
     <Header i18n={i18n} client:visible />
     <main
-      class="max-w-[1200px] lg:mx-auto flex flex-col flex-grow items-center md:gap-[100px] md:mb-[100px] mt-[60px] lg:mt-[64px] lg:text-[18px]"
+      class="max-w-[1200px] min-h-[calc(100vh-60px)] md:min-h-[calc(100vh-64px)] lg:mx-auto flex flex-col flex-grow items-center md:gap-[100px] md:mb-[100px] mt-[60px] lg:mt-[64px] lg:text-[18px]"
     >
       <slot />
     </main>

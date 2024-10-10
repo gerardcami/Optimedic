@@ -27,7 +27,7 @@ console.log(details.features);
 
 <Layout title={product.name} description="">
   <section
-    class="w-[calc(100vw-5px)] py-12 flex flex-col lg:flex-row items-center justify-center gap-8 px-8 md:px-16 shadow-[0_20px_25px_-4px_rgba(7,107,97,0.5)] bg-gradient-to-r from-teal-500 to-teal-700 text-white"
+    class="w-screen py-12 flex flex-col lg:flex-row items-center justify-center gap-8 px-8 md:px-16 shadow-2xl bg-gradient-to-r from-teal-500 to-teal-700 text-white"
   >
     <div class="lg:w-1/2 flex flex-col gap-6 px-4 mx-auto">
       <h1
@@ -53,9 +53,9 @@ console.log(details.features);
 
   {
     details.intro ? (
-      <section class="w-full">
+      <section class="w-full mt-[100px] md:mt-0">
         <article class="flex flex-col px-12 text-center lg:flex-row lg:text-start gap-[100px] justify-between items-center">
-          <div class="flex flex-col gap-5">
+          <div class="px-12 lg:px-0 flex flex-col gap-6">
             <p>{details.intro.intro_text_1}</p>
             <p>{details.intro.intro_text_2}</p>
             <p>{details.intro.intro_text_3}</p>
@@ -87,7 +87,9 @@ console.log(details.features);
     )
   }
 
-  <section class="w-full flex flex-col gap-4">
+  <section
+    class="w-full flex flex-col mt-[100px] md:mt-0 md:px-12 lg:flex-row gap-4"
+  >
     <HeadlightSpecs texts={headlightsTexts} specs={details.specs} />
   </section>
 </Layout>
