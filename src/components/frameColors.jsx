@@ -17,12 +17,12 @@ export default function FrameColors({ frame, colors, texts }) {
   };
 
   return (
-    <section className="flex flex-col mt-12 px-12 gap-8 w-full">
+    <section className="flex flex-col mt-[100px] md:mt-0 md:px-12 md:gap-8 w-full">
       <h2 className="text-3xl mb-8 text-center lg:text-start font-bold ">
         {texts.text_color_options}
       </h2>
-      <div className="flex flex-col lg:flex-row gap-10">
-        <div className="lg:w-2/3 rounded-lg flex justify-center items-center shadow-2xl">
+      <div className="flex w-full flex-col lg:flex-row md:gap-10">
+        <div className="w-full lg:w-2/3 rounded-lg flex justify-center items-center md:shadow-2xl">
           <img
             src={selectedColor.image}
             alt={`${texts.text_selected_color}: ${selectedColor.name}`}
@@ -34,7 +34,7 @@ export default function FrameColors({ frame, colors, texts }) {
 
         <div className="lg:w-1/3">
           <ul
-            className="w-fit flex flex-wrap justify-center lg:flex-col gap-4"
+            className="w-fit flex flex-wrap justify-center lg:flex-col md:gap-4"
             role="listbox"
             aria-label={texts.text_color_options}
           >
@@ -44,7 +44,7 @@ export default function FrameColors({ frame, colors, texts }) {
                 onClick={() => handleColorChange(color)}
                 role="option"
                 aria-selected={color.name === selectedColor.name}
-                className={`cursor-pointer border-2 p-2 px-4 rounded-lg flex flex-grow gap-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
+                className={`cursor-pointer border md:border-2 py-2 px-4 md:rounded-lg flex flex-grow gap-4 transition-all duration-300 transform md:hover:scale-105 md:hover:shadow-lg ${
                   color.name === selectedColor.name
                     ? "border-[#076b61]"
                     : "border-gray-300"

@@ -11,9 +11,10 @@ const { productType } = Astro.props;
 
 const products = i18n[productType]["PRODUCTS"];
 const productsPath = i18n[productType]["PRODUCT_PATH"];
+console.log;
 ---
 
-<section class="flex flex-col gap-[50px]">
+<section class="flex flex-col gap-[50px] px-12">
   {
     products.map((type) => (
       <article class="flex py-12 flex-col gap-4">
@@ -22,7 +23,7 @@ const productsPath = i18n[productType]["PRODUCT_PATH"];
             {type.type}
           </h2>
         </header>
-        <div class="flex flex-col lg:grid lg:grid-cols-3 gap-[50px]">
+        <div class="flex flex-grow flex-wrap justify-center lg:justify-start gap-[20px]">
           {type.products.map((productData) => (
             <div class="flex flex-col gap-4 max-w-[350px]">
               <a

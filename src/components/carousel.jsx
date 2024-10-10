@@ -93,7 +93,7 @@ export default function Carousel() {
   return (
     <section
       ref={carouselRef} // Set ref to the carousel
-      className="relative w-[80%]"
+      className="relative w-full md:w-[90%]"
       data-carousel="slide"
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
@@ -102,7 +102,7 @@ export default function Carousel() {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-[500px]">
+      <div className="relative h-[350px] overflow-hidden md:rounded-lg md:h-[400px] lg:h-[500px]">
         {slides.map((slide, index) => (
           <div
             key={slide.id}

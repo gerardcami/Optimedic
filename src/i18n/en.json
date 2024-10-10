@@ -195,7 +195,7 @@
   "LOUPES": {
     "TITLE": "Loupes",
     "SUBTITLE": "Exceptional magnification is essential for everything from routine exams to complex procedures. We will work with you to find the best magnification level that allows you to do your job as effectively as possible.",
-    "DESCRIPTION_1": "Our magnification levels range from <strong>2.5 to 5.5</strong>, including two variable magnification loupes, <strong>EyeZoom™</strong> and <strong>EyeZoom™ Mini</strong>. EyeZoom offers <strong>three levels of magnification in a single loupe</strong> and has won the <strong>Cellerant Best of Class Technology Award</strong> <strong>three times</strong> since its launch.",
+    "DESCRIPTION_1": "Our magnification levels range from <strong>2.5x to 6.5x</strong>, including three variable magnification loupes, <strong>EyeZoom™</strong>, <strong>EyeZoom™ Mini</strong> and <strong>EyeZoom™ Max</strong>. EyeZoom offers <strong>three levels of magnification in a single loupe</strong> and has won the <strong>Cellerant Best of Class Technology Award</strong> <strong>three times</strong> since its launch.",
     "DESCRIPTION_2": "The <strong>prescription, working distance, and inclination angle</strong> are customized. Additionally, <strong>included</strong> are side shields, a headband, a custom case, an optical screwdriver, and a cleaning cloth.",
     "DESCRIPTION_3": "All optical systems are made with <strong>fine grade-A annealed glass lenses</strong> with scratch-resistant and anti-reflective coatings. All support lenses are made with <strong>high-index polycarbonate material</strong>.",
     "TEXTS": {
@@ -891,8 +891,8 @@
       "text_loupe_options": "Loupe options",
       "text_all_loupe_options": "Available with all loupes"
     },
-    "LOUPES_PATH": "en/products/loupes/",
-    "PRODUCT_PATH": "en/products/frames/",
+    "LOUPES_PATH": "/en/products/loupes/",
+    "PRODUCT_PATH": "/en/products/frames/",
     "PRODUCTS": [
       {
         "type": "Sport",
@@ -1459,7 +1459,7 @@
       "text_est_battery_life": "Estimated Battery Life",
       "text_battery_type": "Battery Type"
     },
-    "PRODUCT_PATH": "/products/headlights/",
+    "PRODUCT_PATH": "/en/products/headlights/",
     "PRODUCTS": [
       {
         "type": "",
