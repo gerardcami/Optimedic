@@ -34,7 +34,7 @@ export default function FrameColors({ frame, colors, texts }) {
 
         <div className="lg:w-1/3">
           <ul
-            className="w-fit flex flex-wrap justify-center lg:flex-col md:gap-4"
+            className="w-full flex flex-wrap justify-center lg:flex-col md:gap-4"
             role="listbox"
             aria-label={texts.text_color_options}
           >

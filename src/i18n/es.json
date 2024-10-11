@@ -187,6 +187,23 @@
       }
     ]
   },
+  "CONTACT": {
+    "TITLE": "Contacta con nosotros",
+    "DESCRIPTION": "Para cualquier duda o consulta, no dude en ponerse en contacto con nosotros. Complete el siguiente formulario y nos comunicaremos con usted lo antes posible. También puede contactarnos por teléfono o correo electrónico.",
+    "ADDRESS": "Carrer Pompeu Fabra, 12",
+    "CITY": "08480, L'Ametlla del Vallès",
+    "PHONE": "+34 938 43 03 36",
+    "EMAIL": "info@optimedic.es",
+    "FORM": {
+      "NAME": "Nombre",
+      "LASTNAME": "Apellido/s",
+      "EMAIL": "Correo electrónico",
+      "PHONE": "Teléfono",
+      "QUERYTYPE": "Tipo de consulta",
+      "MESSAGE": "Mensaje",
+      "SUBMIT": "Enviar"
+    }
+  },
   "LOUPES": {
     "TITLE": "Lupas",
     "SUBTITLE": "El aumento excepcional es esencial para todo, desde los exámenes rutinarios hasta los complicados. Trabajaremos con usted para encontrar el mejor nivel de aumento que le permita realizar su trabajo lo mejor posible.",

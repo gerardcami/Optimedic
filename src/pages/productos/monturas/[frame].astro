@@ -54,7 +54,7 @@ const details = product.details;
     <article
       class="flex flex-col px-12 text-center lg:flex-row lg:text-start gap-[100px] justify-between items-center"
     >
-      <div class="px-12 lg:px-0 flex flex-col gap-6">
+      <div class="md:px-12 lg:px-0 flex flex-col gap-6">
         <p>{details?.intro_text_1}</p>
         <p>{details?.intro_text_2}</p>
         <p>{details?.intro_text_3}</p>
@@ -73,9 +73,7 @@ const details = product.details;
     colors={details.colors}
     texts={framesTexts}
   />
-  <section
-    class="w-full flex flex-col mt-[100px] md:mt-0 md:px-12 lg:flex-row gap-4"
-  >
+  <section class="w-full flex flex-col mt-[100px] md:mt-0 md:px-12 gap-4">
     <FrameSpecs texts={framesTexts} specs={details.specs} />
     <article
       class="flex flex-col bg-white shadow-2xl p-12 md:rounded-lg flex-1"

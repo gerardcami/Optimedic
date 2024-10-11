@@ -192,6 +192,23 @@
       }
     ]
   },
+  "CONTACT": {
+    "TITLE": "Contact us",
+    "DESCRIPTION": "For any questions or inquiries, please do not hesitate to contact us. Complete the following form, and we will get in touch with you as soon as possible. You can also reach us by phone or email.",
+    "ADDRESS": "Carrer Pompeu Fabra, 12",
+    "CITY": "08480, L'Ametlla del Vallès",
+    "PHONE": "+34 938 43 03 36",
+    "EMAIL": "info@optimedic.es",
+    "FORM": {
+      "NAME": "First name",
+      "LASTNAME": "Last name(s)",
+      "EMAIL": "Email",
+      "PHONE": "Phone",
+      "QUERYTYPE": "Inquiry type",
+      "MESSAGE": "Message",
+      "SUBMIT": "Submit"
+    }
+  },
   "LOUPES": {
     "TITLE": "Loupes",
     "SUBTITLE": "Exceptional magnification is essential for everything from routine exams to complex procedures. We will work with you to find the best magnification level that allows you to do your job as effectively as possible.",

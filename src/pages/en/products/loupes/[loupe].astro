@@ -53,7 +53,7 @@ const details = product.details;
     <article
       class="flex flex-col px-12 text-center lg:flex-row lg:text-start gap-[100px] justify-between items-center"
     >
-      <div class="px-12 lg:px-0 flex flex-col gap-6">
+      <div class="md:px-12 lg:px-0 flex flex-col gap-6">
         <p>{details?.intro_text_1}</p>
         <p>{details?.intro_text_2}</p>
         <p>{details?.intro_text_3}</p>
@@ -76,7 +76,7 @@ const details = product.details;
       class="w-[500px] shadow-2xl"
       style="border-radius: 32% 68% 68% 32% / 50% 58% 42% 50%;"
     />
-    <div class="px-12 lg:px-0 lg:w-1/2">
+    <div class="md:px-12 lg:px-0 lg:w-1/2">
       <h2 class="text-3xl mb-8 font-bold">{loupesTexts.text_title_specs}</h2>
       <div class="flex flex-col gap-4">
         <p set:html={loupesTexts.text_intro_specs_1} class="text-gray-700" />
