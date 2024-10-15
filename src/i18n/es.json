@@ -9,8 +9,8 @@
         "href": ""
       },
       {
-        "name": "Eventos",
-        "href": "/eventos"
+        "name": "Documentación",
+        "href": "/documentacion"
       },
       {
         "name": "Sobre nosotros",
@@ -184,6 +184,21 @@
             "href": "/productos/eventos"
           }
         ]
+      }
+    ]
+  },
+  "DOCUMENTATION": {
+    "TITLE": "Documentación",
+    "DESCRIPTION": "Documentación sobre nuestros productos y servicios.",
+    "TEXT_DOWNLOAD": "Descargar el catálogo",
+    "SECTIONS": [
+      {
+        "name": "Loupes",
+        "href": "/catalog/loupes.pdf"
+      },
+      {
+        "name": "MicroAire",
+        "href": "/catalog/microaire.pdf"
       }
     ]
   },
