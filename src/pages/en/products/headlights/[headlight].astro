@@ -55,7 +55,7 @@ console.log(details.features);
     details.intro ? (
       <section class="w-full mt-[100px] md:mt-0">
         <article class="flex flex-col px-12 text-center lg:flex-row lg:text-start gap-[100px] justify-between items-center">
-          <div class="px-12 lg:px-0 flex flex-col gap-6">
+          <div class="md:px-12 lg:px-0 flex flex-col gap-6">
             <p>{details.intro.intro_text_1}</p>
             <p>{details.intro.intro_text_2}</p>
             <p>{details.intro.intro_text_3}</p>
@@ -69,7 +69,7 @@ console.log(details.features);
         </article>
       </section>
     ) : (
-      <section class="w-full p-12 bg-gray-100 rounded-lg">
+      <section class="w-full p-6 py-12 lg:p-12 bg-gray-100 rounded-lg">
         <h2 class="text-3xl font-bold mb-12">
           {headlightsTexts.text_features}
         </h2>

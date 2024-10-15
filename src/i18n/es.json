@@ -200,6 +200,13 @@
       "EMAIL": "Correo electrónico",
       "PHONE": "Teléfono",
       "QUERYTYPE": "Tipo de consulta",
+      "QUERYTYPES": {
+        "DEFAULT": "Selecciona un tipo de consulta",
+        "GENERAL": "Información general",
+        "SUPPORT": "Soporte técnico",
+        "PRODUCT": "Consulta sobre un producto",
+        "OTHER": "Otro"
+      },
       "MESSAGE": "Mensaje",
       "SUBMIT": "Enviar"
     }

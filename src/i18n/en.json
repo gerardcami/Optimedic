@@ -205,6 +205,13 @@
       "EMAIL": "Email",
       "PHONE": "Phone",
       "QUERYTYPE": "Inquiry type",
+      "QUERYTYPES": {
+        "DEFAULT": "Select a query type",
+        "GENERAL": "General inquiry",
+        "SUPPORT": "Technical support",
+        "PRODUCT": "Product inquiry",
+        "OTHER": "Other"
+      },
       "MESSAGE": "Message",
       "SUBMIT": "Submit"
     }

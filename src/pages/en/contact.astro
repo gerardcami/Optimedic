@@ -12,10 +12,10 @@ const texts = i18n.CONTACT.FORM;
 
 <Layout title={contactData.TITLE} description={contactData.DESCRIPTION}>
   <div
-    class="flex flex-col lg:flex-row w-screen min-h-[calc(100vh-60px)] md:min-h-[calc(100vh-64px)]"
+    class="flex flex-col lg:flex-row w-screen min-h-[calc(100vh-60px)] lg:min-h-[calc(100vh-64px)]"
   >
-    <section class="w-full lg:w-1/2 pt-32 pb-20 px-12 lg:px-24 lg:py-48">
-      <div class="px-12 lg:px-0 h-full flex flex-col gap-6">
+    <section class="w-full lg:w-1/2 pt-32 pb-20 px-8 lg:px-24 lg:py-48">
+      <div class="md:px-12 lg:px-0 h-full flex flex-col gap-6">
         <h1 class="text-4xl font-bold">{contactData.TITLE}</h1>
         <p class="text-lg">
           {contactData.DESCRIPTION}
@@ -100,7 +100,9 @@ const texts = i18n.CONTACT.FORM;
         </div>
       </div>
     </section>
-    <section class="w-full lg:w-1/2 pb-32 pt-20 px-24 lg:py-48 lg:border-l">
+    <section
+      class="w-full lg:w-1/2 pb-32 pt-20 px-8 lg:px-24 lg:py-48 lg:border-l"
+    >
       <ContactForm client:load texts={texts} />
     </section>
   </div>

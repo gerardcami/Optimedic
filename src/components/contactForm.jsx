@@ -102,10 +102,11 @@ export const ContactForm = ({ texts }) => {
             className="mt-3 py-2 px-4 block w-full border border-gray-300 rounded-md shadow-sm focus:border-teal-500 focus:ring-teal-500"
             required
           >
-            <option value="">Selecciona un tipus</option>
-            <option value="general">Informació General</option>
-            <option value="support">Suport Tècnic</option>
-            <option value="product">Consulta sobre Producte</option>
+            <option value="">{texts.QUERYTYPES.DEFAULT}</option>
+            <option value="general">{texts.QUERYTYPES.GENERAL}</option>
+            <option value="support">{texts.QUERYTYPES.SUPPORT}</option>
+            <option value="product">{texts.QUERYTYPES.PRODUCT}</option>
+            <option value="other">{texts.QUERYTYPES.OTHER}</option>
           </select>
         </div>
 
