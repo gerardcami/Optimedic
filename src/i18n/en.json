@@ -144,7 +144,7 @@
     "PRODUCTS": [
       {
         "name": "Loupes",
-        "img": "/img/oscar-alonso1.jpg",
+        "img": "/img/products/loupes.jpg",
         "subcategories": [
           {
             "name": "Loupes",
@@ -165,7 +165,7 @@
       },
       {
         "name": "Surgery",
-        "img": "/img/IMG_0415.png",
+        "img": "/img/products/surgery.jpg",
         "subcategories": [
           {
             "name": "MicroAire",
@@ -181,7 +181,7 @@
       },
       {
         "name": "Events",
-        "img": "/img/barcelona-oculoplastics-resumen-grafico-sorteo-gafas-lupa.jpg",
+        "img": "/img/products/events.jpg",
         "subcategories": [
           {
             "name": "Event Organization",
