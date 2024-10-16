@@ -10,6 +10,9 @@ import vercel from '@astrojs/vercel/serverless';
 export default defineConfig({
   integrations: [tailwind(), react()],
   output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
   i18n: {
     defaultLocale: 'es',
     // Idioma por defecto
@@ -22,5 +25,4 @@ export default defineConfig({
   devToolbar: {
     enabled: false
   },
-  adapter: vercel()
 });
