@@ -204,7 +204,15 @@
       {
         "name": "MicroAire",
         "href": "/catalog/microaire.pdf"
-      }
+      },
+      {
+        "name": "Renuvion Body Contouring",
+        "href": "/catalog/renuvion-contouring.pdf"
+      },
+      {
+        "name": "Renuvion Facial Renewal",
+        "href": "/catalog/renuvion-facial.pdf"
+      }      
     ]
   },
   "CONTACT": {
