@@ -39,6 +39,12 @@
 
 ---
 
+## ⚠️ Estado actual del proyecto
+
+Optimedic se encuentra **en desarrollo**. Algunas páginas aún están en construcción y el diseño de la interfaz de usuario está siendo revisado para asegurar una experiencia óptima. 
+
+---
+
 ## 👥 Público objetivo
 
 Optimedic está diseñado para **profesionales médicos y quirúrgicos** que buscan herramientas visuales especializadas, incluyendo lupas y otros productos técnicos que faciliten su labor.
