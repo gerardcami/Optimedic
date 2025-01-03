@@ -125,27 +125,35 @@ export const ContactForm = ({ texts }) => {
         </div>
 
         <div className="flex items-center justify-between">
-          <div className=" flex gap-2">
-            <input
-              type="checkbox"
-              checked={acceptPrivacyPolicy}
-              onChange={() => setAcceptPrivacyPolicy(!acceptPrivacyPolicy)}
-              id="privacyPolicy"
-            />
-            <label htmlFor="privacyPolicy" className="text-sm">
-              {texts.ACCEPT_PRIVACY_POLICY}
-              <a
-                href="/docs/privacy-policy.pdf"
-                target="_blank"
-                className="text-teal-500 hover:underline ml-2"
-              >
-                {texts.PRIVACY_POLICY}
-              </a>
-            </label>
+          <div>
+            <div className=" flex gap-2">
+              <input
+                type="checkbox"
+                checked={acceptPrivacyPolicy}
+                onChange={() => setAcceptPrivacyPolicy(!acceptPrivacyPolicy)}
+                id="privacyPolicy"
+              />
+              <label htmlFor="privacyPolicy" className="text-sm">
+                {texts.ACCEPT_PRIVACY_POLICY}
+                <a
+                  href="/docs/privacy-policy.pdf"
+                  target="_blank"
+                  className="text-teal-500 hover:underline ml-2"
+                >
+                  {texts.PRIVACY_POLICY}
+                </a>
+              </label>
+            </div>
+            {!acceptPrivacyPolicy && (
+              <p className="text-red-500 text-sm mt-2">
+                {texts.ERROR_PRIVACY_POLICY}
+              </p>
+            )}
           </div>
+
           <button
-            disabled={loading}
-            className="bg-teal-500 text-white font-semibold py-2 px-6 rounded-md hover:bg-teal-600 transition-colors"
+            disabled={loading || !acceptPrivacyPolicy}
+            className="bg-teal-500 text-white font-semibold py-2 px-6 rounded-md enabled:hover:bg-teal-600 transition-colors"
           >
             {texts.SUBMIT}
           </button>

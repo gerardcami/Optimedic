@@ -241,6 +241,7 @@
       "MESSAGE": "Mensaje",
       "ACCEPT_PRIVACY_POLICY": "Aceptar nuestra Política de Privacidad.",
       "PRIVACY_POLICY": "Leer Política de Privacidad",
+      "ERROR_PRIVACY_POLICY": "Debes aceptar nuestra Política de Privacidad.",
       "SUBMIT": "Enviar"
     }
   },

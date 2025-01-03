@@ -246,6 +246,7 @@
       "MESSAGE": "Message",
       "ACCEPT_PRIVACY_POLICY": "Accept our Privacy Policy.",
       "PRIVACY_POLICY": "Read Privacy Policy",
+      "ERROR_PRIVACY_POLICY": "You must accept our Privacy Policy.",
       "SUBMIT": "Submit"
     }
   },
