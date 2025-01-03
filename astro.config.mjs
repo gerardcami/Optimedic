@@ -11,7 +11,8 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   output: 'server',
   adapter: vercel({
-    webAnalytics: { enabled: true }
+    webAnalytics: { enabled: true },
+    speedInsights: { enabled:true }
   }),
   i18n: {
     defaultLocale: 'es',
