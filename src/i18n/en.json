@@ -80,11 +80,19 @@
         "LINKS": [
           {
             "name": "Privacy Policy",
-            "href": "/en/privacy-policy"
+            "href": "/docs/privacy-policy.pdf"
           },
           {
             "name": "Cookie Policy",
-            "href": "/en/cookie-policy"
+            "href": "/docs/cookie-policy.pdf"
+          },
+          {
+            "name": "Legal Notice",
+            "href": "/docs/legal-notice.pdf"
+          },
+          {
+            "name": "Social Media Policy",
+            "href": "/docs/social-media-privacy-policy.pdf"
           }
         ]
       },
@@ -236,6 +244,8 @@
         "OTHER": "Other"
       },
       "MESSAGE": "Message",
+      "ACCEPT_PRIVACY_POLICY": "Accept our Privacy Policy.",
+      "PRIVACY_POLICY": "Read Privacy Policy",
       "SUBMIT": "Submit"
     }
   },
@@ -263,59 +273,6 @@
       {
         "type": "Fixed magnification",
         "products": [
-          {
-            "name": "HDL™ 2.5 Micro",
-            "slug": "hdl-25-micro",
-            "card_image": "/img/loupes/hdl-25-micro/card.webp",
-            "description": "This micro-sized optic offers lightweight comfort and superior viewing for all types of loupe users.",
-            "details": {
-              "detailed_description": "Micro-sized optics that offer lightweight comfort without sacrificing magnification.",
-              "intro_text_1": "Pushing the limits of typical micro-optics, this loupe provides a generous field of view with edge-to-edge clarity.",
-              "intro_text_2": "With such a compact size, extra viewing space is available above the telescope, making it easier to read charts and consult with patients.",
-              "intro_image": "/img/loupes/hdl-25-micro/intro.webp",
-              "specs_image": "/img/loupes/hdl-25-micro/specs.webp",
-              "specs": {
-                "magnification_power": "2.5x",
-                "weight": "39.15 g",
-                "field_width": "8.75 cm",
-                "field_depth": "17.8 cm"
-              },
-              "frame_options": [
-                {
-                  "name": "Rydon™",
-                  "slug": "rydon"
-                },
-                {
-                  "name": "Phantom™",
-                  "slug": "phantom"
-                },
-                {
-                  "name": "Triumph™",
-                  "slug": "triumph"
-                },
-                {
-                  "name": "Tempo™",
-                  "slug": "tempo"
-                },
-                {
-                  "name": "Tempo™ Refined Fit",
-                  "slug": "tempo-refined-fit"
-                },
-                {
-                  "name": "Victory™",
-                  "slug": "victory"
-                },
-                {
-                  "name": "DragonFly™ PRO",
-                  "slug": "dragonfly-pro"
-                },
-                {
-                  "name": "DragonFly™ NEO",
-                  "slug": "dragonfly-neo"
-                }
-              ]
-            }
-          },
           {
             "name": "HDL™ 2.5 Macro",
             "slug": "hdl-25-macro",

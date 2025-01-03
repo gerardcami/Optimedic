@@ -74,13 +74,21 @@
         "TITLE": "Legal",
         "LINKS": [
           {
-            "name": "Política de privacidad",
-            "href": "/politica-de-privacidad"
+            "name": "Política de Privacidad",
+            "href": "/docs/privacy-policy.pdf"
           },
           {
-            "name": "Política de cookies",
-            "href": "/politica-de-cookies"
-          }
+            "name": "Política de Cookies",
+            "href": "/docs/cookie-policy.pdf"
+          },
+          {
+            "name": "Aviso Legal",
+            "href": "/docs/legal-notice.pdf"
+          },
+          {
+            "name": "Política de Redes Sociales",
+            "href": "/docs/social-media-privacy-policy.pdf"
+          }          
         ]
       },
       {
@@ -231,6 +239,8 @@
         "OTHER": "Otro"
       },
       "MESSAGE": "Mensaje",
+      "ACCEPT_PRIVACY_POLICY": "Aceptar nuestra Política de Privacidad.",
+      "PRIVACY_POLICY": "Leer Política de Privacidad",
       "SUBMIT": "Enviar"
     }
   },
@@ -258,59 +268,6 @@
       {
         "type": "Aumento fijo",
         "products": [
-          {
-            "name": "HDL™ 2.5 Micro",
-            "slug": "hdl-25-micro",
-            "card_image": "/img/loupes/hdl-25-micro/card.webp",
-            "description": "Esta óptica de tamaño micro ofrece una comodidad ligera y una visualización superior para todo tipo de usuarios de lupas.",
-            "details": {
-              "detailed_description": "Óptica de tamaño micro que ofrece una comodidad ligera sin sacrificar el aumento.",
-              "intro_text_1": "Superando los límites de una microóptica típica, esta lupa proporciona un generoso campo de visión con claridad de borde a borde.",
-              "intro_text_2": "Con un tamaño tan compacto, se dispone de espacio de visión adicional por encima del telescopio, lo que facilita la lectura de gráficos y las consultas con los pacientes.",
-              "intro_image": "/img/loupes/hdl-25-micro/intro.webp",
-              "specs_image": "/img/loupes/hdl-25-micro/specs.webp",
-              "specs": {
-                "magnification_power": "2,5x",
-                "weight": "39,15 g",
-                "field_width": "8,75 cm",
-                "field_depth": "17,8 cm"
-              },
-              "frame_options": [
-                {
-                  "name": "Rydon™",
-                  "slug": "rydon"
-                },
-                {
-                  "name": "Phantom™",
-                  "slug": "phantom"
-                },
-                {
-                  "name": "Triumph™",
-                  "slug": "triumph"
-                },
-                {
-                  "name": "Tempo™",
-                  "slug": "tempo"
-                },
-                {
-                  "name": "Tempo™ Refined Fit",
-                  "slug": "tempo-refined-fit"
-                },
-                {
-                  "name": "Victory™",
-                  "slug": "victory"
-                },
-                {
-                  "name": "DragonFly™ PRO",
-                  "slug": "dragonfly-pro"
-                },
-                {
-                  "name": "DragonFly™ NEO",
-                  "slug": "dragonfly-neo"
-                }
-              ]
-            }
-          },
           {
             "name": "HDL™ 2.5 Macro",
             "slug": "hdl-25-macro",
