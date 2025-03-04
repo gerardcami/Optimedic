@@ -5,11 +5,10 @@
     "HOME_LINK": "/",
     "NAV_ITEMS": [
       {
-        "name": "Productos",
-        "href": ""
+        "name": "Productos"
       },
       {
-        "name": "Documentación",
+        "name": "Catálogos",
         "href": "/documentacion"
       },
       {
@@ -173,12 +172,12 @@
           {
             "name": "MicroAire",
             "description": "Un potente instrumento de precisión diseñado para la extracción de grasa de pequeño o gran volumen, el contorno corporal y la recolección de grasa.",
-            "href": "/productos/microaire"
+            "href": "/catalog/microaire.pdf"
           },
           {
             "name": "Renuvion",
             "description": "El único dispositivo aprobado por la FDA para su uso después de una liposucción y el único dispositivo aprobado por la FDA para contraer el tejido blando subcutáneo.",
-            "href": "/productos/renuvion"
+            "href": "https://www.renuvion.com/"
           }
         ]
       },

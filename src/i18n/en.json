@@ -5,11 +5,10 @@
     "HOME_LINK": "/en/",
     "NAV_ITEMS": [
       {
-        "name": "Products",
-        "href": ""
+        "name": "Products"
       },
       {
-        "name": "Documentation",
+        "name": "Catalogs",
         "href": "/en/documentation"
       },
       {
@@ -20,12 +19,7 @@
         "name": "Contact",
         "href": "/en/contact"
       }
-    ],
-    "LANGUAGES": {
-      "es": "Spanish",
-      "en": "English",
-      "ca": "Catalan"
-    }
+    ]
   },
   "FOOTER": {
     "SECTIONS": [
@@ -178,12 +172,12 @@
           {
             "name": "MicroAire",
             "description": "A powerful precision instrument designed for small or large volume fat extraction, body contouring, and fat harvesting.",
-            "href": "/en/products/microaire"
+            "href": "/catalog/microaire.pdf"
           },
           {
             "name": "Renuvion",
             "description": "The only device approved by the FDA for use after liposuction and the only device approved by the FDA to contract subcutaneous soft tissue.",
-            "href": "/en/products/renuvion"
+            "href": "https://www.renuvion.com/"
           }
         ]
       },

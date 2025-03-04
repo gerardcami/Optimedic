@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { getI18N } from '../../i18n/'
+
+const { currentLocale = 'en' } = Astro
+const i18n = getI18N({ currentLocale })
+
+const notFoundData = i18n.PAGE_NOT_FOUND
+---
+
+<Layout title="404" description="Page not found">
+	<div
+		class="flex h-[calc(100vh-60px)] w-full flex-col items-center justify-center gap-4 text-center lg:h-[calc(100vh-64px)]"
+	>
+		<p class="text-6xl font-semibold text-teal-600">404</p>
+		<h1 class="mt-12 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+			{notFoundData.TITLE}
+		</h1>
+		<div class="mt-12 flex items-center justify-center gap-x-6">
+			<a
+				href={notFoundData.HOME_PAGE}
+				class="rounded-md bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+				>{notFoundData.BUTTON}</a
+			>
+		</div>
+	</div>
+</Layout>
