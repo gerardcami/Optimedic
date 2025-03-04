@@ -121,6 +121,28 @@
   "HOME_PAGE": {
     "TITLE": "Optimedic",
     "SLOGAN": "La precisión a su medida",
+    "HERO": [
+      {
+        "title": "Loupes",
+        "description": "",
+        "href": "/productos/lupas",
+        "backImage": ""
+      },
+      {
+        "logo": "",
+        "title": "Renuvion",
+        "description": "",
+        "href": "/productos/lupas",
+        "backImage": ""
+      },
+      {
+        "logo": "",
+        "title": "MicroAire",
+        "description": "",
+        "href": "/productos/lupas",
+        "backImage": ""
+      }
+    ],
     "FEATURES": [
       {
         "title": "Calidad",
@@ -146,7 +168,7 @@
     "PRODUCTS": [
       {
         "name": "Loupes",
-        "img": "/img/products/loupes.jpg",
+        "img": "/images/products/loupes.jpg",
         "subcategories": [
           {
             "name": "Lupas",
@@ -167,7 +189,7 @@
       },
       {
         "name": "Surgery",
-        "img": "/img/products/surgery.jpg",
+        "img": "/images/products/surgery.jpg",
         "subcategories": [
           {
             "name": "MicroAire",
@@ -183,7 +205,7 @@
       },
       {
         "name": "Eventos",
-        "img": "/img/products/events.jpg",
+        "img": "/images/products/events.jpg",
         "subcategories": [
           {
             "name": "Organización de eventos",
@@ -271,15 +293,15 @@
           {
             "name": "HDL™ 2.5 Macro",
             "slug": "hdl-25-macro",
-            "card_image": "/img/loupes/hdl-25-macro/card.webp",
+            "card_image": "/images/loupes/hdl-25-macro/card.webp",
             "description": "Esta lupa quirúrgica hecha a medida presenta una claridad de borde a borde y un generoso campo de visión para el usuario.",
             "details": {
               "detailed_description": "Las pruebas realizadas por terceros confirman que nuestras lupas ofrecen la calidad de imagen más nítida del sector, con la mejor resolución óptica y transmisión de luz de su categoría.",
               "intro_text_1": "La HDL™ 2.5 Macro se distingue por su gran amplitud de campo, que permite introducir instrumentos en el campo de visión con facilidad.",
               "intro_text_2": "El bisel alargado también reduce la inclinación de la cabeza al aprovechar los ángulos de declinación más pronunciados.",
               "intro_text_3": "Un reciente estudio de laboratorio de terceros confirma que ofrecemos la lupa de 2,5 aumentos más nítida del sector.",
-              "intro_image": "/img/loupes/hdl-25-macro/intro.webp",
-              "specs_image": "/img/loupes/hdl-25-macro/specs.webp",
+              "intro_image": "/images/loupes/hdl-25-macro/intro.webp",
+              "specs_image": "/images/loupes/hdl-25-macro/specs.webp",
               "specs": {
                 "magnification_power": "2,5x",
                 "weight": "50,7 g",
@@ -325,14 +347,14 @@
           {
             "name": "HDL™ 3.0",
             "slug": "hdl-30",
-            "card_image": "/img/loupes/hdl-30/card.webp",
+            "card_image": "/images/loupes/hdl-30/card.webp",
             "description": "La lupa ideal para los clínicos que desean un mayor aumento sin renunciar a una sensación de ligereza.",
             "details": {
               "detailed_description": "Compacta y ligera, esta lupa está diseñada para ofrecer una comodidad raramente asociada a las ópticas galileanas de potencia de aumento equivalente.",
               "intro_text_1": "Esta lupa hecha a medida cuenta con una claridad de borde a borde y un generoso campo de visión.",
               "intro_text_2": "Con un diseño compacto y ligero, la HDL™ 3.0x es la lupa ideal para los médicos que desean un mayor aumento sin renunciar a la sensación de ligereza.",
-              "intro_image": "/img/loupes/hdl-30/intro.webp",
-              "specs_image": "/img/loupes/hdl-30/specs.webp",
+              "intro_image": "/images/loupes/hdl-30/intro.webp",
+              "specs_image": "/images/loupes/hdl-30/specs.webp",
               "specs": {
                 "magnification_power": "3,0x",
                 "weight": "48,7 g",
@@ -378,14 +400,14 @@
           {
             "name": "HDL™ 3.5x",
             "slug": "hdl-35x",
-            "card_image": "/img/loupes/hdl-35x/card.webp",
+            "card_image": "/images/loupes/hdl-35x/card.webp",
             "description": "Aumento de mayor precisión diseñado con un amplio campo de visión.",
             "details": {
               "detailed_description": "Aumento de mayor precisión diseñado con un amplio campo de visión.",
               "intro_text_1": "Nuestras lupas de campo ampliado de 3,5x aumentos están diseñadas para profesionales que realizan procedimientos exigentes.",
               "intro_text_2": "Los prismas HDL™ permiten interacciones precisas, mayor visibilidad y un ángulo de declinación personalizable que le permite realizar los procedimientos que necesita con precisión.",
-              "intro_image": "/img/loupes/hdl-35x/intro.webp",
-              "specs_image": "/img/loupes/hdl-35x/specs.webp",
+              "intro_image": "/images/loupes/hdl-35x/intro.webp",
+              "specs_image": "/images/loupes/hdl-35x/specs.webp",
               "specs": {
                 "magnification_power": "3,5x",
                 "weight": "67,5 g",
@@ -431,14 +453,14 @@
           {
             "name": "HDL™ 4.5x",
             "slug": "hdl-45x",
-            "card_image": "/img/loupes/hdl-45x/card.webp",
+            "card_image": "/images/loupes/hdl-45x/card.webp",
             "description": "Aumento de mayor precisión diseñado con un amplio campo de visión.",
             "details": {
               "detailed_description": "Mayor aumento diseñado para una mayor precisión y rendimiento.",
               "intro_text_1": "Con un aumento de 4,5x, estas lupas prismáticas de campo ampliado están diseñadas para profesionales que buscan un mayor detalle y aumento.",
               "intro_text_2": "Los prismas HDL™ ofrecen una mayor visibilidad y un ángulo de declinación personalizable, al tiempo que le permiten realizar los procedimientos que necesita con precisión.",
-              "intro_image": "/img/loupes/hdl-45x/intro.webp",
-              "specs_image": "/img/loupes/hdl-45x/specs.webp",
+              "intro_image": "/images/loupes/hdl-45x/intro.webp",
+              "specs_image": "/images/loupes/hdl-45x/specs.webp",
               "specs": {
                 "magnification_power": "4,5x",
                 "weight": "71,5 g",
@@ -480,14 +502,14 @@
           {
             "name": "HDL™ 5.5x",
             "slug": "hdl-55x",
-            "card_image": "/img/loupes/hdl-55x/card.webp",
+            "card_image": "/images/loupes/hdl-55x/card.webp",
             "description": "Nuestro mayor aumento autónomo diseñado para ofrecer precisión y rendimiento.",
             "details": {
               "detailed_description": "Nuestro mayor aumento autónomo diseñado para ofrecer precisión y rendimiento.",
               "intro_text_1": "Con un aumento de 5,5x, estas lupas prismáticas de campo ampliado están diseñadas para profesionales que realizan procedimientos exigentes.",
               "intro_text_2": "Los prismas HDL™ permiten interacciones precisas, visibilidad mejorada y un ángulo de declinación personalizable que le permite realizar los procedimientos que necesita con precisión.",
-              "intro_image": "/img/loupes/hdl-55x/intro.webp",
-              "specs_image": "/img/loupes/hdl-55x/specs.webp",
+              "intro_image": "/images/loupes/hdl-55x/intro.webp",
+              "specs_image": "/images/loupes/hdl-55x/specs.webp",
               "specs": {
                 "magnification_power": "5,5x",
                 "weight": "74,4 g",
@@ -538,14 +560,14 @@
           {
             "name": "OmniOptic™",
             "slug": "omnioptic",
-            "card_image": "/img/loupes/omnioptic/card.webp",
+            "card_image": "/images/loupes/omnioptic/card.webp",
             "description": "Descubra la primera y única lupa de aumento intercambiable que permite a los clínicos seleccionar el poder de ampliación óptimo para cada procedimiento.",
             "details": {
               "detailed_description": "La primera y única lupa de aumentos intercambiables.",
               "intro_text_1": "Con la posibilidad de elegir entre cuatro niveles diferentes de aumento (que van de 2,5x a 5,5x), el OmniOptic es un sistema ideal para los usuarios que buscan aumentar su potencia de aumento a lo largo de su carrera.",
               "intro_text_2": "El diseño exclusivo incluye un anclaje magnético integrado en la lente portadora de la montura, lo que permite a los clínicos aumentar la potencia de aumento sin tener que adquirir varios pares de lupas.",
-              "intro_image": "/img/loupes/omnioptic/intro.webp",
-              "specs_image": "/img/loupes/omnioptic/specs.webp",
+              "intro_image": "/images/loupes/omnioptic/intro.webp",
+              "specs_image": "/images/loupes/omnioptic/specs.webp",
               "specs": {
                 "magnification_power": "2,5x · 3,5x · 4,5x · 5,5x",
                 "weight": "57,3 g en 2,5x · 75,3 g en 3,5x · 79,1 g en 4,5x · 82,1 g en 5,5x"
@@ -590,15 +612,15 @@
           {
             "name": "EyeZoom™",
             "slug": "eyezoom",
-            "card_image": "/img/loupes/eyezoom/card.webp",
+            "card_image": "/images/loupes/eyezoom/card.webp",
             "description": "La primera lupa de aumento ajustable, EyeZoom™ ofrece tres niveles de aumento ajustables que van de 3x a 5x.",
             "details": {
               "detailed_description": "La primera y única lupa de aumento variable 3 en 1. Cambia sin problemas entre los niveles de aumento 3x, 4x y 5x.",
               "intro_text_1": "Su día es variable, sus lupas también deberían serlo. Nuestra tecnología ofrece claridad de borde a borde, resolución de alta definición y la posibilidad de cambiar entre aumentos. Consiga unas lupas tan ágiles como usted.",
               "intro_text_2": "A medida que aumenta el aumento, disminuye el campo de visión. Es la física del aumento. Con EyeZoom™ obtendrá lo mejor de ambos.",
               "intro_text_3": "Destaque con nuestra galardonada tecnología EyeZoom™.",
-              "intro_image": "/img/loupes/eyezoom/intro.webp",
-              "specs_image": "/img/loupes/eyezoom/specs.webp",
+              "intro_image": "/images/loupes/eyezoom/intro.webp",
+              "specs_image": "/images/loupes/eyezoom/specs.webp",
               "specs": {
                 "magnification_power": "3x · 4x · 5x",
                 "weight": "82,2 g",
@@ -644,14 +666,14 @@
           {
             "name": "EyeZoom™ Mini",
             "slug": "eyezoom-mini",
-            "card_image": "/img/loupes/eyezoom-mini/card.webp",
+            "card_image": "/images/loupes/eyezoom-mini/card.webp",
             "description": "La EyeZoom™ Mini, la segunda lupa de aumento ajustable lanzada bajo la marca EyeZoom™, ofrece aumentos que van de 2,5x a 3,5x.",
             "details": {
               "detailed_description": "La segunda incorporación a la familia de aumentos variables Orascoptic permite alternar sin problemas entre los niveles de aumento 2,5x y 3,5x.",
               "intro_text_1": "EyeZoom™ Mini incorpora una tecnología de aumento variable en dos pasos que permite al usuario alternar entre 2,5x y 3,5x.",
               "intro_text_2": "Una distancia de trabajo constante en cada nivel de aumento ayuda a reducir la necesidad de reposicionamiento al alternar entre los niveles de aumento.",
-              "intro_image": "/img/loupes/eyezoom-mini/intro.webp",
-              "specs_image": "/img/loupes/eyezoom-mini/specs.webp",
+              "intro_image": "/images/loupes/eyezoom-mini/intro.webp",
+              "specs_image": "/images/loupes/eyezoom-mini/specs.webp",
               "specs": {
                 "magnification_power": "2,5x · 3,5x",
                 "weight": "73,7 g",
@@ -697,15 +719,15 @@
           {
             "name": "EyeZoom™ Max",
             "slug": "eyezoom-max",
-            "card_image": "/img/loupes/eyezoom-max/card.webp",
+            "card_image": "/images/loupes/eyezoom-max/card.webp",
             "description": "La primera lupa que ofrece niveles de aumento ajustables de 3,5x y 6,5x.",
             "details": {
               "detailed_description": "La última incorporación a la familia de aumentos variables de Orascoptic y nuestro mayor aumento hasta la fecha. Cambie sin problemas entre los niveles de aumento 3,5x y 6,5x.",
               "intro_text_1": "EyeZoom™ Max, nuestra mayor potencia de aumento hasta la fecha, ofrece una resolución de alta definición y una agudeza visual mejorada.",
               "intro_text_2": "El generoso tamaño de campo del aumento de 3,5x, combinado con la capacidad de realizar procedimientos precisos con el aumento de 6,5x, crea una experiencia versátil con la lupa.",
               "intro_text_3": "Ideal para los médicos generales que realizan procedimientos de endodoncia, EyeZoom™ Max elimina la necesidad de cambiar de lupa durante los procedimientos.",
-              "intro_image": "/img/loupes/eyezoom-max/intro.webp",
-              "specs_image": "/img/loupes/eyezoom-max/specs.webp",
+              "intro_image": "/images/loupes/eyezoom-max/intro.webp",
+              "specs_image": "/images/loupes/eyezoom-max/specs.webp",
               "specs": {
                 "magnification_power": "3,5x · 6,5x",
                 "weight": "92,7 g",
@@ -756,15 +778,15 @@
           {
             "name": "HDL™ Ergo 3.5x",
             "slug": "hdl-ergo-35x",
-            "card_image": "/img/loupes/hdl-ergo-35x/card.webp",
+            "card_image": "/images/loupes/hdl-ergo-35x/card.webp",
             "description": "Al utilizar prismas refractivos que permiten a los clínicos sentarse erguidos y reducir la inclinación del cuello, la lupa HDL™ Ergo es una opción ergonómica que ofrece comodidad durante todo el día.",
             "details": {
               "detailed_description": "Centrada en la ergonomía, esta lupa de desviación está diseñada para mejorar la postura y reducir las molestias en el cuello.",
               "intro_text_1": "La lupa Ergo de alta definición le permite trabajar con comodidad y preservar su carrera. Nuestra óptica de deflexión mejora la postura sin sacrificar la visión. Al utilizar prismas refractivos que permiten a los clínicos sentarse erguidos y reducir la inclinación del cuello, la lupa HDL Ergo es una opción ergonómica que ofrece comodidad durante todo el día.",
               "intro_text_2": "Nuestra lupa Ergo de alta definición con aumento verificado de 3,5x supera a la competencia.",
               "intro_text_3": "Mejore su postura, mejore su rendimiento.",
-              "intro_image": "/img/loupes/hdl-ergo-35x/intro.webp",
-              "specs_image": "/img/loupes/hdl-ergo-35x/specs.webp",
+              "intro_image": "/images/loupes/hdl-ergo-35x/intro.webp",
+              "specs_image": "/images/loupes/hdl-ergo-35x/specs.webp",
               "specs": {
                 "magnification_power": "3,5x",
                 "weight": "67,6 g",
@@ -810,15 +832,15 @@
           {
             "name": "HDL Ergo™ 5.0x",
             "slug": "hdl-ergo-50x",
-            "card_image": "/img/loupes/hdl-ergo-50x/card.webp",
+            "card_image": "/images/loupes/hdl-ergo-50x/card.webp",
             "description": "Nuestro nivel más alto ofrecido en una lupa de deflexión, lo que la convierte en la lupa elegida por los clínicos que realizan procedimientos exigentes y desean proteger su postura.",
             "details": {
               "detailed_description": "Nuestro mayor aumento Ergo y centrada en la ergonomía, esta lupa de desviación está diseñada para mejorar la postura y reducir las molestias en el cuello.",
               "intro_text_1": "La lupa Ergo de alta definición le permite trabajar con comodidad y preservar su carrera. Nuestra óptica de deflexión mejora la postura sin sacrificar la visión. Al utilizar prismas refractivos que permiten a los clínicos sentarse erguidos y reducir la inclinación del cuello, la lupa HDL Ergo es una opción ergonómica que ofrece comodidad durante todo el día.",
               "intro_text_2": "Nuestro aumento HDL Ergo 5.0x es nuestro nivel más alto ofrecido en una lupa de desviación, convirtiéndola en la lupa de elección para los clínicos que realizan procedimientos exigentes.",
               "intro_text_3": "Mejore su postura, mejore su rendimiento.",
-              "intro_image": "/img/loupes/hdl-ergo-50x/intro.webp",
-              "specs_image": "/img/loupes/hdl-ergo-50x/specs.webp",
+              "intro_image": "/images/loupes/hdl-ergo-50x/intro.webp",
+              "specs_image": "/images/loupes/hdl-ergo-50x/specs.webp",
               "specs": {
                 "magnification_power": "5,0x",
                 "weight": "67,2 g",
@@ -899,34 +921,34 @@
           {
             "name": "Rydon™",
             "slug": "rydon",
-            "card_image": "/img/frames/rydon/card.webp",
+            "card_image": "/images/frames/rydon/card.webp",
             "description": "Lleve la personalización a un nuevo nivel con bisagras de patillas flexibles, patillas plegables y almohadillas nasales ajustables.",
             "details": {
               "detailed_description": "Esta clásica y cómoda montura deportiva ofrece un ajuste personalizado y elegante con bisagras de patillas flexibles, los brazos de las patillas plegables y almohadillas nasales ajustables",
               "intro_text_1": "Diseñadas y fabricadas por el famoso icono de las gafas Rudy Project®, la montura Rydon™ ofrece un ajuste verdaderamente a medida para cada usuario. Con las bisagras flexibles, las terminales de las patillas flexibles y las plaquetas nasales ajustables, esta montura lleva la personalización a un nuevo nivel.",
               "intro_text_2": "La construcción exclusiva de semibordeado admite también dos formas de lente de soporte diferentes, lo que permite adaptar más la lupa al usuario al acomodar ángulos de declinación pronunciados y geometrías faciales específicas.",
               "intro_text_3": "La Rydon admite una amplia gama de prescripciones incluidas las bifocales.",
-              "intro_image": "/img/frames/rydon/intro.webp",
+              "intro_image": "/images/frames/rydon/intro.webp",
               "colors": [
                 {
                   "name": "Negro",
-                  "image": "/img/frames/rydon/black.png"
+                  "image": "/images/frames/rydon/black.png"
                 },
                 {
                   "name": "Azul",
-                  "image": "/img/frames/rydon/blue.png"
+                  "image": "/images/frames/rydon/blue.png"
                 },
                 {
                   "name": "Carbono",
-                  "image": "/img/frames/rydon/carbon.png"
+                  "image": "/images/frames/rydon/carbon.png"
                 },
                 {
                   "name": "Merlot",
-                  "image": "/img/frames/rydon/merlot.png"
+                  "image": "/images/frames/rydon/merlot.png"
                 },
                 {
                   "name": "Carey",
-                  "image": "/img/frames/rydon/carey.png"
+                  "image": "/images/frames/rydon/carey.png"
                 }
               ],
               "specs": {
@@ -964,34 +986,34 @@
           {
             "name": "Phantom™",
             "slug": "phantom",
-            "card_image": "/img/frames/phantom/card.webp",
+            "card_image": "/images/frames/phantom/card.webp",
             "description": "Phantom, fabricada en titanio ligero, es la montura deportiva con graduación incorporada más ligera del mercado.",
             "details": {
               "detailed_description": "Comodidad ligera sin comprometer el rendimiento.",
               "intro_text_1": "Fabricada en titanio ligero, Phantom es la montura deportiva con graduación incorporada más ligera del mercado. Phantom es un 15% más ligera que la principal competidora, con graduación.",
               "intro_text_2": "Todas las mejores características - puntas de patilla flexibles, puente nasal ajustable, canal de control de cables y bisagras flexibles - sin el peso añadido.",
               "intro_text_3": "Disponible en cinco colores impresionantes, Phantom es la elección perfecta para quienes priorizan la comodidad y el estilo.",
-              "intro_image": "/img/frames/phantom/intro.webp",
+              "intro_image": "/images/frames/phantom/intro.webp",
               "colors": [
                 {
                   "name": "Negro",
-                  "image": "/img/frames/phantom/black.png"
+                  "image": "/images/frames/phantom/black.png"
                 },
                 {
                   "name": "Iris",
-                  "image": "/img/frames/phantom/iris.png"
+                  "image": "/images/frames/phantom/iris.png"
                 },
                 {
                   "name": "Oro rosa",
-                  "image": "/img/frames/phantom/rosegold.png"
+                  "image": "/images/frames/phantom/rosegold.png"
                 },
                 {
                   "name": "Zafiro",
-                  "image": "/img/frames/phantom/sapphire.png"
+                  "image": "/images/frames/phantom/sapphire.png"
                 },
                 {
                   "name": "Pizarra",
-                  "image": "/img/frames/phantom/slate.png"
+                  "image": "/images/frames/phantom/slate.png"
                 }
               ],
               "specs": {
@@ -1008,33 +1030,33 @@
           {
             "name": "Triumph™",
             "slug": "triumph",
-            "card_image": "/img/frames/triumph/card.webp",
+            "card_image": "/images/frames/triumph/card.webp",
             "description": "Esta montura icónica emplea una función de control de cables incorporada y está disponible en cinco impresionantes colores bicolores.",
             "details": {
               "detailed_description": "Esta montura icónica emplea una función integrada de control por cable y admite todos los niveles de aumento.",
               "intro_text_1": "Combinando rendimiento y comodidad, Triumph™ es una ligera montura de titanio construida exclusivamente para lupas. El control por cable integrado elimina las distracciones y optimiza la eficacia. Elija cualquier nivel de aumento e incorpore su estilo personal con una de las cinco combinaciones de colores bicolores de moda. Las patillas ajustables y el puente nasal permiten un ajuste personalizado y una mayor comodidad.",
               "intro_text_2": "Triumph™ está disponible en tamaño pequeño, mediano y grande y admite todo tipo de graduaciones.",
-              "intro_image": "/img/frames/triumph/intro.webp",
+              "intro_image": "/images/frames/triumph/intro.webp",
               "colors": [
                 {
                   "name": "Negro",
-                  "image": "/img/frames/triumph/black.png"
+                  "image": "/images/frames/triumph/black.png"
                 },
                 {
                   "name": "Dorado",
-                  "image": "/img/frames/triumph/gold.png"
+                  "image": "/images/frames/triumph/gold.png"
                 },
                 {
                   "name": "Oro rosa",
-                  "image": "/img/frames/triumph/rosegold.png"
+                  "image": "/images/frames/triumph/rosegold.png"
                 },
                 {
                   "name": "Zafiro",
-                  "image": "/img/frames/triumph/sapphire.png"
+                  "image": "/images/frames/triumph/sapphire.png"
                 },
                 {
                   "name": "Pizarra",
-                  "image": "/img/frames/triumph/slate.png"
+                  "image": "/images/frames/triumph/slate.png"
                 }
               ],
               "specs": {
@@ -1084,33 +1106,33 @@
           {
             "name": "Tempo™",
             "slug": "tempo",
-            "card_image": "/img/frames/tempo/card.webp",
+            "card_image": "/images/frames/tempo/card.webp",
             "description": "Esta montura icónica aporta un diseño elegante y minimalista para el clínico moderno de hoy en día.",
             "details": {
               "detailed_description": "Esta montura icónica aporta un diseño elegante y minimalista que admite todos los niveles de aumento.",
               "intro_text_1": "Fabricada pensando en el rendimiento, la construcción ligera de titanio de Tempo™ es lo suficientemente duradera como para soportar la línea completa de lupas y frontales Orascoptic. La incorporación de patillas ajustables, un canal de control de cables y una almohadilla nasal en forma de silla de montar también permite un ajuste personalizable y una mayor comodidad.",
               "intro_text_2": "Tempo™ is available in small, medium, and large and supports all prescription types.",
-              "intro_image": "/img/frames/tempo/intro.webp",
+              "intro_image": "/images/frames/tempo/intro.webp",
               "colors": [
                 {
                   "name": "Amatista",
-                  "image": "/img/frames/tempo/amethyst.png"
+                  "image": "/images/frames/tempo/amethyst.png"
                 },
                 {
                   "name": "Negro",
-                  "image": "/img/frames/tempo/black.png"
+                  "image": "/images/frames/tempo/black.png"
                 },
                 {
                   "name": "Azul",
-                  "image": "/img/frames/tempo/blue.png"
+                  "image": "/images/frames/tempo/blue.png"
                 },
                 {
                   "name": "Merlot",
-                  "image": "/img/frames/tempo/merlot.png"
+                  "image": "/images/frames/tempo/merlot.png"
                 },
                 {
                   "name": "Pizarra",
-                  "image": "/img/frames/tempo/slate.png"
+                  "image": "/images/frames/tempo/slate.png"
                 }
               ],
               "specs": {
@@ -1160,34 +1182,34 @@
           {
             "name": "Tempo™ Refined Fit",
             "slug": "tempo-refined-fit",
-            "card_image": "/img/frames/tempo-re/card.webp",
+            "card_image": "/images/frames/tempo-re/card.webp",
             "description": "Esta montura de ajuste refinado se ha diseñado para proporcionar una comodidad óptima a los clínicos con pómulos prominentes o un puente nasal bajo.",
             "details": {
               "detailed_description": "Tempo™ Refined fit. Porque las lupas deben adaptarse cómodamente a todo el mundo.",
               "intro_text_1": "Diga adiós a las incómodas lupas que se deslizan por la nariz o se apoyan en las mejillas. Esta versión optimizada de nuestra popular montura Tempo™ se ha diseñado para adaptarse cómodamente a los clínicos que tienen un puente nasal más bajo y pómulos prominentes.",
               "intro_text_2": "Diseñado con un exclusivo alambre de puente nasal para permitir un ajuste cómodo y seguro en un puente nasal menos pronunciado, Tempo™ Refined Fit se diseñó con la altura de montura ideal para evitar la desalineación de la óptica causada por monturas apoyadas en los pómulos. ",
               "intro_text_3": "Tempo™ Refined Fit está disponible en las tallas refinadas pequeña, mediana y grande y admite todo tipo de prescripciones.",
-              "intro_image": "/img/frames/tempo-re/intro.webp",
+              "intro_image": "/images/frames/tempo-re/intro.webp",
               "colors": [
                 {
                   "name": "Amatista",
-                  "image": "/img/frames/tempo-re/amethyst.png"
+                  "image": "/images/frames/tempo-re/amethyst.png"
                 },
                 {
                   "name": "Negro",
-                  "image": "/img/frames/tempo-re/black.png"
+                  "image": "/images/frames/tempo-re/black.png"
                 },
                 {
                   "name": "Azul",
-                  "image": "/img/frames/tempo-re/blue.png"
+                  "image": "/images/frames/tempo-re/blue.png"
                 },
                 {
                   "name": "Merlot",
-                  "image": "/img/frames/tempo-re/merlot.png"
+                  "image": "/images/frames/tempo-re/merlot.png"
                 },
                 {
                   "name": "Pizarra",
-                  "image": "/img/frames/tempo-re/slate.png"
+                  "image": "/images/frames/tempo-re/slate.png"
                 }
               ],
               "specs": {
@@ -1237,28 +1259,28 @@
           {
             "name": "Victory™",
             "slug": "victory",
-            "card_image": "/img/frames/victory/card.webp",
+            "card_image": "/images/frames/victory/card.webp",
             "description": "Inspirada en la moda europea, esta montura tiene un perfil pequeño pero sofisticado.",
             "details": {
               "detailed_description": "Fabricada en titanio, la montura Victory™ admite todas las graduaciones y resulta atractiva para los clínicos que prefieren gafas pequeñas y compactas. ",
               "intro_text_1": "La pequeña y sofisticada montura Victory™ se inspira en la moda europea. Su pequeño perfil y su fiable estructura de titanio la convierten en una elección muy popular entre los médicos que buscan una montura de lupa ligera. ",
-              "intro_image": "/img/frames/victory/intro.webp",
+              "intro_image": "/images/frames/victory/intro.webp",
               "colors": [
                 {
                   "name": "Negro",
-                  "image": "/img/frames/victory/black.png"
+                  "image": "/images/frames/victory/black.png"
                 },
                 {
                   "name": "Azul",
-                  "image": "/img/frames/victory/blue.png"
+                  "image": "/images/frames/victory/blue.png"
                 },
                 {
                   "name": "Merlot",
-                  "image": "/img/frames/victory/merlot.png"
+                  "image": "/images/frames/victory/merlot.png"
                 },
                 {
                   "name": "Pizarra",
-                  "image": "/img/frames/victory/slate.png"
+                  "image": "/images/frames/victory/slate.png"
                 }
               ],
               "specs": {
@@ -1301,30 +1323,30 @@
           {
             "name": "Dragonfly™ PRO",
             "slug": "dragonfly-pro",
-            "card_image": "/img/frames/dragonfly-pro/card.webp",
+            "card_image": "/images/frames/dragonfly-pro/card.webp",
             "description": "Nuestro modelo premium PRO es compatible con toda la línea de telescopios Orascoptic y está cargado de características adicionales, incluyendo baterías adicionales, múltiples ajustes de intensidad de luz y un acabado de pintura cerámica extremadamente duradero.",
             "details": {
               "detailed_description": "Nuestro modelo premium PRO es compatible con toda la línea de telescopios Orascoptic y está cargado de características adicionales, incluyendo baterías adicionales, múltiples ajustes de intensidad de luz y un acabado de pintura cerámica extremadamente duradero.",
               "intro_text_1": "Ha llegado la era de las lupas potenciadas. Hemos combinado nuestra óptica líder en el sector y nuestra galardonado iluminador frontal en una solución única y ligera.",
               "intro_text_2": "Dragonfly™ es nuestra montura con alimentación por batería y circuito totalmente integrados que funciona con un iluminador frontal incorporado, liberándote de la molestia de los cables.",
               "intro_text_3": "Dragonfly™ PRO cuenta con Cerakote, un recubrimiento de polímero cerámico que ofrece una durabilidad, dureza, resistencia a los arañazos, resistencia a la corrosión y resistencia química líderes en el sector.",
-              "intro_image": "/img/frames/dragonfly-pro/intro.webp",
+              "intro_image": "/images/frames/dragonfly-pro/intro.webp",
               "colors": [
                 {
                   "name": "Amatista",
-                  "image": "/img/frames/dragonfly-pro/amethyst.png"
+                  "image": "/images/frames/dragonfly-pro/amethyst.png"
                 },
                 {
                   "name": "Carbón",
-                  "image": "/img/frames/dragonfly-pro/charcoal.png"
+                  "image": "/images/frames/dragonfly-pro/charcoal.png"
                 },
                 {
                   "name": "Neptuno",
-                  "image": "/img/frames/dragonfly-pro/neptune.png"
+                  "image": "/images/frames/dragonfly-pro/neptune.png"
                 },
                 {
                   "name": "Oliva",
-                  "image": "/img/frames/dragonfly-pro/olive.png"
+                  "image": "/images/frames/dragonfly-pro/olive.png"
                 }
               ],
               "specs": {
@@ -1387,18 +1409,18 @@
           {
             "name": "Dragonfly™ NEO",
             "slug": "dragonfly-neo",
-            "card_image": "/img/frames/dragonfly-neo/card.webp",
+            "card_image": "/images/frames/dragonfly-neo/card.webp",
             "description": "Admite 4 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
             "details": {
               "detailed_description": "Admite 4 potencias de aumento populares - la lupa preferida tanto de los estudiantes de odontología como de los residentes de medicina.",
               "intro_text_1": "Ha llegado la era de las lupas potenciadas. Hemos combinado nuestra óptica líder en el sector y nuestra galardonado iluminador frontal en una solución única y ligera.",
               "intro_text_2": "Dragonfly™ es nuestra montura con alimentación por batería y circuito totalmente integrados que funciona con un iluminador frontal incorporado, liberándote de la molestia de los cables.",
               "intro_text_3": "Nuestro modelo básico NEO está disponible en un solo color y admite cuatro opciones de aumento habituales.",
-              "intro_image": "/img/frames/dragonfly-neo/intro.webp",
+              "intro_image": "/images/frames/dragonfly-neo/intro.webp",
               "colors": [
                 {
                   "name": "Medianoche",
-                  "image": "/img/frames/dragonfly-neo/midnight.png"
+                  "image": "/images/frames/dragonfly-neo/midnight.png"
                 }
               ],
               "specs": {
@@ -1466,7 +1488,7 @@
           {
             "name": "Endeavour™ MD",
             "slug": "endeavour-md",
-            "card_image": "/img/headlights/endeavour-md/card.webp",
+            "card_image": "/images/headlights/endeavour-md/card.webp",
             "description": "Exclusiva para el campo quirúrgico, Endeavour™ MD presenta una distribución uniforme de hasta 85 lúmenes de luz y ofrece hasta 24 horas de salida de luz constante con CRI 92+.",
             "details": {
               "detailed_description": "Nuestro faro óptimo para cirujanos.",
@@ -1474,7 +1496,7 @@
                 "intro_text_1": "Exclusivo para el campo quirúrgico, Endeavour™ MD cuenta con una distribución uniforme de hasta 115 lúmenes de luz y ofrece hasta veinticuatro horas de salida de luz constante con CRI 92+.",
                 "intro_text_2": "Ajuste fácilmente la configuración de la luz sin tener que meter la mano en el bolsillo. Empleando el faro más pequeño de Orascoptic y la batería de mayor duración, Endeavour™ MD es una solución de faro fiable y ligera.",
                 "intro_text_3": "Endeavour™ MD está disponible con dos paquetes de baterías para garantizar una experiencia sin problemas para cada usuario.",
-                "intro_image": "/img/headlights/endeavour-md/intro.webp"
+                "intro_image": "/images/headlights/endeavour-md/intro.webp"
               },
               "specs": {
                 "weight": "10 g",
@@ -1491,7 +1513,7 @@
           {
             "name": "Endeavour™ XL",
             "slug": "endeavour-xl",
-            "card_image": "/img/headlights/endeavour-xl/card.webp",
+            "card_image": "/images/headlights/endeavour-xl/card.webp",
             "description": "Con un 25% más de autonomía que el faro Endeavour™ estándar, el Endeavour™ XL proporciona hasta 24 horas de batería continua.",
             "details": {
               "detailed_description": "Con mayor autonomía y una luz más brillante que el faro Endeavour™ estándar, el Endeavour™ XL proporciona hasta 24 horas de duración continua de la batería y 115 lúmenes de brillo.",
@@ -1500,7 +1522,7 @@
                 "intro_text_2": "Con la adición de múltiples intensidades de luz de hasta 115 lúmenes, el iluminador frontal permite al usuario seleccionar la salida de luz óptima para cada procedimiento.",
                 "intro_text_3": "La tecnología de corriente constante también garantiza que la potencia luminosa de la linterna frontal no disminuya durante el tiempo de funcionamiento de la batería.",
                 "intro_text_4": "Endeavour™ XL tiene una garantía de tres años para el cable y el LED y de un año para la batería.",
-                "intro_image": "/img/headlights/endeavour-xl/intro.webp"
+                "intro_image": "/images/headlights/endeavour-xl/intro.webp"
               },
               "specs": {
                 "weight": "10 g",
@@ -1517,7 +1539,7 @@
           {
             "name": "Spark™",
             "slug": "spark",
-            "card_image": "/img/headlights/spark/card.webp",
+            "card_image": "/images/headlights/spark/card.webp",
             "description": "Un iluminador frontal inalámbrico que se integra prácticamente con cualquier modelo de lupa o montura de gafas.",
             "details": {
               "detailed_description": "Spark™ es nuestro innovador iluminador frontal inalámbrico, pendiente de patente, que se integra prácticamente con cualquier modelo de lupa o montura de gafas. Nuestro diseño exclusivo distribuye el peso uniformemente por el puente de la montura minimizando la presión sobre la nariz.",

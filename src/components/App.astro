@@ -1,7 +1,7 @@
 ---
 import CookiePopup from './cookie-popup'
 import Layout from '../layouts/Layout.astro'
-import Title from '../components/MainTitle.astro'
+import Hero from '../components/Hero.astro'
 import Features from './Features.astro'
 import Carousel from '../components/carousel'
 import BentoProducts from './BentoProducts.astro'
@@ -13,7 +13,7 @@ const i18n = getI18N({ currentLocale })
 
 <Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
 	<CookiePopup client:load />
-	<Title />
+	<Hero />
 	<Carousel client:visible />
 	<Features />
 	<BentoProducts />
