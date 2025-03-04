@@ -38,7 +38,7 @@ export default function Header({ i18n, isHome = false }) {
 
 		const handleScroll = () => {
 			// Cambiar el estado de "scrolled" cuando se haga scroll
-			setScrolled(window.scrollY > 50)
+			setScrolled(window.scrollY)
 		}
 
 		window.addEventListener('scroll', handleScroll)
@@ -70,9 +70,7 @@ export default function Header({ i18n, isHome = false }) {
 
 	return (
 		<header
-			className={`fixed inset-x-0 top-0 z-30 transform transition-all duration-500 ease-in-out ${
-				heroVisible && isHome ? 'hidden' : ''
-			} ${scrolled ? 'translate-y-0 bg-white/70 opacity-100 shadow-sm backdrop-blur-md' : '-translate-y-16 bg-transparent opacity-0'}`}
+			className={`fixed inset-x-0 top-0 z-30 transform transition-all ease-in-out ${heroVisible && isHome ? 'hidden' : ''} ${scrolled ? 'translate-y-0 bg-white/70 shadow-sm backdrop-blur-md' : 'translate-y-0 bg-transparent'}`}
 		>
 			<nav
 				className="mx-auto flex max-w-7xl items-center justify-between p-2 lg:p-4 lg:px-8"

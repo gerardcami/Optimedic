@@ -7,16 +7,22 @@ const featuresData = i18n.HOME_PAGE.FEATURES
 ---
 
 <section
-	class="mb-[100px] flex w-full flex-col items-center justify-center gap-[80px] px-12 text-center lg:h-[200px] lg:flex-row"
+	class="mb-[100px] flex w-full flex-col items-center justify-center gap-[80px] px-12 text-center lg:h-[200px]"
 >
-	{
-		featuresData.map((feature) => (
-			<article class="flex h-full flex-col items-center md:w-1/3 lg:w-1/4">
-				<div class="icon" set:html={feature.icon} />
-				<h3 class="text-lg font-bold">{feature.title}</h3>
-				<hr class="my-[10px] w-1/4 rounded-full border border-black" />
-				<p class="text-center" set:html={feature.description} />
-			</article>
-		))
-	}
+	<div>
+		<h2 class="text-heading text-4xl">{i18n.HOME_PAGE.TITLE}</h2>
+		<p>{i18n.HOME_PAGE.SLOGAN}</p>
+	</div>
+	<div class="flex">
+		{
+			featuresData.map((feature) => (
+				<article class="flex h-full flex-col items-center md:w-1/3 lg:w-1/4">
+					<div class="icon" set:html={feature.icon} />
+					<h3 class="text-lg font-bold">{feature.title}</h3>
+					<hr class="my-[10px] w-1/4 rounded-full border border-black" />
+					<p class="text-center" set:html={feature.description} />
+				</article>
+			))
+		}
+	</div>
 </section>
