@@ -1,19 +1,15 @@
-import spanish from "./es.json";
-import english from "./en.json";
+import spanish from './es.json'
+import english from './en.json'
 
 const LANGUAGES = {
-  CATALAN: "ca",
-  SPANISH: "es",
-  ENGLISH: "en",
-};
+	CATALAN: 'ca',
+	SPANISH: 'es',
+	ENGLISH: 'en'
+}
 
-export const getI18N = ({
-  currentLocale = "es",
-}: {
-  currentLocale?: string;
-}) => {
-  if (currentLocale === LANGUAGES.SPANISH) return spanish;
-  if (currentLocale === LANGUAGES.ENGLISH) return english;
+export const getI18N = ({ currentLocale = 'es' }: { currentLocale?: string }) => {
+	if (currentLocale === LANGUAGES.SPANISH) return spanish
+	if (currentLocale === LANGUAGES.ENGLISH) return english
 
-  return spanish;
-};
+	return spanish
+}
