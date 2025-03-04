@@ -1,168 +1,158 @@
 ---
-import type { FooterSections, Link } from "../types/FooterSections";
+import type { FooterSections, Link } from '../types/FooterSections'
 
-import { getI18N } from "../i18n/";
+import { getI18N } from '../i18n/'
 
-const { currentLocale = "es" } = Astro;
-const i18n = getI18N({ currentLocale });
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
 
-const footerData: FooterSections = i18n.FOOTER;
+const footerData: FooterSections = i18n.FOOTER
 ---
 
 <footer class="bg-[#076b61]">
-  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-    <div class="lg:flex md:justify-between">
-      <div class="mb-6 lg:mb-0">
-        <a href="/" class="flex items-center">
-          <img
-            src="/img/logos/logo.png"
-            class="h-[60px]"
-            alt="Optimedic Logo"
-            loading="lazy"
-          />
-        </a>
-      </div>
-      <div class="grid grid-cols-2 gap-8 sm:flex sm:gap-[50px]">
-        {
-          footerData.SECTIONS.map((section) => (
-            <div>
-              <h2 class="mb-2 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                {section.TITLE}
-              </h2>
-              <ul class="text-gray-400 font-medium flex flex-col gap-1">
-                {section.LINKS.map((link: Link) => (
-                  <li>
-                    <a
-                      href={link.href}
-                      class="hover:underline flex items-center gap-2"
-                    >
-                      {link?.name ? (
-                        link.name
-                      ) : (
-                        <>
-                          <span set:html={link.svgIcon} class="w-5 h-5" />
-                          {link.data}
-                        </>
-                      )}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-    <hr class="my-6 sm:mx-auto border-gray-400 lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm text-gray-400 sm:text-center">
-        © 2024{" "}
-        <a href="https://optimedic.es" class="hover:underline">Optimedic</a>
-        . {footerData.COPYRIGHT}
-      </span>
-      <div class="flex gap-4 mt-4 sm:justify-center sm:mt-0 text-gray-400">
-        <a
-          href="https://www.instagram.com/optimedicsurgery"
-          target="_blank"
-          class="hover:text-white hover:scale-125 transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-instagram"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
-            ></path>
-            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-            <path d="M16.5 7.5l0 .01"></path>
-          </svg>
-          <span class="sr-only">Instagram page</span>
-        </a>
-        <a
-          href="https://x.com/Optimedic"
-          target="_blank"
-          class="hover:text-white hover:scale-125 transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-x"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-          </svg>
-          <span class="sr-only">X page</span>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/carolinagay/"
-          target="_blank"
-          class="hover:text-white hover:scale-125 transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-linkedin"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
-            ></path>
-            <path d="M8 11l0 5"></path>
-            <path d="M8 8l0 .01"></path>
-            <path d="M12 16l0 -5"></path>
-            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-          </svg>
-          <span class="sr-only">Linkedin page</span>
-        </a>
-        <a
-          href="https://www.facebook.com/optimedic.es/"
-          target="_blank"
-          class="hover:text-white hover:scale-125 transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-facebook"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-            ></path>
-          </svg>
-          <span class="sr-only">Facebook page</span>
-        </a>
-      </div>
-    </div>
-  </div>
+	<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+		<div class="md:justify-between lg:flex">
+			<div class="mb-6 lg:mb-0">
+				<a href="/" class="flex items-center">
+					<img src="/img/logos/logo.png" class="h-[60px]" alt="Optimedic Logo" loading="lazy" />
+				</a>
+			</div>
+			<div class="grid grid-cols-2 gap-8 sm:flex sm:gap-[50px]">
+				{
+					footerData.SECTIONS.map((section) => (
+						<div>
+							<h2 class="mb-2 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+								{section.TITLE}
+							</h2>
+							<ul class="flex flex-col gap-1 font-medium text-gray-400">
+								{section.LINKS.map((link: Link) => (
+									<li>
+										<a href={link.href} class="flex items-center gap-2 hover:underline">
+											{link?.name ? (
+												link.name
+											) : (
+												<>
+													<span set:html={link.svgIcon} class="h-5 w-5" />
+													{link.data}
+												</>
+											)}
+										</a>
+									</li>
+								))}
+							</ul>
+						</div>
+					))
+				}
+			</div>
+		</div>
+		<hr class="my-6 border-gray-400 sm:mx-auto lg:my-8" />
+		<div class="sm:flex sm:items-center sm:justify-between">
+			<span class="text-sm text-gray-400 sm:text-center">
+				© 2024{' '}
+				<a href="https://optimedic.es" class="hover:underline">Optimedic</a>
+				. {footerData.COPYRIGHT}
+			</span>
+			<div class="mt-4 flex gap-4 text-gray-400 sm:mt-0 sm:justify-center">
+				<a
+					href="https://www.instagram.com/optimedicsurgery"
+					target="_blank"
+					class="transition hover:scale-125 hover:text-white"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-brand-instagram"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+						></path>
+						<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+						<path d="M16.5 7.5l0 .01"></path>
+					</svg>
+					<span class="sr-only">Instagram page</span>
+				</a>
+				<a
+					href="https://x.com/Optimedic"
+					target="_blank"
+					class="transition hover:scale-125 hover:text-white"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-brand-x"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+						<path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+					</svg>
+					<span class="sr-only">X page</span>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/carolinagay/"
+					target="_blank"
+					class="transition hover:scale-125 hover:text-white"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-brand-linkedin"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path
+							d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+						></path>
+						<path d="M8 11l0 5"></path>
+						<path d="M8 8l0 .01"></path>
+						<path d="M12 16l0 -5"></path>
+						<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+					</svg>
+					<span class="sr-only">Linkedin page</span>
+				</a>
+				<a
+					href="https://www.facebook.com/optimedic.es/"
+					target="_blank"
+					class="transition hover:scale-125 hover:text-white"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-brand-facebook"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+						></path>
+					</svg>
+					<span class="sr-only">Facebook page</span>
+				</a>
+			</div>
+		</div>
+	</div>
 </footer>

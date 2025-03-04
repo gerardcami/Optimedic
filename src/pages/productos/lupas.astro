@@ -1,14 +1,14 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import ProductTitle from "../../components/ProductTitle.astro";
-import CardProduct from "../../components/CardProduct.astro";
+import Layout from '../../layouts/Layout.astro'
+import ProductTitle from '../../components/ProductTitle.astro'
+import CardProduct from '../../components/CardProduct.astro'
 
-import { getI18N } from "../../i18n/";
-const { currentLocale = "es" } = Astro;
-const i18n = getI18N({ currentLocale });
+import { getI18N } from '../../i18n/'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <Layout title={i18n.LOUPES.TITLE} description="">
-  <ProductTitle productType="LOUPES" />
-  <CardProduct productType="LOUPES" />
+	<ProductTitle productType="LOUPES" />
+	<CardProduct productType="LOUPES" />
 </Layout>

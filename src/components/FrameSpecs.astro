@@ -1,101 +1,87 @@
 ---
-import type { Texts, Specs } from "../types/frames";
+import type { Texts, Specs } from '../types/frames'
 
 interface Props {
-  specs: Specs;
-  texts: Texts;
+	specs: Specs
+	texts: Texts
 }
-const { specs, texts } = Astro.props;
+const { specs, texts } = Astro.props
 ---
 
-<article class="flex flex-col shadow-2xl p-12 rounded-lg">
-  <h2 class="text-3xl mb-12 font-bold">{texts.text_specs}</h2>
-  <div class="flex flex-col flex-wrap lg:max-h-[400px] gap-4">
-    {
-      specs?.materials && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">
-            {texts.text_materials}
-          </h3>
-          <p set:html={specs.materials} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.sizes && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">{texts.text_sizes}</h3>
-          <p set:html={specs.sizes} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.weight && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">{texts.text_weight}</h3>
-          <p set:html={specs.weight} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.light_intensity && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">
-            {texts.text_light_intensity}
-          </h3>
-          <p set:html={specs.light_intensity} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.color_rendering_index && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">
-            {texts.text_color_rendering_index}
-          </h3>
-          <p set:html={specs.color_rendering_index} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.color_temperature && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">
-            {texts.text_color_temperature}
-          </h3>
-          <p set:html={specs.color_temperature} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.est_charge_time && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">
-            {texts.text_est_charge_time}
-          </h3>
-          <p set:html={specs.est_charge_time} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.est_battery_life && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">
-            {texts.text_est_battery_life}
-          </h3>
-          <p set:html={specs.est_battery_life} class="text-gray-700" />
-        </div>
-      )
-    }
-    {
-      specs?.included_batteries && (
-        <div class="border-b pb-2 mb-2">
-          <h3 class="text-xl font-bold text-teal-600">
-            {texts.text_included_batteries}
-          </h3>
-          <p set:html={specs.included_batteries} class="text-gray-700" />
-        </div>
-      )
-    }
-  </div>
+<article class="flex flex-col rounded-lg p-12 shadow-2xl">
+	<h2 class="mb-12 text-3xl font-bold">{texts.text_specs}</h2>
+	<div class="flex flex-col flex-wrap gap-4 lg:max-h-[400px]">
+		{
+			specs?.materials && (
+				<div class="mb-2 border-b pb-2">
+					<h3 class="text-xl font-bold text-teal-600">{texts.text_materials}</h3>
+					<p set:html={specs.materials} class="text-gray-700" />
+				</div>
+			)
+		}
+		{
+			specs?.sizes && (
+				<div class="mb-2 border-b pb-2">
+					<h3 class="text-xl font-bold text-teal-600">{texts.text_sizes}</h3>
+					<p set:html={specs.sizes} class="text-gray-700" />
+				</div>
+			)
+		}
+		{
+			specs?.weight && (
+				<div class="mb-2 border-b pb-2">
+					<h3 class="text-xl font-bold text-teal-600">{texts.text_weight}</h3>
+					<p set:html={specs.weight} class="text-gray-700" />
+				</div>
+			)
+		}
+		{
+			specs?.light_intensity && (
+				<div class="mb-2 border-b pb-2">
+					<h3 class="text-xl font-bold text-teal-600">{texts.text_light_intensity}</h3>
+					<p set:html={specs.light_intensity} class="text-gray-700" />
+				</div>
+			)
+		}
+		{
+			specs?.color_rendering_index && (
+				<div class="mb-2 border-b pb-2">
+					<h3 class="text-xl font-bold text-teal-600">{texts.text_color_rendering_index}</h3>
+					<p set:html={specs.color_rendering_index} class="text-gray-700" />
+				</div>
+			)
+		}
+		{
+			specs?.color_temperature && (
+				<div class="mb-2 border-b pb-2">
+					<h3 class="text-xl font-bold text-teal-600">{texts.text_color_temperature}</h3>
+					<p set:html={specs.color_temperature} class="text-gray-700" />
+				</div>
+			)
+		}
+		{
+			specs?.est_charge_time && (
+				<div class="mb-2 border-b pb-2">
+					<h3 class="text-xl font-bold text-teal-600">{texts.text_est_charge_time}</h3>
+					<p set:html={specs.est_charge_time} class="text-gray-700" />
+				</div>
+			)
+		}
+		{
+			specs?.est_battery_life && (
+				<div class="mb-2 border-b pb-2">
+					<h3 class="text-xl font-bold text-teal-600">{texts.text_est_battery_life}</h3>
+					<p set:html={specs.est_battery_life} class="text-gray-700" />
+				</div>
+			)
+		}
+		{
+			specs?.included_batteries && (
+				<div class="mb-2 border-b pb-2">
+					<h3 class="text-xl font-bold text-teal-600">{texts.text_included_batteries}</h3>
+					<p set:html={specs.included_batteries} class="text-gray-700" />
+				</div>
+			)
+		}
+	</div>
 </article>

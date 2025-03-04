@@ -1,31 +1,28 @@
 ---
-import { getI18N } from "../i18n/";
-const { currentLocale = "es" } = Astro;
-const i18n = getI18N({ currentLocale });
+import { getI18N } from '../i18n/'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
 
 interface Props {
-  productType: "LOUPES" | "FRAMES" | "HEADLIGHTS";
+	productType: 'LOUPES' | 'FRAMES' | 'HEADLIGHTS'
 }
 
-const { productType } = Astro.props;
+const { productType } = Astro.props
 
-const product = i18n[productType];
+const product = i18n[productType]
 ---
 
 <section class="flex flex-col gap-12 px-6 md:px-12">
-  <h1
-    class="text-6xl text-center lg:text-start font-semibold"
-    set:html={product.TITLE}
-  />
-  <article class="flex flex-row gap-4">
-    <div class="relative hidden lg:block">
-      <div class="w-[5px] h-full bg-[#076b61] rounded"></div>
-    </div>
-    <div class="flex flex-col text-center gap-12 lg:gap-4 lg:text-start">
-      <p class="italic font-bold text-lg" set:html={product.SUBTITLE} />
-      <p class="text-lg" set:html={product.DESCRIPTION_1} />
-      <p class="text-lg" set:html={product.DESCRIPTION_2} />
-      <p class="text-lg" set:html={product.DESCRIPTION_3} />
-    </div>
-  </article>
+	<h1 class="text-center text-6xl font-semibold lg:text-start" set:html={product.TITLE} />
+	<article class="flex flex-row gap-4">
+		<div class="relative hidden lg:block">
+			<div class="h-full w-[5px] rounded bg-[#076b61]"></div>
+		</div>
+		<div class="flex flex-col gap-12 text-center lg:gap-4 lg:text-start">
+			<p class="text-lg font-bold italic" set:html={product.SUBTITLE} />
+			<p class="text-lg" set:html={product.DESCRIPTION_1} />
+			<p class="text-lg" set:html={product.DESCRIPTION_2} />
+			<p class="text-lg" set:html={product.DESCRIPTION_3} />
+		</div>
+	</article>
 </section>
