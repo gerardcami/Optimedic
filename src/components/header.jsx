@@ -20,11 +20,13 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(' ')
 }
 
-export default function Header({ i18n }) {
+export default function Header({ i18n, isHome = false }) {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 	const [navItems, setNavItems] = useState([])
 	const [products, setProducts] = useState([])
 	const [scrolled, setScrolled] = useState(false)
+
+	const [heroVisible, setHeroVisible] = useState(true)
 
 	useEffect(() => {
 		async function fetchNavContent() {
@@ -35,24 +37,42 @@ export default function Header({ i18n }) {
 		fetchNavContent()
 
 		const handleScroll = () => {
-			// El header se vuelve opaco tan pronto como se detecta cualquier desplazamiento
-			setScrolled(window.scrollY > 0)
+			// Cambiar el estado de "scrolled" cuando se haga scroll
+			setScrolled(window.scrollY > 50)
 		}
 
 		window.addEventListener('scroll', handleScroll)
 
-		// Inicializa el estado del desplazamiento basado en la posición de la página al cargar
-		handleScroll()
+		// Observador de intersección para Hero
+		const hero = document.getElementById('hero')
+		if (hero) {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					const isHeroVisible = entries[0].isIntersecting
+					setHeroVisible(isHeroVisible)
+				},
+				{ threshold: 0.1 }
+			) // Cambiar el umbral para asegurar que se active rápidamente
+			observer.observe(hero)
+
+			return () => observer.disconnect()
+		}
 
 		return () => window.removeEventListener('scroll', handleScroll)
 	}, [])
 
+	useEffect(() => {
+		// Reseteamos el estado de "scrolled" cuando Hero es visible
+		if (heroVisible) {
+			setScrolled(false)
+		}
+	}, [heroVisible])
+
 	return (
 		<header
-			className={classNames(
-				'fixed inset-x-0 top-0 z-30 transition-colors duration-300',
-				scrolled ? 'bg-white/70 shadow-sm backdrop-blur-md' : 'bg-transparent'
-			)}
+			className={`fixed inset-x-0 top-0 z-30 transform transition-all duration-500 ease-in-out ${
+				heroVisible && isHome ? 'hidden' : ''
+			} ${scrolled ? 'translate-y-0 bg-white/70 opacity-100 shadow-sm backdrop-blur-md' : '-translate-y-16 bg-transparent opacity-0'}`}
 		>
 			<nav
 				className="mx-auto flex max-w-7xl items-center justify-between p-2 lg:p-4 lg:px-8"
@@ -178,7 +198,7 @@ export default function Header({ i18n }) {
 																key={subcategory.name}
 																as="a"
 																href={subcategory.href}
-																className="block w-full rounded-lg py-2 pl-8 pr-3 text-sm font-semibold leading-7 text-gray-900 transition duration-200 hover:bg-gray-50"
+																className="block w-full rounded-lg py-2 pl-8 pr-3 text-sm font-semibold leading-7 text-gray-900 transition duration-200 hover:bg-gray-100"
 															>
 																{subcategory.name}
 															</DisclosureButton>
@@ -189,19 +209,6 @@ export default function Header({ i18n }) {
 										</>
 									)}
 								</Disclosure>
-
-								{/* Render other navigation items */}
-								<div className="flex flex-col gap-4">
-									{navItems.slice(1).map((item) => (
-										<a
-											key={item.name}
-											href={item.href}
-											className="flex items-center justify-start rounded-lg py-3 pl-4 pr-4 text-base font-semibold leading-7 text-gray-900 transition duration-200 hover:bg-gray-100"
-										>
-											{item.name}
-										</a>
-									))}
-								</div>
 							</div>
 						</div>
 					</div>

@@ -2,15 +2,17 @@
 interface Props {
 	title: string
 	description: string
+	isHome?: boolean
 }
 
-const { title, description } = Astro.props
+const { title, description, isHome = false } = Astro.props
 
 import Footer from '../components/Footer.astro'
 import ViewTransitions from 'astro/components/ViewTransitions.astro'
 import Header from '../components/header'
 
 import { getI18N } from '../i18n'
+
 const { currentLocale = 'es' } = Astro
 const i18n = getI18N({ currentLocale })
 ---
@@ -67,9 +69,9 @@ const i18n = getI18N({ currentLocale })
 		</style>
 	</head>
 	<body class="flex min-h-screen flex-col overflow-x-hidden font-sans">
-		<Header i18n={i18n} client:visible />
+		<Header i18n={i18n} isHome={isHome} client:load />
 		<main
-			class="mt-[60px] flex min-h-[calc(100vh-60px)] max-w-[1200px] flex-grow flex-col items-center md:mb-[100px] md:min-h-[calc(100vh-64px)] md:gap-[100px] lg:mx-auto lg:mt-[64px] lg:text-[18px]"
+			class="flex min-h-[calc(100vh-60px)] max-w-[1200px] flex-grow flex-col items-center md:mb-[100px] md:min-h-[calc(100vh-64px)] md:gap-[100px] lg:mx-auto lg:text-[18px]"
 		>
 			<slot />
 		</main>

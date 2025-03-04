@@ -87,7 +87,7 @@
           {
             "name": "Política de Redes Sociales",
             "href": "/docs/social-media-privacy-policy.pdf"
-          }          
+          }
         ]
       },
       {
@@ -124,23 +124,23 @@
     "HERO": [
       {
         "title": "Loupes",
-        "description": "",
+        "description": "Descubre nuestras lupas de alta precisión diseñadas para ofrecer una visión clara y nítida en procedimientos médicos y dentales.",
         "href": "/productos/lupas",
-        "backImage": ""
+        "backImage": "/images/hero/loupes.jpg"
       },
       {
-        "logo": "",
+        "logo": "/images/logos/renuvion.png",
         "title": "Renuvion",
-        "description": "",
-        "href": "/productos/lupas",
-        "backImage": ""
+        "description": "Tecnología avanzada de energía de plasma para procedimientos de rejuvenecimiento y contorno corporal con resultados precisos y mínimamente invasivos.",
+        "href": "https://www.renuvion.com/",
+        "backImage": "/images/hero/renuvion.jpg"
       },
       {
-        "logo": "",
+        "logo": "/images/logos/microaire.png",
         "title": "MicroAire",
-        "description": "",
-        "href": "/productos/lupas",
-        "backImage": ""
+        "description": "Soluciones innovadoras en cirugía asistida por energía, incluyendo sistemas de liposucción y dispositivos quirúrgicos de precisión.",
+        "href": "/catalog/microaire.pdf",
+        "backImage": "/images/hero/microaire.jpg"
       }
     ],
     "FEATURES": [

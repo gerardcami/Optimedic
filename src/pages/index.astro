@@ -1,5 +1,20 @@
 ---
-import App from '../components/App.astro'
+import CookiePopup from '../components/cookie-popup'
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/Hero'
+import Features from '../components/Features.astro'
+import Carousel from '../components/carousel'
+import BentoProducts from '../components/BentoProducts.astro'
+
+import { getI18N } from '../i18n/'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
-<App />
+<Layout title={i18n.SEO_TITLE} isHome={true} description={i18n.SEO_DESCRIPTION}>
+	<CookiePopup client:load />
+	<Hero client:load />
+	<Carousel client:visible />
+	<Features />
+	<BentoProducts />
+</Layout>

@@ -121,6 +121,28 @@
   "HOME_PAGE": {
     "TITLE": "Optimedic",
     "SLOGAN": "Precision tailored to you",
+    "HERO": [
+      {
+        "title": "Loupes",
+        "description": "Discover our high-precision loupes designed to provide clear and sharp vision for medical and dental procedures.",
+        "href": "/productos/lupas",
+        "backImage": "/images/hero/loupes.jpg"
+      },
+      {
+        "logo": "/images/logos/renuvion.png",
+        "title": "Renuvion",
+        "description": "Advanced plasma energy technology for rejuvenation and body contouring procedures with precise and minimally invasive results.",
+        "href": "/productos/lupas",
+        "backImage": "/images/hero/renuvion.jpg"
+      },
+      {
+        "logo": "/images/logos/microaire.png",
+        "title": "MicroAire",
+        "description": "Innovative solutions in power-assisted surgery, including liposuction systems and precision surgical devices.",
+        "href": "/productos/lupas",
+        "backImage": "/images/hero/microaire.jpg"
+      }
+    ],
     "FEATURES": [
       {
         "title": "Quality",
@@ -214,7 +236,7 @@
       {
         "name": "Renuvion Facial Renewal",
         "href": "/catalog/renuvion-facial.pdf"
-      }      
+      }
     ]
   },
   "CONTACT": {
