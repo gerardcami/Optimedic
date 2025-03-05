@@ -1,0 +1,45 @@
+---
+import { getI18N } from '../../../i18n/'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
+
+import { FeatureItem } from './feature-item'
+
+const featuresData = i18n.HOME_PAGE.FEATURES
+
+import { Sparkles, Award, HeartHandshake, Headset } from 'lucide'
+
+const icons = [Sparkles, Award, HeartHandshake, Headset]
+---
+
+<section
+	class="mb-[100px] flex w-full flex-col items-center justify-center gap-[80px] p-12 text-center"
+>
+	<div class="mb-10 flex flex-col items-center space-y-4 text-center">
+		<h2 class="text-3xl font-bold tracking-tighter text-zinc-900 md:text-4xl">
+			Why Choose Optimedic
+		</h2>
+		<p class="max-w-[700px] text-zinc-500 md:text-xl">
+			We're committed to excellence in every aspect of our business
+		</p>
+	</div>
+	<div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+		{
+			featuresData.map((feature, index) => (
+				<FeatureItem
+					title={feature.title}
+					description={feature.description}
+					iconIndex={index}
+					color={feature.color}
+				/>
+			))
+		}
+	</div>
+	<div class="mt-12 text-center">
+		<p
+			class="inline-flex items-center justify-center rounded-full bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700"
+		>
+			Trusted by over 10,000 healthcare professionals in 50+ countries
+		</p>
+	</div>
+</section>

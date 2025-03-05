@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { HeroItem } from './hero-item'
-import { getI18N } from '../i18n/'
+import { getI18N } from '../../../i18n'
 import { ChevronDown } from 'lucide-react'
 
 const Hero = () => {
@@ -13,9 +13,8 @@ const Hero = () => {
 	const [heroInView, setHeroInView] = useState(true) // Track if Hero is in view
 
 	const handleScrollIndicatorClick = () => {
-		console.log('clicked')
 		window.scrollTo({
-			top: window.innerHeight, // Mueve la pantalla justo después del Hero
+			top: window.innerHeight,
 			behavior: 'smooth'
 		})
 	}

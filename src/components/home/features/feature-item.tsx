@@ -17,7 +17,7 @@ const FeatureItem = ({ title, description, iconIndex, color }: FeatureItemProps)
 	const IconComponent = icons[iconIndex]
 
 	return (
-		<div className="flex flex-col items-center rounded-xl border border-zinc-100 bg-white p-6 text-center shadow-sm transition-shadow hover:shadow-md">
+		<div className="flex flex-col items-center rounded-xl border border-zinc-100 bg-white p-6 text-center shadow-sm transition-shadow hover:cursor-default hover:shadow-md">
 			<div
 				className="mb-4 flex h-12 w-12 items-center justify-center rounded-full p-2"
 				style={{
