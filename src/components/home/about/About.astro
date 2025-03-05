@@ -1,0 +1,41 @@
+---
+import { getI18N } from '../../../i18n/'
+import Carousel from '../../carousel'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
+
+const aboutData = i18n.HOME_PAGE.ABOUT
+---
+
+<section class="mb-[100px] justify-center p-12">
+	<h2 class="mb-10 text-3xl font-bold tracking-tighter text-zinc-900 md:text-4xl">
+		Acerca de Optimedic
+	</h2>
+	<div class="grid grid-cols-2 gap-[80px]">
+		<div>
+			<div class="space-y-4 text-pretty">
+				<p class="text-zinc-500 md:text-lg">
+					{aboutData.text1}
+				</p>
+
+				<p class="text-zinc-500 md:text-lg">
+					{aboutData.text2}
+				</p>
+			</div>
+			<div class="mt-10">
+				<a
+					href={aboutData.link.href}
+					class="group inline-flex w-fit items-center gap-2 rounded-xl bg-black/10 px-4 py-2 backdrop-blur-sm transition-all duration-300 hover:border-white/80 hover:bg-black/20"
+				>
+					<span class="text-sm font-medium tracking-wide">{aboutData.link.text}</span>
+					<span class="transform transition-transform duration-300 group-hover:translate-x-1">
+						→
+					</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<Carousel client:visible />
+		</div>
+	</div>
+</section>

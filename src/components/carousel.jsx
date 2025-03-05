@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Slides } from '../services/carousel'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 export default function Carousel() {
 	const [currentSlide, setCurrentSlide] = useState(0)
@@ -102,7 +103,7 @@ export default function Carousel() {
 			onTouchMove={handleTouchMove}
 			onTouchEnd={handleTouchEnd}
 		>
-			<div className="relative h-[350px] overflow-hidden md:h-[400px] md:rounded-lg lg:h-[500px]">
+			<div className="relative h-[400px] overflow-hidden md:rounded-md">
 				{slides.map((slide, index) => (
 					<div
 						key={slide.id}
@@ -127,21 +128,8 @@ export default function Carousel() {
 				data-carousel-prev
 				onClick={handlePrevClick}
 			>
-				<span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
-					<svg
-						className="h-6 w-6 text-white dark:text-gray-800"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke="currentColor"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth="2"
-							d="M15 19l-7-7 7-7"
-						/>
-					</svg>
+				<span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 hover:bg-white/80">
+					<ChevronLeft />
 					<span className="sr-only">Previous</span>
 				</span>
 			</button>
@@ -151,21 +139,8 @@ export default function Carousel() {
 				data-carousel-next
 				onClick={handleNextClick}
 			>
-				<span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
-					<svg
-						className="h-6 w-6 text-white dark:text-gray-800"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke="currentColor"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth="2"
-							d="M9 5l7 7-7 7"
-						/>
-					</svg>
+				<span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/70 hover:bg-white/80">
+					<ChevronRight />
 					<span className="sr-only">Next</span>
 				</span>
 			</button>

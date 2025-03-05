@@ -165,6 +165,14 @@
         "color": "#EF4444"
       }
     ],
+    "ABOUT": {
+      "text1": "Welcome to our website! We are a company committed to delivering high-quality products and services. Our mission is to provide innovative solutions that meet the needs of our diverse customers. With years of experience in the industry, we pride ourselves on our customer-centric approach and continuous improvement.",
+      "text2": "At our core, we believe in fostering strong relationships with our clients. We strive to ensure that each experience with us is positive and exceeds expectations. Our team works diligently to create meaningful solutions, always keeping quality, integrity, and reliability at the forefront of everything we do.",
+      "link": {
+        "text": "Learn more about our journey and values",
+        "href": "/about-us"
+      }
+    },
     "PRODUCTS": [
       {
         "name": "Loupes",
