@@ -177,6 +177,7 @@
       {
         "name": "Loupes",
         "img": "/images/products/loupes.jpg",
+        "description": "Explore our wide range of loupes, designed to offer optimal performance and comfort in use. We have options for different needs and applications.",
         "subcategories": [
           {
             "name": "Loupes",
@@ -198,6 +199,7 @@
       {
         "name": "Surgery",
         "img": "/images/products/surgery.jpg",
+        "description": "We offer advanced equipment and technologies for the field of surgery, providing precision and effectiveness solutions for high-specialization surgical procedures.",
         "subcategories": [
           {
             "name": "MicroAire",
@@ -214,6 +216,7 @@
       {
         "name": "Events",
         "img": "/images/products/events.jpg",
+        "description": "We offer complete solutions for event planning, designed to meet the needs and objectives of each client, ensuring the success of every occasion.",
         "subcategories": [
           {
             "name": "Event Organization",

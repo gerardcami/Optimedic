@@ -177,6 +177,7 @@
       {
         "name": "Loupes",
         "img": "/images/products/loupes.jpg",
+        "description": "Explora nuestra amplia gama de lupas, diseñadas para ofrecer un rendimiento óptimo y comodidad en su uso. Contamos con opciones para diferentes necesidades y aplicaciones.",
         "subcategories": [
           {
             "name": "Lupas",
@@ -198,6 +199,7 @@
       {
         "name": "Surgery",
         "img": "/images/products/surgery.jpg",
+        "description": "Contamos con equipos y tecnologías avanzadas para el campo de la cirugía, ofreciendo soluciones de precisión y eficacia para procedimientos quirúrgicos de alta especialización.",
         "subcategories": [
           {
             "name": "MicroAire",
@@ -214,9 +216,10 @@
       {
         "name": "Eventos",
         "img": "/images/products/events.jpg",
+        "description": "Ofrecemos soluciones completas para la organización de eventos, diseñadas para cumplir con las necesidades y objetivos de cada cliente, garantizando el éxito de cada ocasión.",
         "subcategories": [
           {
-            "name": "Organización de eventos",
+            "name": "Organización de eventos",
             "description": "Organizamos eventos para sus empresas.",
             "href": "/productos/eventos"
           }

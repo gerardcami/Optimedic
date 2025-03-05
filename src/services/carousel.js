@@ -1,8 +1,7 @@
 export const Slides = [
   {
     id: 1,
-    image:
-      "/images/slides/slide1.jpg",
+    image: "/images/slides/slide1.svg",
   },
   {
     id: 2,

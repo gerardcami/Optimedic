@@ -1,0 +1,57 @@
+---
+import { getI18N } from '../../../i18n/'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
+
+const productsData = i18n.HOME_PAGE.PRODUCTS
+---
+
+<section
+	class="mb-[100px] flex w-full flex-col items-center justify-center gap-[80px] p-12 text-center"
+>
+	<div class="mb-10 flex flex-col items-center space-y-4 text-center">
+		<h2 class="text-3xl font-bold tracking-tighter text-zinc-900 md:text-4xl">
+			Nuestros productos y servicios
+		</h2>
+		<p class="max-w-[700px] text-zinc-500 md:text-xl">
+			Soluciones innovadoras y de precisión diseñadas para profesionales de la salud
+		</p>
+	</div>
+	<div
+		class="grid min-h-[600px] w-full auto-rows-fr grid-cols-1 gap-6 px-12 md:grid-cols-2 lg:grid-cols-3"
+	>
+		{
+			productsData.map((product, index) => (
+				<article
+					class={`relative overflow-hidden bg-cover bg-center md:rounded-lg ${
+						index === 0
+							? 'col-span-1 row-span-2 md:col-span-2 lg:col-span-2'
+							: index === 1
+								? 'col-span-1 row-span-1'
+								: 'col-span-1 row-span-1'
+					} group`}
+					style={{ backgroundImage: `url(${product.img})` }}
+				>
+					<div class="flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-50 transition-all duration-300 ease-in-out group-hover:bg-opacity-75 md:rounded-lg">
+						<p class="p-4 text-2xl font-semibold text-white transition-opacity duration-300 ease-in-out group-hover:hidden">
+							{product.name}
+						</p>
+						<div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+							<div class="flex flex-col items-center space-y-2">
+								{product.subcategories.map((subcategory, subIndex) => (
+									<a
+										href={subcategory.href}
+										class="translate-y-4 transform text-lg font-medium text-white transition-all duration-300 ease-in-out hover:underline group-hover:translate-y-0"
+										style={{ transitionDelay: `${subIndex * 100}ms` }}
+									>
+										{subcategory.name}
+									</a>
+								))}
+							</div>
+						</div>
+					</div>
+				</article>
+			))
+		}
+	</div>
+</section>
