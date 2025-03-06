@@ -8,10 +8,10 @@ const aboutData = i18n.HOME_PAGE.ABOUT
 ---
 
 <section class="flex flex-col justify-center gap-10 lg:px-10">
-	<h2 class="px-6 text-3xl font-bold tracking-tighter text-zinc-900 md:text-4xl lg:px-0">
+	<h2 class="px-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:px-0">
 		Acerca de Optimedic
 	</h2>
-	<div class="grid gap-10 lg:grid-cols-2 lg:gap-[80px]">
+	<div class="grid gap-10 lg:grid-cols-2">
 		<div class="px-6 lg:px-0">
 			<div class="space-y-4 text-pretty">
 				<p class="text-zinc-500 md:text-lg">
@@ -34,7 +34,7 @@ const aboutData = i18n.HOME_PAGE.ABOUT
 				</a>
 			</div>
 		</div>
-		<div>
+		<div class="md:px-6 lg:px-0">
 			<Carousel client:visible />
 		</div>
 	</div>

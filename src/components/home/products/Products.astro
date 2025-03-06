@@ -6,16 +6,18 @@ const i18n = getI18N({ currentLocale })
 const productsData = i18n.HOME_PAGE.PRODUCTS
 ---
 
-<section class="flex w-full flex-col items-center justify-center gap-10 text-center">
+<section class="flex w-full flex-col items-center justify-center gap-10 text-center lg:gap-20">
 	<div class="flex flex-col items-center gap-4 px-6 text-center lg:px-0">
-		<h2 class="text-3xl font-bold tracking-tighter text-zinc-900 md:text-4xl">
+		<h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
 			Nuestros productos y servicios
 		</h2>
-		<p class="max-w-[700px] text-zinc-500 md:text-xl">
+		<p class="text-xl font-semibold text-zinc-500 md:w-[700px] lg:w-[800px]">
 			Soluciones innovadoras y de precisión diseñadas para profesionales de la salud
 		</p>
 	</div>
-	<div class="grid w-full auto-rows-fr grid-cols-1 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-6">
+	<div
+		class="grid w-full auto-rows-fr grid-cols-1 md:grid-cols-2 md:gap-4 md:px-10 lg:grid-cols-3 lg:gap-6"
+	>
 		{
 			productsData.map((product, index) => (
 				<article

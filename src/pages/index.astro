@@ -7,6 +7,7 @@ import Products from '../components/home/products/Products.astro'
 
 import { getI18N } from '../i18n/'
 import About from '../components/home/about/About.astro'
+import Gallery from '../components/home/gallery/Gallery.astro'
 const { currentLocale = 'es' } = Astro
 const i18n = getI18N({ currentLocale })
 ---
@@ -17,4 +18,5 @@ const i18n = getI18N({ currentLocale })
 	<Features />
 	<About />
 	<Products />
+	<Gallery />
 </Layout>
