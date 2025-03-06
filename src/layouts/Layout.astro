@@ -11,6 +11,8 @@ import Footer from '../components/Footer.astro'
 import ViewTransitions from 'astro/components/ViewTransitions.astro'
 import Header from '../components/header'
 
+import Lenis from 'astro-lenis'
+
 import { getI18N } from '../i18n'
 
 const { currentLocale = 'es' } = Astro
@@ -76,5 +78,10 @@ const i18n = getI18N({ currentLocale })
 			<slot />
 		</main>
 		<Footer />
+		<script is:inline>
+			window.addEventListener('DOMContentLoaded', () => {
+				initLenis()
+			})
+		</script>
 	</body>
 </html>

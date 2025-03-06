@@ -6,9 +6,11 @@ import node from "@astrojs/node";
 
 import vercel from '@astrojs/vercel/serverless';
 
+import lenis from 'astro-lenis';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react()],
+  integrations: [tailwind(), react(), lenis()],
   output: 'server',
   adapter: vercel({
     webAnalytics: { enabled: true },
