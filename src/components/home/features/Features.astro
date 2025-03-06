@@ -9,9 +9,9 @@ const featuresData = i18n.HOME_PAGE.FEATURES
 ---
 
 <section
-	class="mb-[100px] flex w-full flex-col items-center justify-center gap-[80px] p-12 text-center"
+	class="mb-[100px] flex w-full flex-col items-center justify-center px-6 text-center md:px-10 lg:gap-20"
 >
-	<div class="mb-10 flex flex-col items-center space-y-4 text-center">
+	<div class="mb-10 flex flex-col items-center gap-4 text-center">
 		<h2 class="text-3xl font-bold tracking-tighter text-zinc-900 md:text-4xl">
 			Por qué elegir Optimedic
 		</h2>
@@ -19,7 +19,7 @@ const featuresData = i18n.HOME_PAGE.FEATURES
 			Nos comprometemos con la excelencia en cada aspecto de nuestro negocio.
 		</p>
 	</div>
-	<div class="grid grid-cols-1 gap-5 px-14 md:grid-cols-2 lg:grid-cols-4">
+	<div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:px-14 lg:grid-cols-4">
 		{
 			featuresData.map((feature, index) => (
 				<FeatureItem
@@ -35,7 +35,7 @@ const featuresData = i18n.HOME_PAGE.FEATURES
 		<p
 			class="inline-flex items-center justify-center rounded-lg bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700"
 		>
-			Trusted by over 10,000 healthcare professionals in 50+ countries
+			Con la confianza de más de 2.000 profesionales de la salud en España
 		</p>
 	</div>
 </section>

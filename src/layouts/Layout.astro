@@ -71,7 +71,7 @@ const i18n = getI18N({ currentLocale })
 	<body class="flex min-h-screen flex-col overflow-x-hidden font-sans">
 		<Header i18n={i18n} isHome={isHome} client:load />
 		<main
-			class=`${!isHome ? 'mt-[60px]' : ""} flex min-h-[calc(100vh-60px)] max-w-[1440px] flex-grow flex-col items-center md:mb-[100px] md:min-h-[calc(100vh-64px)] md:gap-[100px] lg:mx-auto lg:text-[18px]`
+			class=`${!isHome ? 'mt-[60px]' : ""} flex min-h-[calc(100vh-60px)] max-w-[1440px] space-y-20 flex-grow flex-col items-center md:mb-[100px] md:min-h-[calc(100vh-64px)] md:gap-[100px] lg:mx-auto lg:text-[18px]`
 		>
 			<slot />
 		</main>

@@ -14,12 +14,19 @@ const HeroItem = ({ logo, title, description, href, backImage }: HeroItemProps) 
 		>
 			<div className="absolute inset-0 z-10 bg-black/40"></div>
 			<div className="absolute inset-0 z-10 bg-gradient-to-b from-black/60 to-transparent"></div>
-			<div className="relative z-10 flex h-full flex-col justify-center gap-[50px] p-14">
-				<header className="h-[50px] w-1/2">
-					{logo ? <img src={logo} /> : <h3 className="text-5xl">{title}</h3>}
+			<div className="relative z-10 flex h-full flex-col justify-center gap-6 p-8 py-10 lg:gap-[50px] lg:p-14">
+				<header className="h-[50px] w-1/3 lg:w-1/2">
+					{logo ? (
+						<>
+							<img src={logo} />
+							<h3 className="sr-only">{title}</h3>
+						</>
+					) : (
+						<h3 className="text-3xl md:text-5xl">{title}</h3>
+					)}
 				</header>
 				<div className="h-1 w-16 bg-blue-500"></div>
-				<div className="h-full w-2/3">
+				<div className="h-full lg:w-2/3">
 					<p className="max-w-md text-lg leading-relaxed text-white/90">{description}</p>
 				</div>
 				<footer>
