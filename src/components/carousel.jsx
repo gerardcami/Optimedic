@@ -94,7 +94,7 @@ export default function Carousel() {
 	return (
 		<section
 			ref={carouselRef} // Set ref to the carousel
-			className="relative mb-[100px] w-full md:w-[90%]"
+			className="relative w-full md:w-[90%]"
 			data-carousel="slide"
 			onMouseDown={handleMouseDown}
 			onMouseMove={handleMouseMove}
