@@ -8,7 +8,7 @@ import { InstagramGallery } from './instagram-gallery'
 		<h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Síguenos en Instagram</h2>
 		<div class="flex items-center space-x-2">
 			<a
-				href="https://instagram.com/brandawesome"
+				href="https://instagram.com/optimedicsurgery"
 				class="flex items-center transition-opacity hover:opacity-80"
 			>
 				<LucideInstagram className="text-pink-600" />
@@ -16,5 +16,14 @@ import { InstagramGallery } from './instagram-gallery'
 			</a>
 		</div>
 	</div>
-	<InstagramGallery client:load />
+	<InstagramGallery client:visible />
+	<div class="flex justify-center">
+		<a
+			href="https://instagram.com/optimedicsurgery"
+			class="flex items-center rounded-full border border-gray-300 px-4 py-2 transition-colors hover:bg-gray-200"
+		>
+			<LucideInstagram className="text-pink-600" />
+			<span class="ml-2 text-sm font-medium">Ver más en Instagram</span>
+		</a>
+	</div>
 </section>
