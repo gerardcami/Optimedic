@@ -20,7 +20,7 @@ export type ProductElement = {
 	slug: string
 	card_image: string
 	description: string
-	details?: Details
+	details: Details
 }
 
 export type Details = {
@@ -29,7 +29,7 @@ export type Details = {
 	intro_text_2: string
 	intro_image: string
 	specs_image: string
-	specs?: Specs
+	specs: Specs
 	frame_options: FrameOption[]
 	intro_text_3?: string
 }
@@ -40,7 +40,7 @@ export type FrameOption = {
 }
 
 export type Specs = {
-	magnification_power?: string
+	magnification_power: string
 	weight: string
 	field_width?: string
 	field_depth?: string
