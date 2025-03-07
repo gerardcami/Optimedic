@@ -16,17 +16,12 @@ const InstagramGallery = () => {
 	>([])
 	const [loading, setLoading] = useState(true)
 
-	// Acceso a las variables de entorno
-	const accessToken = import.meta.env.PUBLIC_INSTAGRAM_ACCESS_TOKEN
-	const accountId = import.meta.env.PUBLIC_INSTAGRAM_ACCOUNT_ID
-
 	useEffect(() => {
 		const fetchLatestPosts = async () => {
 			try {
-				const url = `https://graph.facebook.com/v12.0/${accountId}/media?fields=id,caption,media_type,media_url,thumbnail_url,like_count,comments_count,timestamp&access_token=${accessToken}&limit=9`
-
-				const response = await fetch(url)
-
+				// Hacer la solicitud a tu API backend de Astro
+				const response = await fetch('/instagram-api') // URL de la API del backend de Astro
+				console.log(response)
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status} - ${response.statusText}`)
 				}
@@ -48,10 +43,11 @@ const InstagramGallery = () => {
 						}))
 					)
 				} else {
-					setPosts([])
+					setPosts([]) // Si no hay publicaciones, establecemos el estado como vacío
 				}
+				console.log(data)
 			} catch (error) {
-				console.error('Error fetching Instagram posts:', error)
+				console.error(error)
 				setPosts([]) // Limpiamos el estado en caso de error
 			} finally {
 				setLoading(false)
@@ -59,7 +55,7 @@ const InstagramGallery = () => {
 		}
 
 		fetchLatestPosts()
-	}, [accessToken, accountId])
+	}, [])
 
 	// Función para calcular los días desde la publicación
 	const getDaysAgo = (timestamp: string) => {
@@ -71,7 +67,7 @@ const InstagramGallery = () => {
 
 	if (loading) {
 		return (
-			<div className="grid w-full grid-cols-1 md:grid-cols-2 md:gap-4 md:px-10 lg:grid-cols-3 lg:px-40">
+			<div className="grid w-full grid-cols-1 md:grid-cols-2 md:gap-4 md:px-10 lg:grid-cols-3 lg:gap-6 lg:px-40">
 				<CardPlaceholder />
 				<CardPlaceholder />
 				<CardPlaceholder />
@@ -79,9 +75,8 @@ const InstagramGallery = () => {
 		)
 	}
 
-	// Renderizamos las publicaciones
 	return (
-		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-4 md:px-10 lg:grid-cols-3 lg:px-40">
+		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-4 md:px-10 lg:grid-cols-3 lg:gap-6 lg:px-40">
 			{posts.map((post) => (
 				<article
 					key={post.id}
