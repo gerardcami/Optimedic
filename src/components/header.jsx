@@ -14,7 +14,7 @@ import {
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
-import LanguageDropdown from './language-dropdown'
+/* import LanguageDropdown from './language-dropdown' */
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ')
@@ -145,9 +145,7 @@ export default function Header({ i18n, isHome = false }) {
 						</a>
 					))}
 				</PopoverGroup>
-				<div className="hidden lg:flex lg:flex-1 lg:justify-end">
-					<LanguageDropdown />
-				</div>
+				<div className="hidden lg:flex lg:flex-1 lg:justify-end">{/* <LanguageDropdown /> */}</div>
 			</nav>
 			<Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
 				<DialogPanel
@@ -158,9 +156,7 @@ export default function Header({ i18n, isHome = false }) {
 					}}
 				>
 					<div className="mb-4 flex items-center justify-between">
-						<div className="lg:hidden">
-							<LanguageDropdown />
-						</div>
+						<div className="lg:hidden">{/* <LanguageDropdown /> */}</div>
 						<button
 							type="button"
 							className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 transition duration-200 hover:bg-gray-300"
@@ -176,7 +172,7 @@ export default function Header({ i18n, isHome = false }) {
 							<div className="flex flex-col gap-4 py-6">
 								<Disclosure as="div">
 									{({ open }) => (
-										<>
+										<div className="flex flex-col">
 											<DisclosureButton className="mt-3 flex w-full items-center justify-between rounded-lg py-2 pl-4 pr-4 text-base font-semibold leading-7 text-gray-900 transition duration-200 hover:bg-gray-100">
 												{navItems.length > 0 && navItems[0].name}
 												<ChevronDownIcon
@@ -204,7 +200,16 @@ export default function Header({ i18n, isHome = false }) {
 													</div>
 												))}
 											</DisclosurePanel>
-										</>
+											{navItems.slice(1).map((item) => (
+												<a
+													key={item.name}
+													href={item.href}
+													className="mt-3 flex w-full items-center justify-between rounded-lg py-2 pl-4 pr-4 text-base font-semibold leading-7 text-gray-900 transition duration-200 hover:bg-gray-100"
+												>
+													{item.name}
+												</a>
+											))}
+										</div>
 									)}
 								</Disclosure>
 							</div>
