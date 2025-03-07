@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/Layout.astro'
+
+import { getI18N } from '../../i18n/'
+import { SurgeryHeading } from '../../components/products/surgery/surgery-heading'
+import { RenuvionSteps } from '../../components/products/surgery/renuvion/renuvion-steps'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<Layout title={i18n.RENUVION.heading.title} description="">
+	<SurgeryHeading content={i18n.RENUVION.heading} />
+	<RenuvionSteps content={i18n.RENUVION.steps} />
+</Layout>

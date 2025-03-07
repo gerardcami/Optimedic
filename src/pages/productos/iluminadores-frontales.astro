@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import ProductTitle from '../../components/ProductTitle.astro'
-import CardProduct from '../../components/products/Products.astro'
+import Products from '../../components/products/loupes/Products.astro'
 
 import { getI18N } from '../../i18n/'
 const { currentLocale = 'es' } = Astro
@@ -10,5 +10,5 @@ const i18n = getI18N({ currentLocale })
 
 <Layout title={i18n.HEADLIGHTS.TITLE} description="">
 	<ProductTitle productType="HEADLIGHTS" />
-	<CardProduct productType="HEADLIGHTS" />
+	<Products productType="HEADLIGHTS" />
 </Layout>

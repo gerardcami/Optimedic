@@ -202,14 +202,14 @@
         "description": "Contamos con equipos y tecnologías avanzadas para el campo de la cirugía, ofreciendo soluciones de precisión y eficacia para procedimientos quirúrgicos de alta especialización.",
         "subcategories": [
           {
+            "name": "Renuvion",
+            "description": "El único dispositivo aprobado por la FDA para su uso después de una liposucción y el único dispositivo aprobado por la FDA para contraer el tejido blando subcutáneo.",
+            "href": "/productos/renuvion"
+          },
+          {
             "name": "MicroAire",
             "description": "Un potente instrumento de precisión diseñado para la extracción de grasa de pequeño o gran volumen, el contorno corporal y la recolección de grasa.",
             "href": "/catalog/microaire.pdf"
-          },
-          {
-            "name": "Renuvion",
-            "description": "El único dispositivo aprobado por la FDA para su uso después de una liposucción y el único dispositivo aprobado por la FDA para contraer el tejido blando subcutáneo.",
-            "href": "https://www.renuvion.com/"
           }
         ]
       },
@@ -1593,6 +1593,33 @@
             }
           }
         ]
+      }
+    ]
+  },
+  "RENUVION": {
+    "heading": {
+      "logo": "/images/logos/renuvion_darkblue.png",
+      "title": "Renuvion",
+      "description": "Tecnología avanzada de energía de plasma para procedimientos de rejuvenecimiento y contorno corporal con resultados precisos y mínimamente invasivos. Renuvion es una tecnología de plasma de helio que combina la energía de radiofrecuencia con un chorro de helio frío para proporcionar una contracción inmediata de la piel y un efecto de tensado duradero.",
+      "href": "https://www.renuvion.com/",
+      "catalog": "/catalogs/renuvion.pdf",
+      "poster": "/images/hero/renuvion.jpg"
+    },
+    "steps": [
+      {
+        "step": 1,
+        "title": "Hablemos de la piel flácida",
+        "description": "¿Eres mamá reciente? ¿Has perdido peso? ¿Notas los efectos del envejecimiento? La piel flácida ocurre debido a la degradación del tejido rico en colágeno, lo que contribuye a la pérdida de elasticidad.\n\nDe hecho, muchas personas experimentan piel flácida no deseada después de someterse a una liposucción. Aunque la liposucción es efectiva para eliminar la grasa persistente, no trata la piel suelta que suele aparecer debido al envejecimiento o la pérdida de peso. En algunos casos, la reducción del volumen de grasa puede incluso empeorar la laxitud de la piel. Ahí es donde entra en juego Renuvion."
+      },
+      {
+        "step": 2,
+        "title": "Tenemos una solución",
+        "description": "Renuvion es la tecnología de contorno corporal número uno en la que confían los cirujanos y está diseñada para tratar la piel flácida directamente en su origen. Así es como funciona: la varilla de Renuvion se inserta debajo de la piel, utilizando una combinación única de energía de radiofrecuencia y plasma de helio para tratar el tejido rico en colágeno.\n\nEsta energía contrae las fibras de colágeno, acercando la piel al músculo para lograr una apariencia suave y contorneada en cuestión de minutos."
+      },
+      {
+        "step": 3,
+        "title": "Pacientes reales, resultados reales",
+        "description": "Desde 2017, más de 325,000 personas han experimentado los resultados transformadores de Renuvion. Esta tecnología proporciona resultados duraderos y de larga duración, permitiendo que los pacientes se vean en el espejo y descubran una versión renovada de sí mismos."
       }
     ]
   }
