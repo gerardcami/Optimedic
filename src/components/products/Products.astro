@@ -1,0 +1,43 @@
+---
+import { getI18N } from '../../i18n/'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
+
+interface Props {
+	productType: 'LOUPES' | 'FRAMES' | 'HEADLIGHTS'
+}
+
+const { productType } = Astro.props
+
+const products = i18n[productType]['PRODUCTS']
+const productsPath = i18n[productType]['PRODUCT_PATH']
+import { ProductCard } from './product-card'
+---
+
+<section class="flex flex-col gap-[50px] px-6 md:px-12">
+	{
+		products.map((type) => (
+			<article class="flex flex-col gap-4 py-12">
+				<header class="mb-6">
+					<h2 class="rounded-sm border-l-4 border-[#076b61] pl-3 text-2xl font-bold text-gray-900">
+						{type.type}
+					</h2>
+					<div class="mt-4 h-px bg-gray-200" />
+				</header>
+
+				<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+					{type.products.map((productData) => (
+						<ProductCard
+							path={productsPath}
+							slug={productData.slug}
+							image={productData.card_image}
+							name={productData.name}
+							description={productData.description}
+							magnification={productData?.details?.specs?.magnification_power}
+						/>
+					))}
+				</div>
+			</article>
+		))
+	}
+</section>
