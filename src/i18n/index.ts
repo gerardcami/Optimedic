@@ -9,7 +9,7 @@ const LANGUAGES = {
 
 export const getI18N = ({ currentLocale = 'es' }: { currentLocale?: string }) => {
 	if (currentLocale === LANGUAGES.SPANISH) return spanish
-	if (currentLocale === LANGUAGES.ENGLISH) return english
+	/* if (currentLocale === LANGUAGES.ENGLISH) return english */
 
 	return spanish
 }
