@@ -5,6 +5,7 @@ const InstagramGallery = () => {
 	const [posts, setPosts] = useState<
 		{
 			id: string
+			shortcode: string
 			caption: string
 			media_url: string
 			thumbnail_url: string
@@ -33,6 +34,7 @@ const InstagramGallery = () => {
 					setPosts(
 						filteredPosts.map((post: any) => ({
 							id: post.id,
+							shortcode: post.shortcode,
 							caption: post.caption,
 							media_url: post.media_url,
 							thumbnail_url: post.thumbnail_url,
@@ -82,39 +84,49 @@ const InstagramGallery = () => {
 					key={post.id}
 					className="overflow-hidden border transition-all duration-200 hover:shadow-lg md:rounded-lg"
 				>
-					<div className="p-0">
-						<div className="relative aspect-square">
-							{post.media_type === 'VIDEO' ? (
-								<video controls poster={post.thumbnail_url} className="h-full w-full object-cover">
-									<source src={post.media_url} type="video/mp4" />
-								</video>
-							) : (
-								<img
-									src={post.media_url}
-									alt={`Social media post ${post.id}`}
-									className="h-full w-full object-cover"
-								/>
-							)}
-						</div>
-						<div className="p-4">
-							<p className="line-clamp-2 text-sm text-gray-600">{post.caption}</p>
-							<div className="mt-2 flex items-center justify-between">
-								<div className="flex items-center space-x-1 text-sm text-gray-600">
-									<span>{post.like_count} Me gusta</span>
-									{post.comments_count > 0 && (
-										<>
-											<span>•</span>
-											<span>
-												{post.comments_count}{' '}
-												{post.comments_count === 1 ? 'Comentario' : 'Comentarios'}
-											</span>
-										</>
-									)}
+					<a
+						href={`https://www.instagram.com/p/${post.shortcode}`}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<div className="p-0">
+							<div className="relative aspect-square">
+								{post.media_type === 'VIDEO' ? (
+									<video
+										controls
+										poster={post.thumbnail_url}
+										className="h-full w-full object-cover"
+									>
+										<source src={post.media_url} type="video/mp4" />
+									</video>
+								) : (
+									<img
+										src={post.media_url}
+										alt={`Social media post ${post.id}`}
+										className="h-full w-full object-cover"
+									/>
+								)}
+							</div>
+							<div className="p-4">
+								<p className="line-clamp-2 text-sm text-gray-600">{post.caption}</p>
+								<div className="mt-2 flex items-center justify-between">
+									<div className="flex items-center space-x-1 text-sm text-gray-600">
+										<span>{post.like_count} Me gusta</span>
+										{post.comments_count > 0 && (
+											<>
+												<span>•</span>
+												<span>
+													{post.comments_count}{' '}
+													{post.comments_count === 1 ? 'Comentario' : 'Comentarios'}
+												</span>
+											</>
+										)}
+									</div>
+									<span className="text-xs text-gray-600">{getDaysAgo(post.timestamp)}d</span>
 								</div>
-								<span className="text-xs text-gray-600">{getDaysAgo(post.timestamp)}d</span>
 							</div>
 						</div>
-					</div>
+					</a>
 				</article>
 			))}
 		</div>

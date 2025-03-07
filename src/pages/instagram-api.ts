@@ -19,7 +19,7 @@ export const GET: APIRoute = async ({ request }) => {
 
 		// Hacer la solicitud a la API de Instagram para obtener los posts
 		const response = await fetch(
-			`https://graph.instagram.com/${INSTAGRAM_ACCOUNT_ID}/media?fields=id,caption,media_type,media_url,thumbnail_url,like_count,comments_count,timestamp&access_token=${accessToken}&limit=9`
+			`https://graph.instagram.com/${INSTAGRAM_ACCOUNT_ID}/media?fields=id,shortcode,caption,media_type,media_url,thumbnail_url,like_count,comments_count,timestamp&access_token=${accessToken}&limit=9`
 		)
 
 		const data = await response.json()
