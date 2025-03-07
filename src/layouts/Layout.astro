@@ -24,7 +24,6 @@ const i18n = getI18N({ currentLocale })
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<ViewTransitions />
 		<style is:global>
@@ -40,7 +39,7 @@ const i18n = getI18N({ currentLocale })
 				);
 			}
 			html {
-				font-family: system-ui, sans-serif;
+				font-family: -ui, sans-serif;
 				background: #fff;
 				background-size: 224px;
 			}
@@ -77,6 +76,8 @@ const i18n = getI18N({ currentLocale })
 		</main>
 		<Footer />
 		<script is:inline>
+			import { initLenis } from '../utils/lenis'
+
 			window.addEventListener('DOMContentLoaded', () => {
 				initLenis()
 			})

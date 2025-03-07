@@ -22,12 +22,12 @@ const HeroItem = ({ logo, title, description, href, backImage }: HeroItemProps) 
 							<h3 className="sr-only">{title}</h3>
 						</>
 					) : (
-						<h3 className="text-3xl md:text-5xl">{title}</h3>
+						<h3 className="text-3xl font-semibold md:text-5xl">{title}</h3>
 					)}
 				</header>
 				<div className="h-1 w-16 bg-blue-500"></div>
 				<div className="h-full lg:w-2/3">
-					<p className="max-w-md text-lg leading-relaxed text-white/90">{description}</p>
+					<p className="max-w-md leading-relaxed text-white/90 lg:text-lg">{description}</p>
 				</div>
 				<footer>
 					<a
