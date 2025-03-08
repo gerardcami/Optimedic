@@ -8,7 +8,7 @@ const { currentLocale = 'es' } = Astro
 const i18n = getI18N({ currentLocale })
 ---
 
-<Layout title={i18n.RENUVION.heading.title} description="">
+<Layout isHome={false} title={i18n.RENUVION.heading.title} description="">
 	<SurgeryHeading content={i18n.RENUVION.heading} />
 	<RenuvionSteps content={i18n.RENUVION.steps} />
 </Layout>

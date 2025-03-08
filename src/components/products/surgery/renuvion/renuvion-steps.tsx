@@ -10,7 +10,7 @@ type RenuvionStepProps = {
 
 const RenuvionSteps = ({ content }: RenuvionStepProps) => {
 	return (
-		<section>
+		<section className="lg:px-6">
 			<h1 className="sr-only">Pasos renuvion</h1>
 			<div className="m grid grid-cols-1 gap-4 px-6 lg:grid-cols-3 lg:px-0">
 				{content.map(({ step, title, description }) => (
