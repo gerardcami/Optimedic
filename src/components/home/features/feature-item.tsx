@@ -17,7 +17,7 @@ const FeatureItem = ({ title, description, iconIndex, color }: FeatureItemProps)
 	const IconComponent = icons[iconIndex]
 
 	return (
-		<div className="flex animate-fade-from-top flex-col items-center rounded-xl border border-zinc-100 bg-white p-6 text-center shadow-sm transition-shadow hover:cursor-default hover:shadow-md">
+		<article className="flex animate-fade-from-top flex-col items-center rounded-xl border border-zinc-100 bg-white p-6 text-center shadow-sm transition-shadow hover:cursor-default hover:shadow-md">
 			<div
 				className="mb-4 flex h-12 w-12 items-center justify-center rounded-full p-2"
 				style={{
@@ -28,9 +28,12 @@ const FeatureItem = ({ title, description, iconIndex, color }: FeatureItemProps)
 			>
 				{IconComponent && <IconComponent size={24} color={color} />} {/* Color azul oscuro */}
 			</div>
-			<h3 className="mb-2 text-xl font-bold text-zinc-900">{title}</h3>
+			<header>
+				<h3 className="mb-2 text-xl font-bold text-zinc-900">{title}</h3>
+			</header>
+
 			<p className="text-zinc-500">{description}</p>
-		</div>
+		</article>
 	)
 }
 
