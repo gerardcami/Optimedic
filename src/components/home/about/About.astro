@@ -3,7 +3,7 @@ import { getI18N } from '../../../i18n/'
 import Carousel from '../../carousel'
 const { currentLocale = 'es' } = Astro
 const i18n = getI18N({ currentLocale })
-
+import { aboutSlides } from '../../../services/carousel'
 const aboutData = i18n.HOME_PAGE.ABOUT
 ---
 
@@ -35,7 +35,7 @@ const aboutData = i18n.HOME_PAGE.ABOUT
 			</div>
 		</div>
 		<div class="md:px-6 lg:px-0">
-			<Carousel client:visible />
+			<Carousel slides={aboutSlides} client:visible />
 		</div>
 	</div>
 </section>

@@ -1,10 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
-import { Slides } from '../services/carousel'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-export default function Carousel() {
+export default function Carousel({ slides }) {
 	const [currentSlide, setCurrentSlide] = useState(0)
-	const slides = Slides
 	const intervalRef = useRef(null)
 	const startX = useRef(0)
 	const isDragging = useRef(false)
@@ -94,7 +92,7 @@ export default function Carousel() {
 	return (
 		<section
 			ref={carouselRef} // Set ref to the carousel
-			className="relative w-full"
+			className="relative h-full w-full"
 			data-carousel="slide"
 			onMouseDown={handleMouseDown}
 			onMouseMove={handleMouseMove}
@@ -103,7 +101,7 @@ export default function Carousel() {
 			onTouchMove={handleTouchMove}
 			onTouchEnd={handleTouchEnd}
 		>
-			<div className="relative h-[400px] overflow-hidden md:rounded-md">
+			<div className="relative aspect-auto h-[250px] overflow-hidden md:h-[450px] md:rounded-md xl:h-full">
 				{slides.map((slide, index) => (
 					<div
 						key={slide.id}

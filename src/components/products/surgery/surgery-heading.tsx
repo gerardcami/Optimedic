@@ -15,7 +15,7 @@ const SurgeryHeading = ({
 	content: { logo, title, description, href, catalog, poster }
 }: SurgeryHeadingProps) => {
 	return (
-		<section className="grid grid-cols-1 gap-6 px-6 md:gap-10 md:px-20 lg:mt-40 lg:grid-cols-2 lg:gap-20">
+		<section className="grid animate-fade-from-top grid-cols-1 gap-6 px-6 md:gap-10 md:px-20 lg:mt-40 lg:grid-cols-2 lg:gap-20">
 			<div className="items-star flex flex-col justify-between gap-6 md:items-center md:gap-10 lg:items-start lg:gap-0">
 				<div>
 					{logo ? (

@@ -6,7 +6,7 @@ type StepProps = {
 
 const Step = ({ step, title, description }: StepProps) => {
 	return (
-		<article className="bg-card text-card-foreground relative flex flex-col items-center justify-between gap-6 rounded-lg border p-6 shadow-sm lg:gap-10">
+		<article className="bg-card text-card-foreground relative flex flex-col justify-between gap-6 rounded-lg border p-6 shadow-sm md:items-center lg:gap-10 lg:py-10">
 			<header className="flex flex-col gap-6 md:items-center lg:gap-10">
 				<div className="flex size-16 items-center justify-center rounded-full bg-[#173d6e] font-extrabold shadow-md md:size-20">
 					<span className="text-3xl text-white">{step}</span>

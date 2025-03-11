@@ -1,0 +1,34 @@
+---
+import { renuvionSlides } from '../../../../services/carousel'
+import Carousel from '../../../carousel'
+---
+
+<section class="flex w-screen items-center justify-center bg-[#173d6e]">
+	<div class="grid w-full items-center xl:grid-cols-3 xl:gap-20">
+		<div class="flex flex-col gap-6 px-12 py-12 text-white 2xl:py-48">
+			<div class="flex flex-col">
+				<h2 class="text-3xl font-semibold uppercase tracking-tight">Resultados reales</h2>
+				<p class="text-6xl font-semibold uppercase tracking-tight">Antes y después</p>
+			</div>
+			<div class="flex flex-col gap-4">
+				<p>
+					"Siempre he sido consciente de mi área de la barbilla y el cuello, y estaba lista para
+					hacer algo al respecto. Renuvion cambió por completo la forma en que me veo en el espejo.
+					Finalmente, siento que soy la mejor versión de mí misma y puedo decir con orgullo: esta
+					soy YO."
+				</p>
+				<cite>- Paciente renuvion</cite>
+			</div>
+
+			<a
+				href="https://www.renuvion.com/real-results/"
+				class="flex w-fit items-center rounded-full border border-gray-300 px-4 py-2 transition-colors hover:bg-gray-200/20"
+			>
+				<span class="text-sm font-medium">Ver más resultados</span>
+			</a>
+		</div>
+		<div class="h-full lg:col-span-2">
+			<Carousel slides={renuvionSlides} client:visible />
+		</div>
+	</div>
+</section>
