@@ -12,6 +12,7 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro'
 import Header from '../components/header'
 
 import { getI18N } from '../i18n'
+import CookiePopup from '../components/cookie-popup'
 
 const { currentLocale = 'es' } = Astro
 const i18n = getI18N({ currentLocale })
@@ -72,6 +73,7 @@ const i18n = getI18N({ currentLocale })
 		<main
 			class=`${!isHome ? 'mt-[60px] max-w-[1200px] ' : "max-w-[1440px]"} flex min-h-[calc(100vh-60px)]  space-y-28 flex-grow flex-col items-center mb-[100px] md:min-h-[calc(100vh-64px)] md:gap-[100px] lg:mx-auto lg:text-[18px]`
 		>
+			<CookiePopup client:load />
 			<slot />
 		</main>
 		<Footer />

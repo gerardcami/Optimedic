@@ -1,7 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro'
+
+import { getI18N } from '../i18n/'
+import { AboutHeading } from '../components/about/about-heading'
+import OurMission from '../components/about/OurMission.astro'
+import OurHistory from '../components/about/OurHistory.astro'
+import OurValues from '../components/about/OurValues.astro'
+
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
-<Layout title="About Optimedic" description="About Optimedic">
-	<p class="mt-[92px] lg:mt-[80px]">This is the about page</p>
+<Layout title="Optimedic | Sobre Nosotros" description={i18n.SEO_DESCRIPTION}>
+	<AboutHeading client:visible />
+	<OurMission />
+	<OurHistory />
+	<OurValues />
 </Layout>

@@ -38,7 +38,7 @@ const BlurText: React.FC<BlurTextProps> = ({
 	// Default animations based on direction
 	const defaultFrom: Record<string, any> =
 		direction === 'top'
-			? { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,-50px,0)' }
+			? { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,-10px,0)' }
 			: { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,50px,0)' }
 
 	const defaultTo: Record<string, any>[] = [

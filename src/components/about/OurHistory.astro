@@ -1,0 +1,59 @@
+---
+import { getI18N } from '../../i18n'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<section class="flex flex-col justify-center gap-10 lg:px-10">
+	<div class="grid gap-10 lg:grid-cols-2">
+		<div class="space-y-10 px-6 lg:px-0">
+			<h2 class="px-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:px-0">
+				Nuestra historia
+			</h2>
+			<div class="space-y-4 text-pretty">
+				<p class="text-zinc-500 md:text-lg">
+					Fundada en 2015, nuestra empresa comenzó con una misión simple: crear tecnología que
+					mejore la vida de las personas. Lo que comenzó como un pequeño equipo de tres personas
+					apasionadas se ha convertido en una organización próspera con oficinas en todo el mundo.
+				</p>
+
+				<p class="text-zinc-500 md:text-lg">
+					A lo largo de los años, hemos mantenido nuestro compromiso con nuestros valores
+					fundamentales de innovación, calidad y satisfacción del cliente. Nuestro viaje ha estado
+					marcado por el aprendizaje continuo, la adaptación y una búsqueda incesante de la
+					excelencia.
+				</p>
+			</div>
+		</div>
+		<div class="grid grid-cols-2 gap-4">
+			<article class="space-y-6 rounded-lg border p-6">
+				<header>
+					<p class="text-2xl font-bold">2015</p>
+					<h3 class="text-sm text-zinc-500">Fundación de la Empresa</h3>
+				</header>
+				<p>Comenzamos con 3 empleados en una pequeña oficina</p>
+			</article>
+			<article class="space-y-6 rounded-lg border p-6">
+				<header>
+					<p class="text-2xl font-bold">2015</p>
+					<h3 class="text-sm text-zinc-500">Fundación de la Empresa</h3>
+				</header>
+				<p>Comenzamos con 3 empleados en una pequeña oficina</p>
+			</article>
+			<article class="space-y-6 rounded-lg border p-6">
+				<header>
+					<p class="text-2xl font-bold">2015</p>
+					<h3 class="text-sm text-zinc-500">Fundación de la Empresa</h3>
+				</header>
+				<p>Comenzamos con 3 empleados en una pequeña oficina</p>
+			</article>
+			<article class="space-y-6 rounded-lg border p-6">
+				<header>
+					<p class="text-2xl font-bold">2015</p>
+					<h3 class="text-sm text-zinc-500">Fundación de la Empresa</h3>
+				</header>
+				<p>Comenzamos con 3 empleados en una pequeña oficina</p>
+			</article>
+		</div>
+	</div>
+</section>

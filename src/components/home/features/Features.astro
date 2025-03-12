@@ -1,5 +1,6 @@
 ---
 import { getI18N } from '../../../i18n/'
+import CountUp from '../../animations/CountUp/CountUp'
 const { currentLocale = 'es' } = Astro
 const i18n = getI18N({ currentLocale })
 
@@ -33,9 +34,11 @@ const featuresData = i18n.HOME_PAGE.FEATURES
 	</div>
 	<div class="w-[80%] text-center md:w-full">
 		<p
-			class="inline-flex items-center justify-center rounded-lg bg-blue-50 px-4 py-2 text-xs font-medium text-blue-700 md:text-sm"
+			class="inline-block rounded-lg bg-blue-50 px-4 py-2 text-xs font-medium text-blue-700 md:text-base"
 		>
-			Con la confianza de más de 2.000 profesionales de la salud en España
+			Con la confianza de más de {' '}
+			<CountUp client:visible from={0} to={2000} separator="." duration={1} />
+			{' '} profesionales de la salud en España
 		</p>
 	</div>
 </section>

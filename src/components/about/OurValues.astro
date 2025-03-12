@@ -1,0 +1,23 @@
+---
+import { getI18N } from '../../i18n/'
+import { FeatureItem } from '../home/features/feature-item'
+const { currentLocale = 'es' } = Astro
+const i18n = getI18N({ currentLocale })
+
+const featuresData = i18n.ABOUT.values
+---
+
+<section
+	class="flex w-full flex-col items-center justify-center gap-10 px-6 text-center md:px-10 lg:gap-20"
+>
+	<div class="flex flex-col items-center gap-4 px-6 text-center lg:px-0">
+		<h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Nuestros Valores</h2>
+	</div>
+	<div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:px-14 lg:grid-cols-3">
+		{
+			featuresData.map((feature, index) => (
+				<FeatureItem title={feature.title} description={feature.description} iconIndex={index} />
+			))
+		}
+	</div>
+</section>

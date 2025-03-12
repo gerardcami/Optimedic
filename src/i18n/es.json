@@ -250,6 +250,22 @@
       }
     ]
   },
+  "ABOUT":{
+    "values": [
+      {
+        "title": "Pasión",
+        "description": "Sentimos una profunda pasión por lo que hacemos y se refleja en nuestro trabajo y dedicación."
+      },
+      {
+        "title": "Innovación",
+        "description": "Constantemente superamos límites y exploramos nuevas ideas para crear mejores soluciones."
+      },
+      {
+        "title": "Integridad",
+        "description": "Creemos en la honestidad, la transparencia y hacer lo correcto para nuestros clientes y equipo."
+      }
+    ]
+  },
   "CONTACT": {
     "TITLE": "Contacta con nosotros",
     "DESCRIPTION": "Para cualquier duda o consulta, no dude en ponerse en contacto con nosotros. Complete el siguiente formulario y nos comunicaremos con usted lo antes posible. También puede contactarnos por teléfono o correo electrónico.",

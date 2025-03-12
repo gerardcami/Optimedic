@@ -28,7 +28,7 @@ const ProductsBentoItem = ({
 
 	return (
 		<div
-			className={``}
+			className="animate-fade-from-top"
 			style={{ backgroundImage: backImage }}
 			onMouseEnter={() => setHoveredCard('loupes')}
 			onMouseLeave={() => setHoveredCard(null)}
