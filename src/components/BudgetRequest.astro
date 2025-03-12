@@ -1,12 +1,22 @@
 ---
 import { LucideArrowRight } from 'lucide-react'
+import BlurText from './animations/BlurText/BlurText'
 ---
 
 <section
 	class="mb-[100px] flex w-full flex-col items-center justify-center gap-10 px-6 text-center md:px-10 lg:gap-20"
 >
 	<div class="flex flex-col items-center gap-4 px-6 text-center lg:px-0">
-		<h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">¿Listo para comenzar?</h2>
+		<h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+			<BlurText
+				client:visible
+				text="¿Listo para comenzar?"
+				delay={150}
+				animateBy="words"
+				direction="top"
+			/>
+		</h2>
+
 		<p class="font-semibold text-zinc-500 md:w-[700px] md:text-lg lg:w-[800px] lg:text-xl">
 			Solicita un presupuesto personalizado adaptado a tus necesidades específicas.
 		</p>

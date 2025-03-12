@@ -132,14 +132,14 @@
         "logo": "/images/logos/renuvion.png",
         "title": "Renuvion",
         "description": "Tecnología avanzada de energía de plasma para procedimientos de rejuvenecimiento y contorno corporal con resultados precisos y mínimamente invasivos.",
-        "href": "https://www.renuvion.com/",
+        "href": "/productos/renuvion",
         "backImage": "/images/hero/renuvion.jpg"
       },
       {
         "logo": "/images/logos/microaire.png",
         "title": "MicroAire",
         "description": "Soluciones innovadoras en cirugía asistida por energía, incluyendo sistemas de liposucción y dispositivos quirúrgicos de precisión.",
-        "href": "/catalog/microaire.pdf",
+        "href": "/productos/microaire",
         "backImage": "/images/hero/microaire.jpg"
       }
     ],
@@ -169,7 +169,7 @@
       "text1": "¡Bienvenido a nuestra página web! Somos una empresa comprometida con ofrecer productos y servicios de alta calidad. Nuestra misión es proporcionar soluciones innovadoras que satisfagan las necesidades de nuestros diversos clientes. Con años de experiencia en la industria, nos enorgullece nuestro enfoque centrado en el cliente y nuestra constante mejora.",
       "text2": "En nuestro núcleo, creemos en fomentar relaciones sólidas con nuestros clientes. Nos esforzamos por asegurar que cada experiencia con nosotros sea positiva y supere las expectativas. Nuestro equipo trabaja de manera diligente para crear soluciones significativas, siempre manteniendo la calidad, la integridad y la fiabilidad como los pilares de todo lo que hacemos.",
       "link": {
-        "text": "Conoce más sobre nuestro recorrido y valores",
+        "text": "Conoce más sobre nosotros",
         "href": "/sobre-nosotros"
       }
     },
@@ -209,7 +209,7 @@
           {
             "name": "MicroAire",
             "description": "Un potente instrumento de precisión diseñado para la extracción de grasa de pequeño o gran volumen, el contorno corporal y la recolección de grasa.",
-            "href": "/catalog/microaire.pdf"
+            "href": "/productos/microaire"
           }
         ]
       },
@@ -219,9 +219,9 @@
         "description": "Ofrecemos soluciones completas para la organización de eventos, diseñadas para cumplir con las necesidades y objetivos de cada cliente, garantizando el éxito de cada ocasión.",
         "subcategories": [
           {
-            "name": "Organización de eventos",
+            "name": "Contacta con nosotros",
             "description": "Organizamos eventos para sus empresas.",
-            "href": "/productos/eventos"
+            "href": "/contacto"
           }
         ]
       }
@@ -1602,7 +1602,7 @@
       "title": "Renuvion",
       "description": "Tecnología avanzada de energía de plasma para procedimientos de rejuvenecimiento y contorno corporal con resultados precisos y mínimamente invasivos. Renuvion es una tecnología de plasma de helio que combina la energía de radiofrecuencia con un chorro de helio frío para proporcionar una contracción inmediata de la piel y un efecto de tensado duradero.",
       "href": "https://www.renuvion.com/",
-      "catalog": "/catalogs/renuvion.pdf",
+      "catalog": "/catalog/renuvion-contouring.pdf",
       "poster": "/images/hero/renuvion.jpg"
     },
     "steps": [
@@ -1622,5 +1622,15 @@
         "description": "Desde 2017, más de 325,000 personas han experimentado los resultados transformadores de Renuvion. Esta tecnología proporciona resultados duraderos y de larga duración, permitiendo que los pacientes se vean en el espejo y descubran una versión renovada de sí mismos."
       }
     ]
+  },
+  "MICROAIRE": {
+  "heading": {
+    "logo": "/images/logos/microaire.png",
+    "title": "MicroAire",
+    "description": "MicroAire es líder mundial en liposucción asistida por energía (PAL) y en tecnologías innovadoras en cirugía estética. Recientemente, ampliaron su portafolio con la adquisición de NEOSYAD, una empresa conocida por sus tecnologías avanzadas en tejido adiposo, que mejoran los procesos de liposucción y preparación de tejido adiposo. Su tecnología Renuvion, que combina plasma de helio y radiofrecuencia, sigue proporcionando contracción de la piel y rejuvenecimiento efectivos con procedimientos mínimamente invasivos.",
+    "catalog": "/catalog/microaire.pdf",
+    "poster": "/images/hero/microaire.jpg"
   }
+}
+
 }

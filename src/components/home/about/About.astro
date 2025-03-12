@@ -4,6 +4,7 @@ import Carousel from '../../carousel'
 const { currentLocale = 'es' } = Astro
 const i18n = getI18N({ currentLocale })
 import { aboutSlides } from '../../../services/carousel'
+import { LucideArrowRight } from 'lucide-react'
 const aboutData = i18n.HOME_PAGE.ABOUT
 ---
 
@@ -25,12 +26,11 @@ const aboutData = i18n.HOME_PAGE.ABOUT
 			<div class="mt-10">
 				<a
 					href={aboutData.link.href}
-					class="group inline-flex w-fit items-center gap-2 rounded-xl bg-black/10 px-4 py-2 backdrop-blur-sm transition-all duration-300 hover:border-white/80 hover:bg-black/20"
+					class="group inline-flex w-fit items-center rounded-xl bg-black/10 px-4 py-3 backdrop-blur-sm transition-all duration-300 hover:border-white/80 hover:bg-black/20"
 				>
 					<span class="text-sm font-medium tracking-wide">{aboutData.link.text}</span>
-					<span class="transform transition-transform duration-300 group-hover:translate-x-1">
-						→
-					</span>
+
+					<LucideArrowRight className="ml-2 size-4 transition-all group-hover:ml-3" />
 				</a>
 			</div>
 		</div>
