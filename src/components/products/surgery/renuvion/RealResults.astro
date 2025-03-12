@@ -1,9 +1,16 @@
 ---
-import { renuvionSlides } from '../../../../services/carousel'
-import Carousel from '../../../carousel'
+import {
+	LucideArrowRight,
+	LucideArrowUpRight,
+	LucideBrackets,
+	LucideSmilePlus,
+	LucideWandSparkles
+} from 'lucide-react'
+import Iridescence from '../../../backgrounds/Iridescence/Iridescence'
+import Threads from '../../../backgrounds/Threads/Threads'
 ---
 
-<section class="flex w-screen items-center justify-center bg-[#173d6e]">
+<!-- <section class="flex w-screen items-center justify-center bg-[#173d6e]">
 	<div class="grid w-full items-center xl:grid-cols-3 xl:gap-20">
 		<div class="flex flex-col gap-6 px-12 py-12 text-white 2xl:py-48">
 			<div class="flex flex-col">
@@ -31,4 +38,102 @@ import Carousel from '../../../carousel'
 			<Carousel slides={renuvionSlides} client:visible />
 		</div>
 	</div>
+</section> -->
+<section class="mb-[100px] space-y-20 px-6 md:px-10">
+	<div class="flex w-full flex-col items-center gap-10 lg:flex-row xl:gap-20">
+		<article class="space-y-8 md:max-w-[500px]">
+			<header class="space-y-4">
+				<div
+					class="inline-block rounded-lg bg-gray-500/20 px-3 py-1 text-sm font-semibold text-zinc-800"
+				>
+					<span>Resultados Reales</span>
+				</div>
+				<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+					Vea la Diferencia que Hace Nuestra Experiencia
+				</h2>
+			</header>
+			<p class="font-semibold text-zinc-500 md:text-lg lg:text-xl">
+				Nuestros procedimientos quirúrgicos han ayudado a innumerables pacientes a lograr los
+				resultados deseados. Explore nuestra galería de antes y después para presenciar los
+				resultados transformadores de nuestro trabajo.
+			</p>
+			<div>
+				<a
+					href="/contacto"
+					class="group flex w-fit items-center rounded-lg border border-gray-300 px-4 py-2 transition-colors hover:bg-gray-200/80"
+				>
+					<span>Reservar una Consulta</span>
+					<LucideArrowRight className="ml-2 size-4 transition-all group-hover:ml-3" />
+				</a>
+			</div>
+		</article>
+
+		<div
+			class="grid grid-cols-2 grid-rows-2 gap-2 overflow-hidden rounded-xl md:w-[500px] md:border"
+		>
+			<article class="relative col-span-2 h-full w-full overflow-hidden rounded-lg bg-slate-100/60">
+				<!-- <Iridescence client:visible color={[0.2, 1, 1]} speed={0.3} /> -->
+				<Threads client:visible color={[0, 0.5, 1]} amplitude={2} distance={1} />
+				<div
+					class="absolute inset-0 flex flex-col items-center justify-center rounded-lg p-8 hover:cursor-default"
+				>
+					<LucideBrackets className="text-primary mb-4 size-6 md:size-8 lg:size-10" />
+					<h3 class="text-lg font-medium lg:text-2xl">Antes y Después</h3>
+					<p class="mt-2 text-center text-sm lg:text-base">
+						Transformaciones documentadas de nuestros pacientes
+					</p>
+				</div>
+			</article>
+			<article
+				class="group relative rounded-lg bg-slate-100/60 p-4 transition-all hover:bg-slate-200 md:p-8"
+			>
+				<a
+					href="https://www.renuvion.com/real-results/"
+					target="_blank"
+					class="flex h-full w-full flex-col items-center justify-center"
+				>
+					<div
+						class="absolute right-3 top-3 opacity-0 transition-all duration-200 group-hover:opacity-100"
+					>
+						<LucideArrowUpRight className="size-5" />
+					</div>
+					<LucideWandSparkles className="mb-4 size-5 md:size-6" />
+					<h3 class="text-center font-medium lg:text-xl">Transformación Corporal</h3>
+					<p class="mt-2 text-center text-sm text-zinc-500">
+						Contorneado, esculpido y rejuvenecimiento
+					</p>
+				</a>
+			</article>
+			<article
+				class="group relative rounded-lg bg-slate-100/60 p-4 transition-all hover:bg-slate-200 md:p-8"
+			>
+				<a
+					href="https://www.renuvion.com/real-renewal/"
+					target="_blank"
+					class="flex h-full w-full flex-col items-center justify-center"
+				>
+					<div
+						class="absolute right-3 top-3 opacity-0 transition-all duration-200 group-hover:opacity-100"
+					>
+						<LucideArrowUpRight className="size-5" />
+					</div>
+					<LucideSmilePlus className="mb-4 size-5 md:size-6" />
+					<h3 class="text-center font-medium lg:text-xl">Renovación Facial</h3>
+					<p class="mt-2 text-center text-sm text-zinc-500">
+						Revitalice y mejore sus características faciales
+					</p>
+				</a>
+			</article>
+		</div>
+	</div>
+	<footer class="flex flex-col items-center justify-center text-center">
+		<div class="max-w-[500px] space-y-4 lg:max-w-[800px]">
+			<h3 class="text-xl font-medium">Nuestro Compromiso con la Excelencia</h3>
+			<p class="text-zinc-500">
+				Cada procedimiento se realiza con los más altos estándares de cuidado y precisión. Nuestros
+				resultados hablan por sí mismos, mostrando nuestra dedicación para ayudar a los pacientes a
+				alcanzar sus objetivos estéticos y funcionales.
+			</p>
+		</div>
+	</footer>
 </section>
