@@ -15,6 +15,7 @@ const Hero = () => {
 
 	return (
 		<section id="hero" className="relative">
+			<h2 className="sr-only">Nuestras Areas</h2>
 			<div className="grid w-screen lg:h-screen lg:grid-cols-3">
 				{heroItems.map(({ logo, title, description, href, backImage }) => (
 					<HeroItem

@@ -8,10 +8,12 @@ import OurHistory from '../components/about/OurHistory.astro'
 import OurValues from '../components/about/OurValues.astro'
 
 const { currentLocale = 'es' } = Astro
-const i18n = getI18N({ currentLocale })
+
+const i18n = getI18N({ currentLocale }).ABOUT_PAGE
+const seoData = i18n.SEO
 ---
 
-<Layout title="Optimedic | Sobre Nosotros" description={i18n.SEO_DESCRIPTION}>
+<Layout seoData={seoData}>
 	<AboutHeading client:visible />
 	<OurMission />
 	<OurHistory />

@@ -9,8 +9,8 @@ interface Props {
 
 const { productType } = Astro.props
 
-const products = i18n[productType]['PRODUCTS']
-const productsPath = i18n[productType]['PRODUCT_PATH']
+const products = i18n[`${productType}_PAGE`]['PRODUCTS']
+const productsPath = i18n[`${productType}_PAGE`]['PRODUCT_PATH']
 import { ProductCard } from './product-card'
 ---
 

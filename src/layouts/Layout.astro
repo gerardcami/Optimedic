@@ -1,11 +1,23 @@
 ---
 interface Props {
-	title: string
-	description: string
+	seoData: {
+		SEO_TITLE: string
+		SEO_DESCRIPTION: string
+		SEO_URL: string
+		SEO_SHORT_NAME: string
+	}
 	isHome?: boolean
 }
 
-const { title, description, isHome = false } = Astro.props
+const {
+	seoData: {
+		SEO_TITLE: title,
+		SEO_DESCRIPTION: description,
+		SEO_URL: url,
+		SEO_SHORT_NAME: shortName
+	},
+	isHome = false
+} = Astro.props
 
 import Footer from '../components/Footer.astro'
 import ViewTransitions from 'astro/components/ViewTransitions.astro'
@@ -22,11 +34,75 @@ const i18n = getI18N({ currentLocale })
 <html lang={currentLocale}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
+
+		<!-- Favicon estándar -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /> -->
+		<link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
+
+		<!-- Favicon para iOS -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+		<!-- Web App Manifest -->
+		<link rel="manifest" href="/site.webmanifest" />
+
 		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={url} />
+
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:title" content="Gerard Camí - Desarrollador Frontend" />
+		<meta property="og:description" content="Desarrollador Frontend especializado en React" />
+		<meta property="og:image" content="https://www.optimedic.es/og.jpg" />
+		<meta property="og:url" content={url} />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={shortName} />
+		<meta property="og:locale" content="es_ES" />
+
+		<!-- Twitter Card Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content="https://www.optimedic.es/og.jpg" />
+		<meta name="twitter:url" content={url} />
+		<meta name="twitter:site" content="@Optimedic" />
+		<meta name="twitter:creator" content="@Optimedic" />
+		<meta name="twitter:url" content={url} />
+		<meta name="twitter:domain" content="optimedic.es" />
+
+		<!-- Schema Markup -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Optimedic",
+				"url": "https://optimedic.com",
+				"logo": "https://optimedic.com/logo.png",
+				"description": "Distribuidor de lupas quirúrgicas, iluminadores frontales, máquinas de liposucción y retracción de piel y equipos médicos de alta precisión.",
+				"sameAs": [
+					"https://www.linkedin.com/company/optimedic-s-l/",
+					"https://twitter.com/Optimedic"
+				],
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+34 687 437 703",
+					"contactType": "customer service",
+					"availableLanguage": ["Spanish", "English"]
+				},
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Carrer Pompeu Fabra 12",
+					"addressLocality": "Ametlla del Valles",
+					"addressCountry": "ES"
+				}
+			}
+		</script>
+
 		<ViewTransitions />
+
 		<style is:global>
 			:root {
 				--accent: 136, 58, 234;
@@ -68,6 +144,7 @@ const i18n = getI18N({ currentLocale })
 			}
 		</style>
 	</head>
+
 	<body class="flex min-h-screen flex-col overflow-x-hidden font-sans">
 		<Header i18n={i18n} isHome={isHome} client:load />
 		<main

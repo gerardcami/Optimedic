@@ -1,93 +1,40 @@
 import InfiniteScroll from '../ui/InfiniteScroll/InfiniteScroll'
 
+const imageClass = 'pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover'
+
 const items = [
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide1.svg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide1.svg" alt="Carousel slide 1" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide2.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide2.jpg" alt="Carousel slide 2" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide3.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide3.jpg" alt="Carousel slide 3" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide4.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide4.jpg" alt="Carousel slide 4" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide5.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide5.jpg" alt="Carousel slide 5" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide6.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide6.jpg" alt="Carousel slide 6" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide7.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide7.jpg" alt="Carousel slide 7" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide8.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide8.jpg" alt="Carousel slide 8" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide9.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide9.jpg" alt="Carousel slide 9" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide10.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide10.jpg" alt="Carousel slide 10" />
 	},
 	{
-		content: (
-			<img
-				className="pointer-events-none h-[200px] w-[300px] select-none rounded-lg object-cover"
-				src="/images/slides/slide11.jpg"
-			/>
-		)
+		content: <img className={imageClass} src="/images/slides/slide11.jpg" alt="Carousel slide 11" />
 	}
 ]
 

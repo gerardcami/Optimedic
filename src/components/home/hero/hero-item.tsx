@@ -1,3 +1,5 @@
+import { LucideArrowRight } from 'lucide-react'
+
 type HeroItemProps = {
 	logo?: string
 	title: string
@@ -18,7 +20,7 @@ const HeroItem = ({ logo, title, description, href, backImage }: HeroItemProps) 
 				<header className="h-[50px] w-1/3 lg:w-1/2">
 					{logo ? (
 						<>
-							<img src={logo} />
+							<img loading="lazy" src={logo} alt={`Brand logo: ${title}`} />
 							<h3 className="sr-only">{title}</h3>
 						</>
 					) : (
@@ -36,7 +38,7 @@ const HeroItem = ({ logo, title, description, href, backImage }: HeroItemProps) 
 					>
 						<span className="text-sm font-medium tracking-wide">Saber más</span>
 						<span className="transform transition-transform duration-300 group-hover:translate-x-1">
-							→
+							<LucideArrowRight className="size-4" />
 						</span>
 					</a>
 				</footer>

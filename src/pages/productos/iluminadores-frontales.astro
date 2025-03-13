@@ -5,10 +5,12 @@ import Products from '../../components/products/loupes/Products.astro'
 
 import { getI18N } from '../../i18n/'
 const { currentLocale = 'es' } = Astro
-const i18n = getI18N({ currentLocale })
+
+const i18n = getI18N({ currentLocale }).HEADLIGHTS_PAGE
+const seoData = i18n.SEO
 ---
 
-<Layout title={i18n.HEADLIGHTS.TITLE} description="">
+<Layout seoData={seoData}>
 	<ProductTitle productType="HEADLIGHTS" />
 	<Products productType="HEADLIGHTS" />
 </Layout>

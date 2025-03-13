@@ -5,10 +5,13 @@ import { getI18N } from '../../../i18n/'
 import LoupeSpecs from '../../../components/LoupeSpecs.astro'
 
 const { currentLocale = 'es' } = Astro
-const i18n = getI18N({ currentLocale })
 
-const loupesTexts = i18n.LOUPES.TEXTS
-const loupesData = i18n.LOUPES.PRODUCTS
+const i18n = getI18N({ currentLocale }).LOUPES_PAGE
+const seoData = i18n.DETAILS_SEO
+const content = i18n
+
+const loupesTexts = content.TEXTS
+const loupesData = content.PRODUCTS
 
 const { loupe } = Astro.params
 
@@ -20,10 +23,17 @@ if (!product) {
 	throw new Error(`Product not found for slug: ${loupe}`)
 }
 
+const seoContent = {
+	SEO_TITLE: `${seoData.SEO_TITLE} ${product.name}`,
+	SEO_DESCRIPTION: seoData.SEO_DESCRIPTION,
+	SEO_URL: `${seoData.SEO_URL}${product.slug}`, // Aquí puedes integrar el slug o el nombre
+	SEO_SHORT_NAME: `${seoData.SEO_SHORT_NAME} ${product.name}`
+}
+
 const details = product.details
 ---
 
-<Layout title={product.name} description="">
+<Layout seoData={seoContent}>
 	<section
 		class="flex w-screen flex-col items-center justify-center gap-8 bg-gradient-to-r from-teal-500 to-teal-700 px-8 py-12 text-white shadow-2xl md:px-16 lg:flex-row"
 	>
@@ -92,7 +102,7 @@ const details = product.details
 					details.frame_options &&
 						details.frame_options.map((option) => (
 							<a
-								href={`${i18n.LOUPES.FRAMES_PATH}${option.slug}`}
+								href={`${content.FRAMES_PATH}${option.slug}`}
 								class="mb-2 border-b pb-2 text-teal-600 transition-colors duration-200 hover:text-teal-800 hover:underline"
 							>
 								{option.name}

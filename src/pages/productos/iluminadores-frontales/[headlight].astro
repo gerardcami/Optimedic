@@ -6,10 +6,13 @@ import type { Product } from '../../../types/headlights'
 import { getI18N } from '../../../i18n/'
 
 const { currentLocale = 'es' } = Astro
-const i18n = getI18N({ currentLocale })
 
-const headlightsTexts = i18n.HEADLIGHTS.TEXTS
-const headlightsData = i18n.HEADLIGHTS.PRODUCTS
+const i18n = getI18N({ currentLocale }).HEADLIGHTS_PAGE
+const seoData = i18n.DETAILS_SEO
+const content = i18n
+
+const headlightsTexts = content.TEXTS
+const headlightsData = content.PRODUCTS
 
 const { headlight } = Astro.params
 
@@ -21,11 +24,18 @@ if (!product) {
 	throw new Error(`Product not found for slug: ${headlight}`)
 }
 
+const seoContent = {
+	SEO_TITLE: `${seoData.SEO_TITLE} ${product.name}`,
+	SEO_DESCRIPTION: seoData.SEO_DESCRIPTION,
+	SEO_URL: `${seoData.SEO_URL}${product.slug}`, // Aquí puedes integrar el slug o el nombre
+	SEO_SHORT_NAME: `${seoData.SEO_SHORT_NAME} ${product.name}`
+}
+
 const details = product.details
 console.log(details.features)
 ---
 
-<Layout title={product.name} description="">
+<Layout seoData={seoContent}>
 	<section
 		class="flex w-screen flex-col items-center justify-center gap-8 bg-gradient-to-r from-teal-500 to-teal-700 px-8 py-12 text-white shadow-2xl md:px-16 lg:flex-row"
 	>

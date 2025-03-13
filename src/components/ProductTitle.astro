@@ -9,7 +9,7 @@ interface Props {
 
 const { productType } = Astro.props
 
-const product = i18n[productType]
+const product = i18n[`${productType}_PAGE`]
 ---
 
 <section class="flex flex-col gap-12 px-6 md:px-12">

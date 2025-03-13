@@ -1,6 +1,4 @@
 {
-  "SEO_TITLE": "Optimedic",
-  "SEO_DESCRIPTION": "",
   "HEADER": {
     "HOME_LINK": "/",
     "NAV_ITEMS": [
@@ -32,7 +30,7 @@
           },
           {
             "name": "Eventos",
-            "href": "/eventos"
+            "href": "/contacto"
           },
           {
             "name": "Sobre nosotros",
@@ -114,11 +112,23 @@
     "COPYRIGHT": "Todos los derechos reservados."
   },
   "PAGE_NOT_FOUND": {
+    "SEO": {
+      "SEO_TITLE": "Página No Encontrada | Optimedic - Página no disponible",
+      "SEO_DESCRIPTION": "Lo sentimos, la página que estás buscando no existe. Vuelve a la página de inicio para encontrar más información sobre nuestros productos.",
+      "SEO_URL": "https://optimedic.es/404",
+      "SEO_SHORT_NAME": "Página No Encontrada"
+    },
     "TITLE": "Página no encontrada",
     "BUTTON": "Volver a inicio",
     "HOME_PAGE": "/"
   },
   "HOME_PAGE": {
+    "SEO": {
+      "SEO_TITLE": "Optimedic | Lupas Quirúrgicas, Máquinas de Liposucción y Retracción",
+      "SEO_DESCRIPTION": "Descubre lupas quirúrgicas, máquinas de liposucción y retracción de alta precisión para profesionales de la salud. Tecnología avanzada y calidad garantizada.",
+      "SEO_URL": "https://optimedic.es/",
+      "SEO_SHORT_NAME": "Optimedic - Tecnología Médica"
+    },
     "TITLE": "Optimedic",
     "SLOGAN": "La precisión a su medida",
     "HERO": [
@@ -227,9 +237,15 @@
       }
     ]
   },
-  "DOCUMENTATION": {
-    "TITLE": "Documentación",
-    "DESCRIPTION": "Documentación sobre nuestros productos y servicios.",
+  "CATALOGS_PAGE": {
+    "SEO": {
+      "SEO_TITLE": "Catálogos de Productos Médicos | Optimedic - Lupas, Iluminadores y Liposucción",
+      "SEO_DESCRIPTION": "Consulta nuestros catálogos de lupas quirúrgicas, sistemas de iluminación, máquinas de liposucción y tecnología médica avanzada.",
+      "SEO_URL": "https://optimedic.es/catalogos",
+      "SEO_SHORT_NAME": "Catálogos Optimedic"
+    },
+    "TITLE": "Documentación",
+    "DESCRIPTION": "Documentación sobre nuestros productos y servicios",
     "TEXT_DOWNLOAD": "Descargar el catálogo",
     "SECTIONS": [
       {
@@ -250,7 +266,13 @@
       }
     ]
   },
-  "ABOUT":{
+  "ABOUT_PAGE": {
+    "SEO": {
+      "SEO_TITLE": "Sobre Optimedic | Innovación en Lupas Quirúrgicas y Tecnología Médica",
+      "SEO_DESCRIPTION": "Conoce Optimedic, líder en distribución de lupas quirúrgicas, iluminadores frontales y equipos médicos de alta precisión.",
+      "SEO_URL": "https://optimedic.es/sobre-nosotros",
+      "SEO_SHORT_NAME": "Sobre Optimedic"
+    },
     "values": [
       {
         "title": "Pasión",
@@ -266,7 +288,13 @@
       }
     ]
   },
-  "CONTACT": {
+  "CONTACT_PAGE": {
+    "SEO": {
+      "SEO_TITLE": "Contacto | Optimedic - Hablemos de Lupas Quirúrgicas y Tecnología Médica",
+      "SEO_DESCRIPTION": "Ponte en contacto con Optimedic para más información sobre nuestros productos médicos. Estamos aquí para asesorarte.",
+      "SEO_URL": "https://optimedic.es/contacto",
+      "SEO_SHORT_NAME": "Contacto Optimedic"
+    },
     "TITLE": "Contacta con nosotros",
     "DESCRIPTION": "Para cualquier duda o consulta, no dude en ponerse en contacto con nosotros. Complete el siguiente formulario y nos comunicaremos con usted lo antes posible. También puede contactarnos por teléfono o correo electrónico.",
     "ADDRESS": "Carrer Pompeu Fabra, 12",
@@ -293,7 +321,19 @@
       "SUBMIT": "Enviar"
     }
   },
-  "LOUPES": {
+  "LOUPES_PAGE": {
+    "SEO": {
+      "SEO_TITLE": "Lupas Quirúrgicas y Gafas Lupa | Optimedic - Precisión y Ergonomía en Cirugía",
+      "SEO_DESCRIPTION": "Explora nuestras lupas quirúrgicas y gafas lupa de última generación. Diseñadas para mejorar la precisión en procedimientos médicos y dentales.",
+      "SEO_URL": "https://optimedic.es/productos/lupas",
+      "SEO_SHORT_NAME": "Optimedic Lupas"
+    },
+    "DETAILS_SEO": {
+      "SEO_TITLE": "Detalles de Lupa |",
+      "SEO_DESCRIPTION": "Nuestras lupas quirúrgicas están diseñadas para ofrecer precisión y comodidad, mejorando la visibilidad en procedimientos médicos y dentales. Con un diseño ergonómico, son ideales para profesionales de la salud que buscan lo mejor en precisión óptica.",
+      "SEO_URL": "https://optimedic.es/productos/lupas/",
+      "SEO_SHORT_NAME": "Detalle"
+    },
     "TITLE": "Lupas",
     "SUBTITLE": "El aumento excepcional es esencial para todo, desde los exámenes rutinarios hasta los complicados. Trabajaremos con usted para encontrar el mejor nivel de aumento que le permita realizar su trabajo lo mejor posible.",
     "DESCRIPTION_1": "Nuestros niveles de aumento van de <strong>2,5x a 6,5x</strong>, incluyendo tres lupas de aumento variable, <strong>EyeZoom™</strong>, <strong>EyeZoom™ Mini</strong> y <strong>EyeZoom™ Max</strong>. EyeZoom ofrece <strong>tres niveles de aumento en una sola lupa</strong> y ha ganado el <strong>Cellerant Best of Class Technology Award</strong> (premio de tecnología Mejor en su clase de Cellerant) <strong>tres veces</strong> desde su lanzamiento.",
@@ -914,7 +954,19 @@
       }
     ]
   },
-  "FRAMES": {
+  "FRAMES_PAGE": {
+    "SEO": {
+      "SEO_TITLE": "Monturas para Lupas Quirúrgicas | Optimedic - Diseño y Confort para Profesionales",
+      "SEO_DESCRIPTION": "Descubre nuestras monturas ergonómicas y resistentes, diseñadas para adaptarse perfectamente a tus lupas quirúrgicas.",
+      "SEO_URL": "https://optimedic.es/productos/monturas",
+      "SEO_SHORT_NAME": "Optimedic Monturas"
+    },
+    "DETAILS_SEO": {
+      "SEO_TITLE": "Detalles de Montura |",
+      "SEO_DESCRIPTION": "Descubre nuestras monturas ergonómicas, diseñadas para proporcionar la máxima comodidad y estabilidad a las lupas quirúrgicas. Perfectas para profesionales que buscan un ajuste seguro y un diseño elegante.",
+      "SEO_URL": "https://optimedic.es/productos/monturas/",
+      "SEO_SHORT_NAME": "Detalle"
+    },
     "TITLE": "Monturas",
     "SUBTITLE": "Tanto si prefiere estilos deportivos como icónicos, estamos seguros de que tenemos una montura que le encantará.",
     "DESCRIPTION_1": "Escoger la montura correcta para su telescopio es tan importante como escoger la <strong>ampliación correcta</strong>. En <strong>Optimedic</strong>, nos esforzamos para ofrecerle monturas <strong>duraderas</strong> y <strong>estéticamente atractivas</strong> que superarán sus expectativas de <strong>rendimiento</strong> y <strong>estilo</strong>.",
@@ -1487,7 +1539,19 @@
       }
     ]
   },
-  "HEADLIGHTS": {
+  "HEADLIGHTS_PAGE": {
+    "SEO": {
+      "SEO_TITLE": "Iluminadores Frontales para Cirugía | Optimedic - Visibilidad de Precisión",
+      "SEO_DESCRIPTION": "Optimiza la visibilidad en cada procedimiento con nuestros iluminadores frontales de alta intensidad y autonomía prolongada.",
+      "SEO_URL": "https://optimedic.es/productos/iluminadores-frontales",
+      "SEO_SHORT_NAME": "Optimedic Iluminadores Frontales"
+    },
+    "DETAILS_SEO": {
+      "SEO_TITLE": "Detalles de Iluminador Frontal |",
+      "SEO_DESCRIPTION": "Optimiza la visibilidad durante procedimientos médicos con nuestros iluminadores frontales. Ofrecen alta intensidad, larga duración y diseño ergonómico, siendo la opción perfecta para profesionales de la salud que requieren lo mejor en iluminación.",
+      "SEO_URL": "https://optimedic.es/productos/iluminadores-frontales/",
+      "SEO_SHORT_NAME": "Detalle"
+    },
     "TITLE": "Iluminadores frontales",
     "SUBTITLE": "Disponer de una iluminación adecuada durante los procedimientos y exámenes es crucial para asegurarse de no pasar por alto los detalles críticos a simple vista. Aunque la ampliación puede mejorar su campo visual, la iluminación adecuada contribuye a eliminar las sombras que pueden obstaculizar su campo de visión.",
     "DESCRIPTION_1": "Nuestros <strong>iluminadores frontales</strong> tienen el <strong>mejor rendimiento lumínico global</strong> entre los principales competidores, según pruebas realizadas por terceros. Gracias a <strong>TruColor™</strong>, nuestra tecnología pionera en faros, todos los faros <strong>Orascoptic</strong> ofrecen una iluminación con un <strong>CRI intenso</strong> que eclipsa a la competencia.",
@@ -1612,12 +1676,18 @@
       }
     ]
   },
-  "RENUVION": {
+  "RENUVION_PAGE": {
+    "SEO": {
+      "SEO_TITLE": "Renuvion | Optimedic - Tecnología Avanzada para Retracción de Piel con Plasma",
+      "SEO_DESCRIPTION": "Descubre Renuvion, el sistema de retracción de piel con plasma de helio para resultados precisos y mínimamente invasivos.",
+      "SEO_URL": "https://optimedic.es/productos/renuvion",
+      "SEO_SHORT_NAME": "Renuvion Retracción"
+    },
     "heading": {
       "logo": "/images/logos/renuvion_darkblue.png",
       "title": "Renuvion",
       "description": "Tecnología avanzada de energía de plasma para procedimientos de rejuvenecimiento y contorno corporal con resultados precisos y mínimamente invasivos. Renuvion es una tecnología de plasma de helio que combina la energía de radiofrecuencia con un chorro de helio frío para proporcionar una contracción inmediata de la piel y un efecto de tensado duradero.",
-      "href": "https://www.renuvion.com/",
+      "href": "https://www.renuvion.es/",
       "catalog": "/catalog/renuvion-contouring.pdf",
       "poster": "/images/hero/renuvion.jpg"
     },
@@ -1639,14 +1709,19 @@
       }
     ]
   },
-  "MICROAIRE": {
-  "heading": {
-    "logo": "/images/logos/microaire.png",
-    "title": "MicroAire",
-    "description": "MicroAire es líder mundial en liposucción asistida por energía (PAL) y en tecnologías innovadoras en cirugía estética. Recientemente, ampliaron su portafolio con la adquisición de NEOSYAD, una empresa conocida por sus tecnologías avanzadas en tejido adiposo, que mejoran los procesos de liposucción y preparación de tejido adiposo. Su tecnología Renuvion, que combina plasma de helio y radiofrecuencia, sigue proporcionando contracción de la piel y rejuvenecimiento efectivos con procedimientos mínimamente invasivos.",
-    "catalog": "/catalog/microaire.pdf",
-    "poster": "/images/hero/microaire.jpg"
+  "MICROAIRE_PAGE": {
+    "SEO": {
+      "SEO_TITLE": "MicroAire | Optimedic - Innovación en Liposucción Asistida por Potencia",
+      "SEO_DESCRIPTION": "Explora MicroAire, el sistema de liposucción asistida por potencia que optimiza los resultados y reduce el esfuerzo del cirujano.",
+      "SEO_URL": "https://optimedic.es/productos/microaire",
+      "SEO_SHORT_NAME": "MicroAire Liposucción"
+    },
+    "heading": {
+      "logo": "/images/logos/microaire.png",
+      "title": "MicroAire",
+      "description": "MicroAire es líder mundial en liposucción asistida por energía (PAL) y en tecnologías innovadoras en cirugía estética. Recientemente, ampliaron su portafolio con la adquisición de NEOSYAD, una empresa conocida por sus tecnologías avanzadas en tejido adiposo, que mejoran los procesos de liposucción y preparación de tejido adiposo. Su tecnología Renuvion, que combina plasma de helio y radiofrecuencia, sigue proporcionando contracción de la piel y rejuvenecimiento efectivos con procedimientos mínimamente invasivos.",
+      "catalog": "/catalog/microaire.pdf",
+      "poster": "/images/hero/microaire.jpg"
+    }
   }
-}
-
 }

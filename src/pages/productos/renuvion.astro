@@ -7,12 +7,15 @@ import { RenuvionSteps } from '../../components/products/surgery/renuvion/renuvi
 import RealResults from '../../components/products/surgery/renuvion/RealResults.astro'
 import BudgetRequest from '../../components/BudgetRequest.astro'
 const { currentLocale = 'es' } = Astro
-const i18n = getI18N({ currentLocale })
+
+const i18n = getI18N({ currentLocale }).RENUVION_PAGE
+const seoData = i18n.SEO
+const content = i18n
 ---
 
-<Layout title={i18n.RENUVION.heading.title} description="">
-	<SurgeryHeading content={i18n.RENUVION.heading} />
-	<RenuvionSteps content={i18n.RENUVION.steps} />
+<Layout seoData={seoData}>
+	<SurgeryHeading content={content.heading} />
+	<RenuvionSteps content={content.steps} />
 	<RealResults />
 	<BudgetRequest />
 </Layout>

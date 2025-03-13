@@ -3,13 +3,15 @@ import Layout from '../../layouts/Layout.astro'
 
 import { getI18N } from '../../i18n/'
 import { SurgeryHeading } from '../../components/products/surgery/surgery-heading'
-import RealResults from '../../components/products/surgery/renuvion/RealResults.astro'
 import BudgetRequest from '../../components/BudgetRequest.astro'
 const { currentLocale = 'es' } = Astro
-const i18n = getI18N({ currentLocale })
+
+const i18n = getI18N({ currentLocale }).MICROAIRE_PAGE
+const seoData = i18n.SEO
+const content = i18n
 ---
 
-<Layout isHome={false} title={i18n.MICROAIRE.heading.title} description="">
-	<SurgeryHeading content={i18n.MICROAIRE.heading} />
+<Layout seoData={seoData}>
+	<SurgeryHeading content={content.heading} />
 	<BudgetRequest />
 </Layout>

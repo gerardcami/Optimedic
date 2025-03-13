@@ -111,9 +111,10 @@ export default function Carousel({ slides }) {
 						data-carousel-item
 					>
 						<img
+							loading="lazy"
 							src={slide.image}
 							className="block h-full w-full object-cover"
-							alt={`Slide ${slide.id}`}
+							alt={`Carousel slide: ${slide.id}`}
 							draggable="false"
 						/>
 					</div>
