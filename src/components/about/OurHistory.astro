@@ -4,10 +4,10 @@ const { currentLocale = 'es' } = Astro
 const i18n = getI18N({ currentLocale })
 ---
 
-<section class="flex flex-col justify-center gap-10 lg:px-10">
+<section class="flex flex-col justify-center gap-10 px-6 lg:px-10">
 	<div class="grid gap-10 lg:grid-cols-2">
-		<div class="space-y-10 px-6 lg:px-0">
-			<h2 class="px-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:px-0">
+		<div class="space-y-10 lg:px-0">
+			<h2 class="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:px-0">
 				Nuestra historia
 			</h2>
 			<div class="space-y-4 text-pretty">
@@ -25,34 +25,46 @@ const i18n = getI18N({ currentLocale })
 				</p>
 			</div>
 		</div>
-		<div class="grid grid-cols-2 gap-4">
+		<div class="grid gap-4 md:grid-cols-2">
 			<article class="space-y-6 rounded-lg border p-6">
 				<header>
 					<p class="text-2xl font-bold">2015</p>
-					<h3 class="text-sm text-zinc-500">Fundación de la Empresa</h3>
+					<h3 class="text-sm text-zinc-500">Fundación de Optimedic</h3>
 				</header>
-				<p>Comenzamos con 3 empleados en una pequeña oficina</p>
+				<p class="text-sm">
+					Optimedic nace con la misión de ofrecer tecnología innovadora para mejorar la precisión en
+					el ámbito médico.
+				</p>
 			</article>
 			<article class="space-y-6 rounded-lg border p-6">
 				<header>
-					<p class="text-2xl font-bold">2015</p>
-					<h3 class="text-sm text-zinc-500">Fundación de la Empresa</h3>
+					<p class="text-2xl font-bold">2018</p>
+					<h3 class="text-sm text-zinc-500">Expansión y crecimiento</h3>
 				</header>
-				<p>Comenzamos con 3 empleados en una pequeña oficina</p>
+				<p class="text-sm">
+					La empresa amplía su catálogo de productos, consolidándose en el sector con soluciones
+					avanzadas en óptica médica cirugía plástica.
+				</p>
 			</article>
 			<article class="space-y-6 rounded-lg border p-6">
 				<header>
-					<p class="text-2xl font-bold">2015</p>
-					<h3 class="text-sm text-zinc-500">Fundación de la Empresa</h3>
+					<p class="text-2xl font-bold">2021</p>
+					<h3 class="text-sm text-zinc-500">Liderazgo en el mercado</h3>
 				</header>
-				<p>Comenzamos con 3 empleados en una pequeña oficina</p>
+				<p class="text-sm">
+					Optimedic se posiciona como una de las marcas líderes en innovación óptica quirúrgica, con
+					presencia internacional.
+				</p>
 			</article>
 			<article class="space-y-6 rounded-lg border p-6">
 				<header>
-					<p class="text-2xl font-bold">2015</p>
-					<h3 class="text-sm text-zinc-500">Fundación de la Empresa</h3>
+					<p class="text-2xl font-bold">2025</p>
+					<h3 class="text-sm text-zinc-500">Compromiso con la excelencia</h3>
 				</header>
-				<p>Comenzamos con 3 empleados en una pequeña oficina</p>
+				<p class="text-sm">
+					Con más de 2000 médicos confiando en sus productos, la empresa sigue innovando para
+					ofrecer soluciones personalizadas.
+				</p>
 			</article>
 		</div>
 	</div>
