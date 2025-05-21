@@ -38,7 +38,7 @@ export const ContactForm = ({ texts }) => {
 				})
 			})
 
-			alert(API_TOKEN)
+			alert('Mensaje enviado correctamente')
 		} catch (error) {
 			alert('Failed to send the message. Please try again.')
 		} finally {
