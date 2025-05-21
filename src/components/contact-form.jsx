@@ -7,7 +7,7 @@ export const ContactForm = ({ texts }) => {
 	const lastNameRef = useRef()
 	const emailRef = useRef()
 	const phoneRef = useRef()
-	const queryTypeRef = useRef()
+	const subjectRef = useRef()
 	const messageRef = useRef()
 	const [loading, setLoading] = useState(false)
 	const [acceptPrivacyPolicy, setAcceptPrivacyPolicy] = useState(false)
@@ -23,10 +23,22 @@ export const ContactForm = ({ texts }) => {
 				from_name: firstNameRef.current?.value + ' ' + lastNameRef.current?.value,
 				from_email: emailRef.current?.value,
 				phone: phoneRef.current?.value,
-				queryType: queryTypeRef.current?.value,
+				queryType: subjectRef.current?.value,
 				message: messageRef.current?.value
 			})
-			alert('Message sent successfully!')
+			await fetch('/api/tickets', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					customerName: firstNameRef.current?.value + ' ' + lastNameRef.current?.value,
+					customerEmail: emailRef.current?.value,
+					customerPhone: phoneRef.current?.value,
+					title: subjectRef.current?.value,
+					content: messageRef.current?.value
+				})
+			})
+
+			alert(API_TOKEN)
 		} catch (error) {
 			alert('Failed to send the message. Please try again.')
 		} finally {
@@ -94,20 +106,15 @@ export const ContactForm = ({ texts }) => {
 
 				<div className="w-full">
 					<label htmlFor="queryType" className="block font-medium">
-						{texts.QUERYTYPE}
+						{texts.SUBJECT}
 					</label>
-					<select
-						ref={queryTypeRef}
-						name="queryType"
+					<input
+						ref={subjectRef}
+						type="text"
+						name="subject"
 						className="mt-3 block w-full rounded-md border border-gray-300 px-4 py-2 shadow-sm focus:border-teal-500 focus:ring-teal-500"
 						required
-					>
-						<option value="">{texts.QUERYTYPES.DEFAULT}</option>
-						<option value="general">{texts.QUERYTYPES.GENERAL}</option>
-						<option value="support">{texts.QUERYTYPES.SUPPORT}</option>
-						<option value="product">{texts.QUERYTYPES.PRODUCT}</option>
-						<option value="other">{texts.QUERYTYPES.OTHER}</option>
-					</select>
+					/>
 				</div>
 
 				<div className="w-full">
