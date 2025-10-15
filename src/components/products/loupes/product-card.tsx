@@ -23,7 +23,7 @@ const ProductCard = ({ path, slug, image, name, description, magnification }: Pr
 						<h3 className="line-clamp-1 text-base font-semibold text-gray-900">{name}</h3>
 						<LucideArrowRight className="ml-1 size-4 flex-shrink-0 text-[#076b61] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 					</div>
-					<p className="mb-3 h-full text-sm leading-relaxed text-gray-600">{description}</p>
+					<p className="h-full text-sm leading-relaxed text-gray-600">{description}</p>
 					<div>
 						<span className="text-xs font-medium text-[#076b61]">{magnification}</span>
 					</div>

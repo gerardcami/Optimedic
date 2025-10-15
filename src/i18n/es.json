@@ -670,6 +670,56 @@
 				"type": "Aumento variable",
 				"products": [
 					{
+						"name": "ErgoZoom™",
+						"slug": "ergozoom",
+						"card_image": "/images/loupes/ergozoom/card.webp",
+						"description": "Una lupa de aumento ajustable con óptica de tipo deflectora te permite mantener una postura erguida.",
+						"details": {
+							"detailed_description": "Construido para el esfuerzo, diseñado para su columna vertebral.",
+							"intro_text_1": "ErgoZoom ofrece a los médicos soporte ergonómico para la postura y aumento ajustable en un único sistema revolucionario.",
+							"intro_text_2": "Siéntese erguido y ajuste el campo de visión en tiempo real, sin cambiar de herramienta ni modificar la postura.",
+							"intro_text_3": "Realice cómodamente el trabajo de preparación con el aumento de 3,5x, luego amplíe con el aumento de 5,5x para enfocar con precisión las ubicaciones y el trabajo de acabado.",
+							"intro_image": "/images/loupes/ergozoom/intro.webp",
+							"specs_image": "/images/loupes/ergozoom/specs.webp",
+							"specs": {
+								"magnification_power": "3,5x · 5,5x",
+								"weight": "43,2 g",
+								"field_width": "9,2 cm en 3,5x · 6,9 cm en 5,5x",
+								"field_depth": "9,1 cm en 3,5x · 6,4 cm en 5,5x"
+							},
+							"frame_options": [
+								{
+									"name": "Rydon™",
+									"slug": "rydon"
+								},
+								{
+									"name": "Phantom™",
+									"slug": "phantom"
+								},
+								{
+									"name": "Triumph™",
+									"slug": "triumph"
+								},
+								{
+									"name": "Tempo™",
+									"slug": "tempo"
+								},
+								{
+									"name": "Tempo™ Refined Fit",
+									"slug": "tempo-refined-fit"
+								},
+								{
+									"name": "DragonFly™ PRO",
+									"slug": "dragonfly-pro"
+								},
+								{
+									"name": "DragonFly™ NEO",
+									"slug": "dragonfly-neo"
+								}
+							]
+						}
+					},
+					{
 						"name": "EyeZoom™",
 						"slug": "eyezoom",
 						"card_image": "/images/loupes/eyezoom/card.webp",
@@ -931,6 +981,56 @@
 								{
 									"name": "Victory™",
 									"slug": "victory"
+								},
+								{
+									"name": "DragonFly™ PRO",
+									"slug": "dragonfly-pro"
+								},
+								{
+									"name": "DragonFly™ NEO",
+									"slug": "dragonfly-neo"
+								}
+							]
+						}
+					},
+					{
+						"name": "ErgoZoom™",
+						"slug": "ergozoom",
+						"card_image": "/images/loupes/ergozoom/card.webp",
+						"description": "Una lupa de aumento ajustable con óptica de tipo deflectora te permite mantener una postura erguida.",
+						"details": {
+							"detailed_description": "Construido para el esfuerzo, diseñado para su columna vertebral.",
+							"intro_text_1": "ErgoZoom ofrece a los médicos soporte ergonómico para la postura y aumento ajustable en un único sistema revolucionario.",
+							"intro_text_2": "Siéntese erguido y ajuste el campo de visión en tiempo real, sin cambiar de herramienta ni modificar la postura.",
+							"intro_text_3": "Realice cómodamente el trabajo de preparación con el aumento de 3,5x, luego amplíe con el aumento de 5,5x para enfocar con precisión las ubicaciones y el trabajo de acabado.",
+							"intro_image": "/images/loupes/ergozoom/intro.webp",
+							"specs_image": "/images/loupes/ergozoom/specs.webp",
+							"specs": {
+								"magnification_power": "3,5x · 5,5x",
+								"weight": "43,2 g",
+								"field_width": "9,2 cm en 3,5x · 6,9 cm en 5,5x",
+								"field_depth": "9,1 cm en 3,5x · 6,4 cm en 5,5x"
+							},
+							"frame_options": [
+								{
+									"name": "Rydon™",
+									"slug": "rydon"
+								},
+								{
+									"name": "Phantom™",
+									"slug": "phantom"
+								},
+								{
+									"name": "Triumph™",
+									"slug": "triumph"
+								},
+								{
+									"name": "Tempo™",
+									"slug": "tempo"
+								},
+								{
+									"name": "Tempo™ Refined Fit",
+									"slug": "tempo-refined-fit"
 								},
 								{
 									"name": "DragonFly™ PRO",
